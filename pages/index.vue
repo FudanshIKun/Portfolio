@@ -45,10 +45,6 @@ export default {
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   	<main v-if="!loading" id="hello" class="max-w-full h-full" style="overflow-y: scroll; overflow-x: hidden;">
 
-    	<!-- gradients -->
-    	<div class="css-blurry-gradient-blue"></div>
-    	<div class="css-blurry-gradient-green"></div>
-
       <section class="hero" style="height: 100%;">
         <div style="height: 100%; justify-content: end;">
           
