@@ -135,7 +135,7 @@
         <!-- windows tab -->
         <div class="tab-height w-full h-full hidden lg:flex border-bot items-center"></div>
         <!-- windows tab mobile -->
-        <div class="tab-height w-full h-full flex-none lg:hidden items-center"></div>
+        <div class="tab-height w-full h-full flex-none lg:hidden items-center "></div>
           
           <div id="posts" v-if="currentSection === 'personal-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding: 20px;">
             <!-- title -->
@@ -144,10 +144,10 @@
             </div>
           </div>
 
-          <div id="gists" v-if="currentSection === 'professional-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding: 20px;">
+          <div id="gists" v-if="currentSection === 'professional-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding-left: 20px; padding-right: 20px;">
             <!-- title -->
             <h3 class="text-white lg:text-menu-text mb-4 text-sm">Code snippet showcase:</h3>
-            <div class="flex flex-col" style="overflow-x: hidden;">
+            <div class="flex flex-col" style="overflow-x: hidden; border-radius: 10px;">
               <!-- snippets -->
               <GistSnippet
                 v-if="config.public.dev.about.sections[currentSection].gist"

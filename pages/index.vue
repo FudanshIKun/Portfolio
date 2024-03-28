@@ -53,7 +53,7 @@ export default {
         <div style="height: 100%; justify-content: end;">
           
         </div>
-        <div class="head" style="padding-bottom: 5vh">
+        <div class="head" style="padding-bottom: 5vh; color: white;">
           <h1>{{ config.dev.name }}</h1>
           <h2>> {{ config.dev.role }}</h2>
         </div>
@@ -63,8 +63,8 @@ export default {
       <section class="hero" style="height: fit-content;">
         <div style="justify-content: center; margin: 0; padding-right: 5vw;">
           <div class="w3-container w3-content w3-right" style="max-width:800px;">
-            <h2 class="w3-wide">WHO AM I</h2>
-            <p class="box text-sm">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
+            <h2 class="w3-wide" style="color: white;">WHO AM I</h2>
+            <p class="box text-sm" style="color: white;">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
               I've passion for both art and coding for games and interested in games with unique design and artstyle ( <b>Mostly Stylized</b> ).
               I like to solve problems and improve game quality, create tools for artists in my team.
               <br>
@@ -84,8 +84,8 @@ export default {
               <button 
               class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
               style="height: fit-content; width: fit-content; text-align: center;">
-                <div style="display: flex; flex-direction: row;">
-                  <i class="fa fa-download"></i> 
+                <div style="display: flex; flex-direction: row; align-items: center">
+                  <i class="fa fa-download" style="padding-top: .6px;"></i> 
                   <span class="px-1"></span>
                   <p style="text-wrap: nowrap;">Download CV</p>
                 </div>
