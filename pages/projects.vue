@@ -1,8 +1,47 @@
+<script setup>
+import { ref } from 'vue'
+const config = useRuntimeConfig()
+const techs = ['unity', 'shader']
+const filters = ref(['all'])
+const showFilters = ref(true)
+const projects = ref(config.public.dev.projects)
+
+function filterProjects(tech) {
+  document.getElementById('icon-tech-' + tech).classList.toggle('active')
+  document.getElementById('title-tech-' + tech).classList.toggle('active')
+
+  const check = document.getElementById(tech)
+  if (check.checked) {
+    filters.value = filters.value.filter((item) => item !== 'all')
+    filters.value.push(tech)
+  } else {
+    filters.value = filters.value.filter((item) => item !== tech)
+    filters.value.length === 0 ? filters.value.push('all') : null
+  }
+  filters.value[0] == 'all' ? projects.value = config.public.dev.projects : projects.value = filterProjectsBy(filters.value)
+
+  if (projects.value.length === 0) {
+    document.getElementById('projects-case').classList.remove('grid')
+    document.getElementById('not-found').classList.remove('hidden')
+  } else {
+    document.getElementById('projects-case').classList.add('grid')
+    document.getElementById('not-found').classList.add('hidden')
+  }
+}
+
+function filterProjectsBy(filters) {
+  const projectArray = Object.values(config.public.dev.projects)
+  return projectArray.filter(project => {
+    return filters.some(filter => project.tech.includes(filter))
+  })
+}
+</script>
+
 <template>
   <main class="flex flex-col flex-auto lg:flex-row overflow-hidden">
 
     <div id="mobile-page-title">
-      <h2>_projects</h2>
+      <h2>projects</h2>
     </div>
 
     <!-- section title (mobile) -->
@@ -74,47 +113,6 @@
   </div>
 </main>
 </template>
-
-<script setup>
-import { ref } from 'vue'
-
-const config = useRuntimeConfig()
-
-const techs = ['Unity', 'Shader']
-const filters = ref(['all'])
-const showFilters = ref(true)
-const projects = ref(config.public.dev.projects)
-
-function filterProjects(tech) {
-  document.getElementById('icon-tech-' + tech).classList.toggle('active')
-  document.getElementById('title-tech-' + tech).classList.toggle('active')
-
-  const check = document.getElementById(tech)
-  if (check.checked) {
-    filters.value = filters.value.filter((item) => item !== 'all')
-    filters.value.push(tech)
-  } else {
-    filters.value = filters.value.filter((item) => item !== tech)
-    filters.value.length === 0 ? filters.value.push('all') : null
-  }
-  filters.value[0] == 'all' ? projects.value = config.public.dev.projects : projects.value = filterProjectsBy(filters.value)
-
-  if (projects.value.length === 0) {
-    document.getElementById('projects-case').classList.remove('grid')
-    document.getElementById('not-found').classList.remove('hidden')
-  } else {
-    document.getElementById('projects-case').classList.add('grid')
-    document.getElementById('not-found').classList.add('hidden')
-  }
-}
-
-function filterProjectsBy(filters) {
-  const projectArray = Object.values(config.public.dev.projects)
-  return projectArray.filter(project => {
-    return filters.some(filter => project.tech.includes(filter))
-  })
-}
-</script>
 
 <style>
 #filters {
