@@ -1,14 +1,14 @@
 <template>
-    <main id="contact-me" class="page">
+    <main id="contact-me" class="page" style="height: 100%;">
 
         <div id="mobile-page-title">
-            <h2>_contact-me</h2>
+            <h2>contact-me</h2>
         </div>
 
-        <div id="page-menu" class="w-fullflex flex-col border-right" style="height: 100%;">
+        <div id="page-menu" class="w-fullflex flex-col" style="height: 100%; border-right: 2px solid #454843;">
 
             <!-- contacts -->
-            <div id="contacts" class="submenu">
+            <div id="contacts" class="submenu" style="height: 100%;">
                 <div class="title" @click="open('contacts')">
                     <img class="arrow" src="/icons/arrow.svg">
                     <h3>

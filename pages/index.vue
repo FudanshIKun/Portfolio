@@ -49,7 +49,7 @@ export default {
     	<div class="css-blurry-gradient-blue"></div>
     	<div class="css-blurry-gradient-green"></div>
 
-      <section class="hero" style="height: 85vh;">
+      <section class="hero" style="height: 100%;">
         <div style="height: 100%; justify-content: end;">
           
         </div>
@@ -314,8 +314,8 @@ export default {
                   </div>
                   <div class="slide slide2" style="padding: 1vh;">
                     <div style="width: 100%;">
-                      <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap;">{{ activities.name}}</h3>
-                      <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap;">{{ activities.name}}</h3>
+                      <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ activities.name}}</h3>
+                      <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ activities.name}}</h3>
                       <p class="text-menu-text font-fira_retina text-sm mb-5">
                         {{ activities.description }}
                       </p>
