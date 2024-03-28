@@ -5,7 +5,7 @@
             <h2>_contact-me</h2>
         </div>
 
-        <div id="page-menu" class="w-full h-full flex flex-col border-right">
+        <div id="page-menu" class="w-fullflex flex-col border-right" style="height: 100%;">
 
             <!-- contacts -->
             <div id="contacts" class="submenu">

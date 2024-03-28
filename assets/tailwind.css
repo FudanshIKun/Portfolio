@@ -9,16 +9,16 @@ h3, h2 {
 
 html {
   color-scheme:unset;
-    --bg-background: #272926;
-    background-color: var(--bg-background);
-    height: stretch;
-    width: stretch;
-    margin: 30px;
+  --bg-background: #272926;
+  background-color: var(--bg-background);
+  height: stretch;
+  width: stretch;
+  margin: 30px;
 }
 
 body {
-    height: stretch;
-    width: stretch;
+  height: stretch;
+  width: stretch;
 }
 
 main.page {
@@ -53,7 +53,6 @@ main.page {
 #section-content-title-contact {
   @apply cursor-pointer;
   border-bottom: 2px solid #454843;
-
   height: 35px;
 }
 

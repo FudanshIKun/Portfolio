@@ -49,7 +49,7 @@ export default {
     	<div class="css-blurry-gradient-blue"></div>
     	<div class="css-blurry-gradient-green"></div>
 
-      <section class="hero" style="height: 100%;">
+      <section class="hero" style="height: 85vh;">
         <div style="height: 100%; justify-content: end;">
           
         </div>
@@ -98,8 +98,8 @@ export default {
       <section class="hero" style="height: fit-content; padding-top: 5vh;">
         <div style=" padding: 2vw; padding-right: 5vh;">
           <div class="box" style="padding: 2vh;">
-            <h2 class="w3-wide">MY HIGHLIGHTS</h2>
-            <p class="w3-opacity"><i>Create with Passion</i></p>
+            <h2 class="w3-wide" style="color: white;">MY HIGHLIGHTS</h2>
+            <p class="w3-opacity" style="color: gray;"><i>Create with Passion</i></p>
             <span class="px-1"></span>
             <div class="media-scroller snaps-inline" style="padding-top:1vh;">
               <div class="media-element container max-w-full" v-for="(highlights, key) in highlights.projects" :key="key">
@@ -112,8 +112,8 @@ export default {
                   </div>
                   <div class="slide slide2" style="padding: 1vh;">
                     <div style="width: 100%;">
-                      <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap;">{{ highlights.name}}</h3>
-                      <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap;">{{ highlights.name}}</h3>
+                      <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white;">{{ highlights.name}}</h3>
+                      <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white;">{{ highlights.name}}</h3>
                       <p class="text-menu-text font-fira_retina text-sm mb-5">
                         {{ highlights.description }}
                       </p>
@@ -135,7 +135,7 @@ export default {
       <section class="hero">
         <div style="justify-content: center;">
           <div class="w3-container w3-content w3-right" style="max-width:800px; padding: 2vw; padding-right: 5vh;">
-            <h2 class="w3-wide">WHAT I DO</h2>
+            <h2 class="w3-wide" style="color: white;">WHAT I DO</h2>
               <section class="box skills" data-astro-cid-ab4ihpzs=""> 
 
                 <div class="stack gap-2 lg:gap-4" data-astro-cid-ab4ihpzs=""> 
@@ -150,7 +150,7 @@ export default {
                       <stop offset="1" stop-color="var(--gradient-stop-3)" data-astro-cid-patnjmll=""></stop> 
                     </linearGradient> 
                   </svg>  
-                  <h2 data-astro-cid-ab4ihpzs="">Design</h2> 
+                  <h2 data-astro-cid-ab4ihpzs="" style="color: white;">Design</h2> 
                   <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ready to exploring new concepts, ideas and Craft creative designs with passion.</p> 
                 </div> 
 
@@ -165,7 +165,7 @@ export default {
                     <stop offset="1" stop-color="var(--gradient-stop-3)" data-astro-cid-patnjmll=""></stop> 
                   </linearGradient> 
                   </svg>  
-                  <h2 data-astro-cid-ab4ihpzs="">Create</h2> 
+                  <h2 data-astro-cid-ab4ihpzs="" style="color: white;">Create</h2> 
                   <p data-astro-cid-ab4ihpzs="" style="color: gray;">Implement Features and script which easy to use and setup.</p> 
                 </div> 
 
@@ -180,7 +180,7 @@ export default {
                       <stop offset="1" stop-color="var(--gradient-stop-3)" data-astro-cid-patnjmll=""></stop> 
                     </linearGradient> 
                   </svg>  
-                  <h2 data-astro-cid-ab4ihpzs="">Coding</h2> 
+                  <h2 data-astro-cid-ab4ihpzs="" style="color: white;">Coding</h2> 
                   <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
                 </div> 
               </section>
@@ -197,11 +197,11 @@ export default {
       <section class="hero">
         <div>
           <div class="w3-container" style="max-width:800px; padding-right: 5vh;">
-            <h2 class="w3-wide">WHAT I USE</h2>
+            <h2 class="w3-wide" style="color: white;">WHAT I USE</h2>
             <span class="px-2"></span>
 
             <div class="w3-row-padding box" style="max-width:100%; height: fit-content; padding-right: 5vw; padding: 2vw;"> 
-              <p class="w3-justify" style="padding: 2vh">These're software, I've ever use in my journey.</p>
+              <p class="w3-justify" style="padding: 2vh; color: white;">These're software, I've ever use in my journey.</p>
               <div class="w3-quarter">
                 <ul class="w3-ul w3-gray w3-center" style="min-width: 100px;">
                   <li class="w3-black w3-padding-16" style="font-size: 12px">Editing</li>    
@@ -275,10 +275,10 @@ export default {
       <section class="hero">
         <div style="height: fit-content;">
           <div class="w3-container w3-content w3-right" style="max-width:1000px; padding: 2vw; padding-right: 5vh;">
-            <h2 class="w3-wide">LANGUAGES</h2>
+            <h2 class="w3-wide" style="color: white">LANGUAGES</h2>
               <section class="box text-sm" data-astro-cid-ab4ihpzs=""> 
                 <div style="box-shadow: var(--shadow-2); padding: 1vh;">
-                  <p><b>THAI</b></p>
+                  <p style="color: white"><b>THAI</b></p>
                   <span class="px-0.5"></span>
                   <div class="w3-light-grey w3-round-xlarge">
                     <div class="w3-round-xlarge w3-gray" style="height:24px;width:99%"></div>
@@ -286,7 +286,7 @@ export default {
                   <p style="color: gray; padding-top: 1vh;">Native Speaker</p>
                 </div>
                 <div style="box-shadow: var(--shadow-2); padding: 1vh;">
-                  <p><b>ENGLISH</b></p>
+                  <p style="color: white"><b>ENGLISH</b></p>
                   <span class="px-0.5"></span>
                   <div class="w3-light-grey w3-round-xlarge">
                     <div class="w3-round-xlarge w3-gray" style="height:24px;width:65%"></div>
@@ -302,7 +302,7 @@ export default {
       <section class="hero" style="height: fit-content; padding-top: 5vh;">
         <div style=" padding: 2vw; padding-right: 5vh;">
           <div class="box" style="padding: 2vh;">
-            <h2 class="w3-wide">ACTIVITIES</h2>
+            <h2 class="w3-wide" style="color: white">ACTIVITIES</h2>
             <span class="px-1"></span>
             <div class="media-scroller snaps-inline" style="padding-top:1vh;">
               <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key">

@@ -38,7 +38,7 @@ function filterProjectsBy(filters) {
 </script>
 
 <template>
-  <main class="flex flex-col flex-auto lg:flex-row overflow-hidden">
+  <main class="flex flex-col flex-auto lg:flex-row" style="height: 100%; overflow: hidden;">
 
     <div id="mobile-page-title">
       <h2>projects</h2>
