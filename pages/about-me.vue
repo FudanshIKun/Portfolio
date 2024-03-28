@@ -1,6 +1,6 @@
 <template>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <main v-if="!loading" id="about-me" class="page">
+  <main v-if="!loading" id="about-me" class="page" style="height: 100%;">
 
     <div id="mobile-page-title">
       <h2>About me</h2>
