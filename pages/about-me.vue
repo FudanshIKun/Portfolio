@@ -6,7 +6,7 @@
       <h2>About me</h2>
     </div>
 
-    <div id="page-menu" class="w-full flex">
+    <div id="page-menu" class="w-full flex" style="height: 100%;">
       <!-- DESKTOP section icons -->
       <div id="sections">
         <div id="section-icon" v-for="section in config.dev.about.sections" :key="section.title" :class="{ active: isSectionActive(section.title)}">
@@ -15,7 +15,7 @@
       </div>
 
       <!-- focused section content -->
-      <div id="section-content" class="hidden lg:block w-full h-full border-right">
+      <div id="section-content" class="hidden lg:block w-full h-full border-right" style="height: 100%;">
         <!-- title -->
         <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
           <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">

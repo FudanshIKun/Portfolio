@@ -58,7 +58,7 @@ function filterProjectsBy(filters) {
       </div>
 
       <!-- filter menu -->
-      <nav id="filters" class="w-full flex-col">
+      <nav id="filters" class="w-full flex-col" style="max-height: 100%;">
   
         <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
@@ -89,7 +89,7 @@ function filterProjectsBy(filters) {
       </div>
 
       <!-- projects -->
-      <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full overflow-scroll lg:self-center">
+      <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full lg:self-center" style="overflow: scroll;">
         <div id="not-found" class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
           <span class="flex justify-center text-4xl pb-3">
             X__X
