@@ -1,4 +1,5 @@
 <template>
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <main v-if="!loading" id="about-me" class="page">
 
     <div id="mobile-page-title">
@@ -102,9 +103,8 @@
     <!-- MENU END -->
 
     <!-- content -->
-    <div class="flex flex-col lg:grid lg:grid-cols-2 h-full w-full">
-      
-      <div id="left" class="w-full flex flex-col border-right">
+    <div class="flex flex-col lg:grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+      <div id="left" class="w-full flex flex-col">
         
         <!-- windows tab desktop -->
         <div class="tab-height w-full hidden lg:flex border-bot items-center">
@@ -115,44 +115,93 @@
         </div>
 
         <!-- windows tab mobile -->
-        <div id="tab-mobile" class="flex lg:hidden font-fira_retina">
-            <span class="text-white">// </span>
-            <h3 v-html="config.dev.about.sections[currentSection].title" class="text-white px-2"></h3>
-            <span class="text-menu-text"> / </span>
-            <h3 v-html="config.dev.about.sections[currentSection].info[folder].title" class="text-menu-text pl-2"></h3>
+        <div id="tab-mobile" class="lg:hidden font-fira_retina" style="display: flex;">
+            <h3 class="text-white px-2">{{ config.dev.about.sections[currentSection].title }}</h3>
+            <h3 class="text-menu-text pl-2">[{{ config.dev.about.sections[currentSection].info[folder].title }}]</h3>
         </div>
         
         <!-- text -->
-        <div id="commented-text" class="flex h-full w-full lg:border-right overflow-hidden">
+        <div id="commented-text" class="flex h-full w-full">
 
           <div class="w-full h-full ml-5 mr-10 lg:my-5" style="overflow-x: hidden; overflow-y:auto;">
               <CommentedText :text="config.dev.about.sections[currentSection].info[folder].description" />
           </div>
         </div>
-      </div>
-    </div>
 
-    <div id="right" class="max-w-full flex flex-col">   
-      <!-- windows tab -->
-      <div class="tab-height w-full h-full hidden lg:flex border-bot items-center"></div>
-      <!-- windows tab mobile -->
-      <div class="tab-height w-full h-full flex-none lg:hidden items-center"></div>
-        
-    </div>
+      </div>
+
+      <div id="right" class="max-w-full flex flex-col">   
+
+        <!-- windows tab -->
+        <div class="tab-height w-full h-full hidden lg:flex border-bot items-center"></div>
+        <!-- windows tab mobile -->
+        <div class="tab-height w-full h-full flex-none lg:hidden items-center"></div>
+          
+          <div id="posts" v-if="currentSection === 'personal-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding: 20px;">
+            <!-- title -->
+            <div class="flex flex-col" style="overflow-x: hidden;">
+
+            </div>
+          </div>
+
+          <div id="gists" v-if="currentSection === 'professional-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding: 20px;">
+            <!-- title -->
+            <h3 class="text-white lg:text-menu-text mb-4 text-sm">Code snippet showcase:</h3>
+            <div class="flex flex-col" style="overflow-x: hidden;">
+              <!-- snippets -->
+              <GistSnippet
+                v-if="config.public.dev.about.sections[currentSection].gist"
+                data-aos="fade-down"
+                v-for="(gist, key) in config.public.dev.about.sections[currentSection].gist"
+                :key="key"
+                :id="gist"
+              />
+            </div>
+          </div>
+
+          <div id="posts" v-if="currentSection === 'hobbies-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding: 20px;">
+            <!-- title -->
+            <div class="flex flex-col" style="overflow-x: hidden;">
+
+            </div>
+          </div>
+
+        </div>
+      </div>
   </main>
 </template>
 
-<style>
+<style scoped>
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 #sections {
-  width: 5rem; /* 80px */
+  width: 5rem;
   height: 100%;
   display: none;
   border-right: 1px solid #454843;
 }
 
-/* LG */
-@media (min-width: 1024px) {
+#scroll-bar{
+  width: 20px;
+}
+
+#scroll {
+  width: 14px;
+  height: 7px;
+  background-color: #607B96;
+}
+
+
+@media (min-width: 1026px) {
   #sections {
     display: block;
   }

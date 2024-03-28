@@ -2,9 +2,11 @@
     <div id="project" :key="key" class="lg:mx-5">
 
         <span class="flex text-sm my-3">
-            <h3 v-if="index == null" class="text-purplefy font-fira_bold mr-3">Project {{ key + 1 }}</h3>
-            <h3 v-else class="text-purplefy font-fira_bold mr-3">Project {{ index + 1 }}</h3>
-            <h4 class="font-fira_retina text-menu-text"> // {{ project.title }}</h4>
+            <div style="display: flex; flex-direction: column;">
+              <h3 v-if="index == null" class="text-purplefy font-fira_bold">{{ project.name }}</h3>
+              <h3 v-else class="text-purplefy font-fira_bold">{{ project.name }}</h3>
+              <h4 class="font-fira_retina text-menu-text">{{ project.title }}</h4>
+            </div>
         </span>
 
         <div id="project-card" class="flex flex-col">
@@ -15,7 +17,7 @@
                 <img id="showcase" :src="project.img" alt="" class="">
             </div>
 
-            <div class="pb-8 pt-6 px-6 border-top">
+            <div class="pb-8 pt-8 px-6">
                 <p class="text-menu-text font-fira_retina text-sm mb-5">
                 {{ project.description }}
                 </p>
@@ -49,14 +51,14 @@ const { project, key, index } = defineProps(['project', 'key', 'index'])
 }
 
 #window {
-  max-height: 120px;
   position: relative;
-  overflow: hidden;
 }
 
 #showcase {
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
+  aspect-ratio: 16/9;
+  object-fit: cover;
 }
 
 #view-button {

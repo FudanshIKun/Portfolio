@@ -12,25 +12,21 @@
 
     <!-- mobile menu -->
       <div id="menu" class="bg-mobile-menu-blue z-10 hidden">
-        <NuxtLink id="nav-link-mobile" to="/" :class="{ active: isActive('/') }" @click="toggleMobileMenu()">
+        <RouterLink id="nav-link-mobile" to="/" :class="{ active: isActive('/') }" @click="toggleMobileMenu()">
           Home
-        </NuxtLink>
+        </RouterLink>
   
-        <NuxtLink id="nav-link-mobile" to="/about-me" :class="{ active: isActive('/about-me') }" @click="toggleMobileMenu()">
+        <RouterLink id="nav-link-mobile" to="/about-me" :class="{ active: isActive('/about-me') }" @click="toggleMobileMenu()">
           About me
-        </NuxtLink>
-
-        <NuxtLink id="nav-link-mobile" to="/activities" :class="{ active: isActive('/activities') }">
-          My Activities
-        </NuxtLink>
+        </RouterLink>
   
-        <NuxtLink id="nav-link-mobile" to="/projects" :class="{ active: isActive('/projects') }" @click="toggleMobileMenu()">
+        <RouterLink id="nav-link-mobile" to="/projects" :class="{ active: isActive('/projects') }" @click="toggleMobileMenu()">
           My Journey
-        </NuxtLink>
+        </RouterLink>
 
-        <NuxtLink id="nav-link-mobile" to="/contact-me" :class="{ active: isActive('/contact-me') }" @click="toggleMobileMenu()">
+        <RouterLink id="nav-link-mobile" to="/contact-me" :class="{ active: isActive('/contact-me') }" @click="toggleMobileMenu()">
           Contact me
-        </NuxtLink>
+        </RouterLink>
     </div>
 
   </div>

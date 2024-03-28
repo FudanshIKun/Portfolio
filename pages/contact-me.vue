@@ -56,21 +56,13 @@
             <!-- main -->
             <div class="flex lg:grid lg:grid-cols-2 h-full w-full">
         
-                <div id="left" class="h-full w-full flex flex-col border-right items-center">
-                    
-                    <ContactForm :name="name" :email="email" :message="message" />
+                <div id="left" class="h-full w-full flex flex-col items-center">
+                    <ContactForm :name="name" :subject="subject" :email="email" :message="message" />
 
                 </div>
 
                 <div id="right" class="h-full w-full hidden lg:flex">
                     
-                    <div class="form-content">
-                        <FormContentCode :name="name" :email="email" :message="message" />
-                    </div>
-                    <!-- scroll bar -->
-                    <div id="scroll-bar" class="h-full border-left flex justify-center py-1">
-                        <div id="scroll"></div>
-                    </div>
                 
                 </div>
             </div>
@@ -81,13 +73,6 @@
 
 <script>
 export default {
-    data() {
-        return {
-            name: '',
-            email: '',
-            message: '',
-        }
-    },
     setup() {
         const contact = useRuntimeConfig().dev.contacts
 
@@ -111,26 +96,6 @@ export default {
         }
     },
     mounted(){
-
-        const nameInput = document.getElementById('name-input');
-        const emailInput = document.getElementById('email-input');
-        const messageInput = document.getElementById('message-input');
-
-        nameInput.addEventListener('input', (event) => {
-            const nameValue = document.getElementById('name-value')
-            nameValue.innerHTML = event.target.value;
-        })
-
-        emailInput.addEventListener('input', (event) => {
-            const emailValue = document.getElementById('email-value')
-            emailValue.innerHTML = event.target.value;
-        })
-
-        messageInput.addEventListener('input', (event) => {
-            const messageValue = document.getElementById('message-value')
-            messageValue.innerHTML = event.target.value;
-        })
-
         /**
          * * Close all submenus
          * ! This is a temporary solution.

@@ -15,7 +15,6 @@ export default {
     }
   },
   mounted() {
-    // Detectamos si es mobile
     if (window.innerWidth <= 1024) {
       this.isMobile = true
     }
@@ -44,7 +43,6 @@ export default {
 
 <template>
     <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-    <link rel="stylesheet" href="/portfolio/_astro/about.DWhrNTL7.css">
   	<main v-if="!loading" id="hello" class="max-w-full h-full" style="overflow-y: scroll; overflow-x: hidden;">
 
     	<!-- gradients -->
@@ -63,10 +61,10 @@ export default {
       </section>
 
       <section class="hero" style="height: fit-content;">
-        <div style="justify-content: center; padding: 2vw; padding-right: 5vh;">
-          <div class="w3-container w3-content w3-right" style="max-width:1000px;">
+        <div style="justify-content: center; margin: 0; padding-right: 5vw;">
+          <div class="w3-container w3-content w3-right" style="max-width:800px;">
             <h2 class="w3-wide">WHO AM I</h2>
-            <p class="box">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
+            <p class="box text-sm">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
               I've passion for both art and coding for games and interested in games with unique design and artstyle ( <b>Mostly Stylized</b> ).
               I like to solve problems and improve game quality, create tools for artists in my team.
               <br>
@@ -74,12 +72,23 @@ export default {
               That's why I'm aways strive for new experience and do my best in any given task.
             </p>
             <div style="display:flex; flex-direction: row-reverse;">
-              <RouterLink id="nav-link" to="/about-me?topic=personal-info&folder=bio" target="" class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right" @click.prevent="focusCurrentSection('professional-info')">
+              <RouterLink 
+              id="nav-link" 
+              to="/about-me?topic=personal-info&folder=bio" 
+              target="" 
+              class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
+              style="height: fit-content; text-align: center; text-wrap: nowrap;">
                 See more On About Me
               </RouterLink>
               <span class="px-2"></span>
-              <button class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right">
-                <i class="fa fa-download"></i> <span class="px-1"></span> Download CV
+              <button 
+              class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
+              style="height: fit-content; width: fit-content; text-align: center;">
+                <div style="display: flex; flex-direction: row;">
+                  <i class="fa fa-download"></i> 
+                  <span class="px-1"></span>
+                  <p style="text-wrap: nowrap;">Download CV</p>
+                </div>
               </button>
             </div>
           </div>
@@ -93,10 +102,10 @@ export default {
             <p class="w3-opacity"><i>Create with Passion</i></p>
             <span class="px-1"></span>
             <div class="media-scroller snaps-inline" style="padding-top:1vh;">
-              <div class="media-element container" v-for="(highlights, key) in highlights.projects" :key="key" style="width: 400px; height: 300px;">
-                <div class="card">
-                  <div class="slide slide1">
-                    <div class="container">
+              <div class="media-element container max-w-full" v-for="(highlights, key) in highlights.projects" :key="key">
+                <div class="card" style="width: 100%;">
+                  <div class="slide slide1" >
+                    <div class="container h-auto">
                       <img :src="highlights.img" alt="" class="image">
                       <video :src="highlights.video" autoplay='true' loop muted class="video"></video>
                     </div>
@@ -114,7 +123,10 @@ export default {
               </div>
             </div>
           </div>
-          <RouterLink id="nav-link" to="/projects" class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-left">
+          <RouterLink 
+          id="nav-link" 
+          to="/projects" 
+          class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-left text-xs">
             See more On My Journey
           </RouterLink>
         </div>
@@ -122,7 +134,7 @@ export default {
       
       <section class="hero">
         <div style="justify-content: center;">
-          <div class="w3-container w3-content w3-right" style="min-width: 600px; max-width:800px; padding: 2vw; padding-right: 5vh;">
+          <div class="w3-container w3-content w3-right" style="max-width:800px; padding: 2vw; padding-right: 5vh;">
             <h2 class="w3-wide">WHAT I DO</h2>
               <section class="box skills" data-astro-cid-ab4ihpzs=""> 
 
@@ -172,7 +184,10 @@ export default {
                   <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
                 </div> 
               </section>
-              <RouterLink id="nav-link" to="/about-me?topic=professional-info&folder=experience" class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right">
+              <RouterLink 
+              id="nav-link" 
+              to="/about-me?topic=professional-info&folder=experience" 
+              class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right text-xs">
                 See more On My Experiences
               </RouterLink>
           </div>
@@ -259,9 +274,9 @@ export default {
 
       <section class="hero">
         <div style="height: fit-content;">
-          <div class="w3-container w3-content w3-right" style="min-width: 800px; max-width:1000px; padding: 2vw; padding-right: 5vh;">
+          <div class="w3-container w3-content w3-right" style="max-width:1000px; padding: 2vw; padding-right: 5vh;">
             <h2 class="w3-wide">LANGUAGES</h2>
-              <section class="box" data-astro-cid-ab4ihpzs=""> 
+              <section class="box text-sm" data-astro-cid-ab4ihpzs=""> 
                 <div style="box-shadow: var(--shadow-2); padding: 1vh;">
                   <p><b>THAI</b></p>
                   <span class="px-0.5"></span>
@@ -290,11 +305,11 @@ export default {
             <h2 class="w3-wide">ACTIVITIES</h2>
             <span class="px-1"></span>
             <div class="media-scroller snaps-inline" style="padding-top:1vh;">
-              <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key"  style="width: 400px; height: 300px;">
-                <div class="card">
+              <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key">
+                <div class="card" style="width: 100%;">
                   <div class="slide slide1">
                     <NuxtLink>
-                      <img id="showcase" :src="activities.img" style="inline-size: 100%; aspect-ratio: 16 / 9; object-fit:contain;">
+                      <img id="h-auto" :src="activities.img" style="inline-size: 100%; aspect-ratio: 16 / 9; object-fit:cover; border-radius: 5px;">
                     </NuxtLink>
                   </div>
                   <div class="slide slide2" style="padding: 1vh;">
@@ -310,7 +325,10 @@ export default {
               </div>
             </div>
           </div>
-          <RouterLink id="nav-link" to="/about-me?topic=hobbies-info&folder=Games" class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-left">
+          <RouterLink 
+          id="nav-link" 
+          to="/about-me?topic=hobbies-info&folder=Games" 
+          class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-left text-xs">
               See more On My Hobbies
           </RouterLink>
         </div>
@@ -320,6 +338,16 @@ export default {
 </template>
 
 <style>
+/* Hide scrollbar for Chrome, Safari and Opera */
+.example::-webkit-scrollbar {
+  display: none;
+}
+
+/* Hide scrollbar for IE, Edge and Firefox */
+.example {
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+}
 
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
@@ -339,10 +367,10 @@ export default {
   border-radius: inherit;
   opacity: 1;
   transition: 300ms ease;
+  border-radius: var(--radius-2);
 }
 
 .video {
-  height: 100%;
   position: absolute;
   border-radius: inherit;
   inset: 0;
@@ -369,6 +397,9 @@ export default {
   display: grid;
   border-radius: var(--radius-2);
   box-shadow: var(--shadow-2);
+  width: 70vw; 
+  max-width: 350px; 
+  min-height: 17.5rem;
 }
 
 .flow {
@@ -406,8 +437,6 @@ transform: translateY(0);
 .container .card .slide.slide2::after{
 content: "";
 bottom: 15px;
-left: 50%;
-left: 50%;
 transform: translateX(-50%);
 }
 

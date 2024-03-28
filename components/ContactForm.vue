@@ -1,28 +1,12 @@
-<template>
-    <form id="contact-form" class="text-sm">
-        <div class="flex flex-col">
-            <label for="name" class="mb-3">_name:</label>
-            <input type="text" id="name-input" name="name" :placeholder="name" class="p-2 mb-5 placeholder-slate-600" required>
-        </div>
-        <div class="flex flex-col">
-            <label for="email" class="mb-3">_email:</label>
-            <input type="email" id="email-input" name="email" :placeholder="email" class="p-2 mb-5 placeholder-slate-600" required>
-        </div>
-        <div class="flex flex-col">
-            <label for="message" class="mb-3">_message:</label>
-            <textarea id="message-input" name="message" :placeholder="message" class="placeholder-slate-600" required></textarea>
-        </div>
-        <button id="submit-button" type="submit" class="py-2 px-4">submit-message</button>
-    </form>
-</template>
-
 <script>
-
-
 export default {
     name: 'ContactForm',
     props: {
         name: {
+            type: String,
+            required: true
+        },
+        subject: {
             type: String,
             required: true
         },
@@ -38,16 +22,45 @@ export default {
     mounted() {
         document.getElementById("contact-form").addEventListener("submit", function(event) {
             event.preventDefault();
-            const name = document.querySelector('input[name="name"]').value;
-            const email = document.querySelector('input[name="email"]').value;
-            const message = document.querySelector('textarea[name="message"]').value;
-            
-            // Here the code to send the email
-            
+            const btn = document.getElementById('submit-button');
+            btn.value = 'Sending...';
+            const serviceID = 'service_qe9go99';
+            const templateID = 'template_q3nto7a';
+
+            emailjs.sendForm(serviceID,  templateID, this)
+            .then(() => {
+                btn.value = 'Send Email';
+                alert('Sent!');
+            }, (err) => {
+                btn.value = 'Send Email';
+                alert(JSON.stringify(err));
+            });
         });
-    }
+    },
 }
 </script>
+
+<template>
+    <form id="contact-form" class="text-sm">
+        <div class="flex flex-col">
+            <label for="name" class="mb-3">name:</label>
+            <input type="text" id="name-input" name="name" :placeholder="name" class="p-2 mb-5 placeholder-slate-600" required>
+        </div>
+        <div class="flex flex-col">
+            <label for="subject" class="mb-3">subject:</label>
+            <input type="text" id="subject-input" name="subject" :placeholder="subject" class="p-2 mb-5 placeholder-slate-600" required>
+        </div>
+        <div class="flex flex-col">
+            <label for="email" class="mb-3">email:</label>
+            <input type="email" id="email-input" name="email" :placeholder="email" class="p-2 mb-5 placeholder-slate-600" required>
+        </div>
+        <div class="flex flex-col">
+            <label for="message" class="mb-3">message:</label>
+            <textarea id="message-input" name="message" :placeholder="message" class="placeholder-slate-600" required></textarea>
+        </div>
+        <button id="submit-button" type="submit" class="py-2 px-4">submit-message</button>
+    </form>
+</template>
 
 <style>
 
@@ -106,6 +119,7 @@ input:focus, #message-input:focus {
 #contact-form {
     max-width: 370px;
     width: 100%;
+    height: fit-content;
 }
 
 @media (max-width: 1920px) {
