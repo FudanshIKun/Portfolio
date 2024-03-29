@@ -97,27 +97,26 @@ export default {
             <h2 class="w3-wide" style="color: white;">MY HIGHLIGHTS</h2>
             <p class="w3-opacity" style="color: gray;"><i>Create with Passion</i></p>
             <span class="px-1"></span>
-            <div class="media-scroller snaps-inline" style="padding-top:1vh;">
-              <div class="media-element container max-w-full" v-for="(highlights, key) in highlights.projects" :key="key">
-                <div class="card" style="width: 100%;">
+            
+            <div class="grid-container">
+              <div class="container" v-for="(highlights, key) in highlights.projects" :key="key">
+                <div class="card">
                   <div class="slide slide1" >
                     <div class="container h-auto">
-                      <img :src="highlights.img" alt="" class="image">
                       <video :src="highlights.video" autoplay='true' loop muted class="video"></video>
                     </div>
                   </div>
-                  <div class="slide slide2" style="padding: 1vh;">
-                    <div style="width: 100%;">
+                  <div style="width: 100%; padding: 2vh;">
                       <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white;">{{ highlights.name}}</h3>
                       <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white;">{{ highlights.name}}</h3>
                       <p class="text-menu-text font-fira_retina text-sm mb-5">
                         {{ highlights.description }}
                       </p>
-                    </div>
                   </div>
                 </div>
               </div>
             </div>
+
           </div>
           <RouterLink 
           id="nav-link" 
@@ -205,6 +204,9 @@ export default {
                     <a href="https://www.gimp.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Gimp</a> 
                   </li>
                   <li class="w3-padding-16"> 
+                    <a href="https://www.darktable.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Darktable</a> 
+                  </li>
+                  <li class="w3-padding-16"> 
                     <a href="https://kdenlive.org/en/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Kdenlive</a> 
                   </li>
                   <li class="w3-padding-16"> 
@@ -233,7 +235,10 @@ export default {
 
               <div class="w3-quarter">
                 <ul class="w3-ul w3-gray w3-center" >
-                  <li class="w3-black w3-padding-16" style="font-size: 12px">Development</li>    
+                  <li class="w3-black w3-padding-16" style="font-size: 12px">Development</li>
+                  <li class="w3-padding-16"> 
+                    <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Github</a> 
+                  </li>    
                   <li class="w3-padding-16"> 
                     <a href="https://code.visualstudio.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Visual Studio Code</a> 
                   </li>
@@ -244,10 +249,10 @@ export default {
                     <a href="https://unity.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">UnityEngine C#</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://www.fmod.com/unity" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px">FMOD<br>Unity Plugin</a> 
+                    <a href="https://www.fmod.com/unity" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px">FMOD</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://www.yarnspinner.dev/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px;">Yarn Spinner<br>Unity Plugin</a> 
+                    <a href="https://www.yarnspinner.dev/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px;">Yarn Spinner</a> 
                   </li>
                 </ul>
               </div>
@@ -300,7 +305,7 @@ export default {
           <div class="box" style="padding: 2vh;">
             <h2 class="w3-wide" style="color: white">ACTIVITIES</h2>
             <span class="px-1"></span>
-            <div class="media-scroller snaps-inline" style="padding-top:1vh;">
+            <div class="media-scroller snaps-inline" style="padding:2vh;">
               <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key">
                 <div class="card" style="width: 100%;">
                   <div class="slide slide1">
@@ -308,7 +313,7 @@ export default {
                       <img id="h-auto" :src="activities.img" style="inline-size: 100%; aspect-ratio: 16 / 9; object-fit:cover; border-radius: 5px;">
                     </NuxtLink>
                   </div>
-                  <div class="slide slide2" style="padding: 1vh;">
+                  <div style="padding: 1vh;">
                     <div style="width: 100%;">
                       <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ activities.name}}</h3>
                       <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ activities.name}}</h3>
@@ -333,7 +338,29 @@ export default {
 	  </main>
 </template>
 
-<style>
+<style scoped>
+.grid-container {
+  columns: 5 300px;
+  column-gap: 1.5rem;
+  margin: 0 auto;
+
+  .card {
+    display: inline-block;
+    margin: 0 1.5rem 1.5rem 0;
+    width: 100%;
+    box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+    border-radius: 15px;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+
+    video {
+      border-top-right-radius: 15px;
+      border-top-left-radius: 15px;
+      width: 100%;
+    }
+  }
+}
+
 /* Hide scrollbar for Chrome, Safari and Opera */
 .example::-webkit-scrollbar {
   display: none;
@@ -347,37 +374,6 @@ export default {
 
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
-
-.container {
-  aspect-ratio: 16 / 9;
-  border-radius: 12px;
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  overflow: hidden;
-}
-
-.image {
-  object-fit:contain;
-  border-radius: inherit;
-  opacity: 1;
-  transition: 300ms ease;
-  border-radius: var(--radius-2);
-}
-
-.video {
-  position: absolute;
-  border-radius: inherit;
-  inset: 0;
-  z-index: -1;
-}
-
-.container:hover {
-  .image {
-    opacity: 0;
-  }
-}
 
 .media-scroller {
   display: grid;
@@ -398,8 +394,9 @@ export default {
   min-height: 17.5rem;
 }
 
-.flow {
-  display: grid;
+.container .card {
+  box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
+  border-radius: 15px;
 }
 
 .container .card .slide.slide1 {
@@ -484,33 +481,6 @@ text-align: center;
   font-size: 32px;
   line-height: 1;
   font-family: 'Fira Code Retina';
-}
-
-.css-blurry-gradient-blue {
-  bottom: 25%;
-  right: 5%;
-  width: 300px;
-  height: 300px;
-	border-radius: 0% 0% 50% 50%;
-  rotate: 10deg;
-	filter: blur(70px);
-  background: radial-gradient(circle at 50% 50%,rgba(77, 91, 206, 1), rgba(76, 0, 255, 0));
-  opacity: 0.5;
-  z-index: 10;
-  pointer-events: none
-}
-
-.css-blurry-gradient-green {
-  top: 20%;
-  right: 30%;
-  width: 300px;
-  height: 300px;
-	border-radius: 0% 50% 0% 50%;
-	filter: blur(70px);
-  background: radial-gradient(circle at 50% 50%,rgba(67, 217, 173, 1), rgba(76, 0, 255, 0));
-  opacity: 0.5;
-  z-index: 10;
-  pointer-events: none
 }
 
 .box{

@@ -16,6 +16,18 @@
             }
         },
         "projects": {
+            "4": {
+                "name": "RYTHM GAME",
+                "description": "University-Assignment",
+                "img": "/images/projects/(University)SimpleRythmGame.png",
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4"
+            },
+            "3": {
+                "name": "RYTHM GAME",
+                "description": "University-Assignment",
+                "img": "/images/projects/(University)SimpleRythmGame.png",
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4"
+            },
             "2": {
                 "name": "RYTHM GAME",
                 "description": "University-Assignment",
@@ -178,6 +190,7 @@
             "title": "university-assignment",
             "description": "a simple Rythm Game",
             "img": "/images/projects/(University)SimpleRythmGame.png",
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4",
             "tech": ["unity"],
             "url": "https://github.com/FudanshIKun/CGE105-GAME-DESIGN-AND-PRODUCTION",
             "download": "https://drive.google.com/drive/folders/1mELtGkeWayQo36ntAxyJNsD1cktXuagI?usp=sharing"
@@ -221,7 +234,8 @@
             "name": "ANTARCTIC ADVENTURE [REMAKE]",
             "title": "university-assignment",
             "description": "a remake of Antarctic Adventure(1983)",
-            "img": "/images/projects/(University)Antarctic Adventure Remake.jpeg",
+            "img": "/images/projects/(University)Antarctic Adventure Remake.png",
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711296494/Projects/University/CGE381-Gameplay_360p_lbgggm.mp4",
             "tech": ["unity"],
             "url": "https://github.com/FudanshIKun/CGE381-GAME-PROJECT-I",
             "download": "https://drive.google.com/drive/folders/1cbSIuSNrVkI3U6n1CDs2PqYQo597L6Ba?usp=sharing"

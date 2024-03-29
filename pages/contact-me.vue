@@ -1,5 +1,5 @@
 <template>
-    <main id="contact-me" class="page" style="height: 100%;">
+    <main id="contact-me" class="page">
 
         <div id="mobile-page-title">
             <h2>contact-me</h2>
@@ -43,8 +43,8 @@
             
         <div class="flex flex-col w-full">
 
-        <!-- windows tab -->
-        <div class="tab-height w-full hidden lg:flex border-right border-bot items-center">
+            <!-- windows tab -->
+            <div class="tab-height w-full hidden lg:flex border-right border-bot items-center">
 
                 <div class="flex items-center border-right h-full">
                     <p class="font-fira_regular text-menu-text text-sm px-3">contacts</p>
@@ -54,7 +54,7 @@
             </div>
 
             <!-- main -->
-            <div class="flex lg:grid lg:grid-cols-2 h-full w-full">
+            <div class="flex lg:grid lg:grid-cols-2 w-full" style="min-height: 550px;">
         
                 <div id="left" class="h-full w-full flex flex-col items-center">
                     <ContactForm :name="name" :subject="subject" :email="email" :message="message" />

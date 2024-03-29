@@ -114,7 +114,28 @@ function filterProjectsBy(filters) {
 </main>
 </template>
 
-<style>
+<style scoped>
+.image {
+  object-fit:contain;
+  border-radius: inherit;
+  opacity: 1;
+  transition: 300ms ease;
+  border-radius: var(--radius-2);
+}
+
+.video {
+  border-radius: inherit;
+  inset: 0;
+  z-index: -1;
+}
+
+.container:hover {
+  .image {
+    opacity: 0;
+  }
+}
+
+
 #filters {
   padding: 10px 25px;
 }
