@@ -19,26 +19,22 @@
             "4": {
                 "name": "RYTHM GAME",
                 "description": "University-Assignment",
-                "img": "/images/projects/(University)SimpleRythmGame.png",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4"
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711813160/Projects/University/Simple_Rythm_Game_Showreel_hw5mxq.mp4"
             },
             "3": {
-                "name": "RYTHM GAME",
+                "name": "ANTARCTIC ADVENTURE [REMAKE]",
                 "description": "University-Assignment",
-                "img": "/images/projects/(University)SimpleRythmGame.png",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4"
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711809903/Projects/University/Antarctic_Adventure_Remake_Showreel_m01zb9.mp4"
             },
             "2": {
-                "name": "RYTHM GAME",
-                "description": "University-Assignment",
-                "img": "/images/projects/(University)SimpleRythmGame.png",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4"
+                "name": "Sprite Shader",
+                "description": "My asset on asset store!",
+                "video": ""
             },
             "1": {
-                "name": "ANTARCTIC ADVENTURE [REMAKE]",
-                "description": "Game remake of Antarctic Adventure(1983)",
-                "img": "/images/projects/(University)Antarctic Adventure Remake.jpeg",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711296494/Projects/University/CGE381-Gameplay_360p_lbgggm.mp4"
+                "name": "BEAT'EM UP [THE LOST TABE]",
+                "description": "University-Assignment",
+                "video": ""
             }
         }
     },
@@ -63,10 +59,7 @@
                 },
                 "gist": {
                     "1": "2e27f55acf3477526b5d9c4a191203bd",
-                    "2": "694c1f32332788a2ac7f37b09e5aa40e",
-                    "3": "694c1f32332788a2ac7f37b09e5aa40e",
-                    "4": "694c1f32332788a2ac7f37b09e5aa40e",
-                    "5": "694c1f32332788a2ac7f37b09e5aa40e"
+                    "2": "694c1f32332788a2ac7f37b09e5aa40e"
                 }
             },
             "personal-info": {
@@ -181,8 +174,10 @@
             "title": "my-first-game",
             "description": "a simple TopdownPixel Game",
             "img": "/images/projects/(University)SimplePixelGame.png",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/SimpleTopdownPixel-Game",
+            "video": "",
+            "tech": ["GAME", "UNITY"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/SimpleTopdownPixel-Game",
             "download": "https://drive.google.com/drive/folders/1O1MRghNCkVwfPQ-pRcqDU3nUYXhBi4Ax?usp=sharing"
         },
         "8": {
@@ -191,8 +186,9 @@
             "description": "a simple Rythm Game",
             "img": "/images/projects/(University)SimpleRythmGame.png",
             "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE105-GAME-DESIGN-AND-PRODUCTION",
+            "tech": ["UNITY", "GAME"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE105-GAME-DESIGN-AND-PRODUCTION",
             "download": "https://drive.google.com/drive/folders/1mELtGkeWayQo36ntAxyJNsD1cktXuagI?usp=sharing"
         },
         "7": {
@@ -200,8 +196,10 @@
             "title": "university-assignment",
             "description": "a simple TopdownShooting Game",
             "img": "/images/projects/(University)SimpleTopdownShooting.png",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
+            "video": "",
+            "tech": ["UNITY", "GAME"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
             "download": "https://drive.google.com/drive/folders/13gkD1whO_OHhgaH46nEJYjCv2uKrnSRJ?usp=sharing"
         },
         "6": {
@@ -209,8 +207,10 @@
             "title": "university-assignment",
             "description": "a simple Otome Game",
             "img": "/images/projects/(University)OtomeProject.png",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
+            "video": "",
+            "tech": ["UNITY", "GAME"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
             "download": "https://drive.google.com/drive/folders/13gkD1whO_OHhgaH46nEJYjCv2uKrnSRJ?usp=sharing"
         },
         "5": {
@@ -218,8 +218,10 @@
             "title": "university-assignment",
             "description": "a simple 3D ArrowShooting Mobile Game \nInspired from game \"Pathless\" \nwith Firebase Integration",
             "img": "/images/projects/(University)SimpleThirdPersonArrowShooting.png",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE109-3DIMENSIONAL-GAME-DEVELOPMENT",
+            "video": "",
+            "tech": ["UNITY", "GAME"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE109-3DIMENSIONAL-GAME-DEVELOPMENT",
             "download": "https://drive.google.com/drive/folders/1LUvXaE2oQ8Q8yfCHSdcvFi6Qabcz3xs0?usp=sharing"
         },
         "4": {
@@ -227,17 +229,20 @@
             "title": "university-assignment",
             "description": "a pack of simple shader created within unity",
             "img": "/images/projects/(University)CGE499-VisualEffect.png",
-            "tech": ["unity", "shader"],
-            "url": "https://github.com/FudanshIKun/CGE499-VisualEffect/"
+            "video": "",
+            "tech": ["UNITY", "SHADER"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE499-VisualEffect/"
         },
         "3": {
             "name": "ANTARCTIC ADVENTURE [REMAKE]",
             "title": "university-assignment",
             "description": "a remake of Antarctic Adventure(1983)",
             "img": "/images/projects/(University)Antarctic Adventure Remake.png",
-            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711296494/Projects/University/CGE381-Gameplay_360p_lbgggm.mp4",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE381-GAME-PROJECT-I",
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711772354/Projects/University/Antarctic_Adventure_Remake_Gameplay_sj4wve.mp4",
+            "tech": ["UNITY", "GAME"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE381-GAME-PROJECT-I",
             "download": "https://drive.google.com/drive/folders/1cbSIuSNrVkI3U6n1CDs2PqYQo597L6Ba?usp=sharing"
         },
         "2": {
@@ -245,8 +250,10 @@
             "title": "personal-project",
             "description": "shader for sprite created with hlsl and shaderlab",
             "img": "/images/projects/ethereum.png",
-            "tech": ["unity", "shader"],
-            "url": "/sprite-shader",
+            "video": "",
+            "tech": ["UNITY", "SHADER"],
+            "url": "/blogs/sprite-shader",
+            "source": "",
             "download": ""
         },
         "1": {
@@ -254,8 +261,10 @@
             "title": "university-assignment",
             "description": "a game where injustice becomes law, so you do crime and save the day.",
             "img": "/images/projects/ethereum.png",
-            "tech": ["unity"],
-            "url": "/beat-em-up",
+            "video": "",
+            "tech": ["UNITY", "GAME"],
+            "url": "/blogs/beat-em-up",
+            "source": "",
             "download": ""
         }
     }

@@ -42,7 +42,6 @@ export default {
 </script>
 
 <template>
-    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   	<main v-if="!loading" id="hello" class="max-w-full h-full" style="overflow-y: scroll; overflow-x: hidden;">
 
       <section class="hero" style="height: 100%;">
@@ -59,7 +58,7 @@ export default {
       <section class="hero" style="height: fit-content;">
         <div style="justify-content: center; margin: 0; padding-right: 5vw;">
           <div class="w3-container w3-content w3-right" style="max-width:800px;">
-            <h2 class="w3-wide" style="color: white;">WHO AM I</h2>
+            <h2 class="w3-wide text-3xl pb-6" style="color: white;">WHO AM I</h2>
             <p class="box text-sm" style="color: white;">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
               I've passion for both art and coding for games and interested in games with unique design and artstyle ( <b>Mostly Stylized</b> ).
               I like to solve problems and improve game quality, create tools for artists in my team.
@@ -72,13 +71,13 @@ export default {
               id="nav-link" 
               to="/about-me?topic=personal-info&folder=bio" 
               target="" 
-              class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
+              class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
               style="height: fit-content; text-align: center; text-wrap: nowrap;">
                 See more On About Me
               </RouterLink>
               <span class="px-2"></span>
               <button 
-              class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
+              class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
               style="height: fit-content; width: fit-content; text-align: center;">
                 <div style="display: flex; flex-direction: row; align-items: center">
                   <i class="fa fa-download" style="padding-top: .6px;"></i> 
@@ -94,7 +93,7 @@ export default {
       <section class="hero" style="height: fit-content; padding-top: 5vh;">
         <div style=" padding: 2vw; padding-right: 5vh;">
           <div class="box" style="padding: 2vh;">
-            <h2 class="w3-wide" style="color: white;">MY HIGHLIGHTS</h2>
+            <h2 class="w3-wide text-3xl pb-2" style="color: white;">MY HIGHLIGHTS</h2>
             <p class="w3-opacity" style="color: gray;"><i>Create with Passion</i></p>
             <span class="px-1"></span>
             
@@ -130,52 +129,27 @@ export default {
       <section class="hero">
         <div style="justify-content: center;">
           <div class="w3-container w3-content w3-right" style="max-width:800px; padding: 2vw; padding-right: 5vh;">
-            <h2 class="w3-wide" style="color: white;">WHAT I DO</h2>
+            <h2 class="w3-wide text-3xl pb-6" style="color: white;">WHAT I DO</h2>
               <section class="box skills" data-astro-cid-ab4ihpzs=""> 
 
                 <div class="stack gap-2 lg:gap-4" data-astro-cid-ab4ihpzs=""> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" color="white" stroke="white" style="--size:2.5rem" class="astro-patnjmll" data-astro-cid-patnjmll=""> 
-                    <g data-astro-cid-patnjmll="">
-                      <path fill="none" color="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m80 96 40 32-40 32m56 0h40"></path>
-                      <rect width="192" height="160" x="32" y="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.97" rx="8.5"></rect>
-                    </g> 
-                    <linearGradient id="icon-gradient-2iemuxwxn" x1="23" x2="235" y1="43" y2="202" gradientUnits="userSpaceOnUse" data-astro-cid-patnjmll=""> 
-                      <stop stop-color="var(--gradient-stop-1)" data-astro-cid-patnjmll=""></stop> 
-                      <stop offset=".5" stop-color="var(--gradient-stop-2)" data-astro-cid-patnjmll=""></stop> 
-                      <stop offset="1" stop-color="var(--gradient-stop-3)" data-astro-cid-patnjmll=""></stop> 
-                    </linearGradient> 
-                  </svg>  
+                  <i class="fa-regular fa-pen-to-square" style="font-size: 36px; color: white;"></i>
                   <h2 data-astro-cid-ab4ihpzs="" style="color: white;">Design</h2> 
+                  <span class="px-1"></span>
                   <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ready to exploring new concepts, ideas and Craft creative designs with passion.</p> 
                 </div> 
 
                 <div class="stack gap-2 lg:gap-4" data-astro-cid-ab4ihpzs=""> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" color="white" stroke="white" style="--size:2.5rem" class="astro-patnjmll" data-astro-cid-patnjmll=""> 
-                  <g data-astro-cid-patnjmll="">
-                    <path fill="none" color="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m80 96 40 32-40 32m56 0h40"></path>
-                    <rect width="192" height="160" x="32" y="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.97" rx="8.5"></rect>
-                  </g> 
-                  <linearGradient id="icon-gradient-5gd8gfvm" x1="23" x2="235" y1="43" y2="202" gradientUnits="userSpaceOnUse" data-astro-cid-patnjmll=""> 
-                    <stop stop-color="var(--gradient-stop-1)" data-astro-cid-patnjmll=""></stop> <stop offset=".5" stop-color="var(--gradient-stop-2)" data-astro-cid-patnjmll=""></stop> 
-                    <stop offset="1" stop-color="var(--gradient-stop-3)" data-astro-cid-patnjmll=""></stop> 
-                  </linearGradient> 
-                  </svg>  
+                  <i class="fa-solid fa-laptop-file" style="font-size: 36px; color: white;"></i>
                   <h2 data-astro-cid-ab4ihpzs="" style="color: white;">Create</h2> 
+                  <span class="px-1"></span>
                   <p data-astro-cid-ab4ihpzs="" style="color: gray;">Implement Features and script which easy to use and setup.</p> 
                 </div> 
 
                 <div class="stack gap-2 lg:gap-4" data-astro-cid-ab4ihpzs=""> 
-                  <svg xmlns="http://www.w3.org/2000/svg" width="40" height="40" viewBox="0 0 256 256" aria-hidden="true" color="white" stroke="white" style="--size:2.5rem" class="astro-patnjmll" data-astro-cid-patnjmll=""> 
-                    <g data-astro-cid-patnjmll="">
-                      <path fill="none" color="white" stroke="white" stroke-linecap="round" stroke-linejoin="round" stroke-width="16" d="m80 96 40 32-40 32m56 0h40"></path>
-                      <rect width="192" height="160" x="32" y="48" fill="none" stroke-linecap="round" stroke-linejoin="round" stroke-width="16.97" rx="8.5"></rect>
-                    </g> 
-                    <linearGradient id="icon-gradient-2kj3qwynw" x1="23" x2="235" y1="43" y2="202" gradientUnits="userSpaceOnUse" data-astro-cid-patnjmll=""> 
-                      <stop stop-color="var(--gradient-stop-1)" data-astro-cid-patnjmll=""></stop> <stop offset=".5" stop-color="var(--gradient-stop-2)" data-astro-cid-patnjmll=""></stop> 
-                      <stop offset="1" stop-color="var(--gradient-stop-3)" data-astro-cid-patnjmll=""></stop> 
-                    </linearGradient> 
-                  </svg>  
+                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
                   <h2 data-astro-cid-ab4ihpzs="" style="color: white;">Coding</h2> 
+                  <span class="px-1"></span>
                   <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
                 </div> 
               </section>
@@ -192,7 +166,7 @@ export default {
       <section class="hero">
         <div>
           <div class="w3-container" style="max-width:800px; padding-right: 5vh;">
-            <h2 class="w3-wide" style="color: white;">WHAT I USE</h2>
+            <h2 class="w3-wide text-3xl pb-2" style="color: white;">WHAT I USE</h2>
             <span class="px-2"></span>
 
             <div class="w3-row-padding box" style="max-width:100%; height: fit-content; padding-right: 5vw; padding: 2vw;"> 
@@ -207,7 +181,7 @@ export default {
                     <a href="https://www.darktable.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Darktable</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://kdenlive.org/en/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Kdenlive</a> 
+                    <a href="https://www.openshot.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">OpenShot</a> 
                   </li>
                   <li class="w3-padding-16"> 
                     <a href="https://www.reaper.fm/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Reaper</a> 
@@ -237,7 +211,7 @@ export default {
                 <ul class="w3-ul w3-gray w3-center" >
                   <li class="w3-black w3-padding-16" style="font-size: 12px">Development</li>
                   <li class="w3-padding-16"> 
-                    <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Github</a> 
+                    <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Github</a> 
                   </li>    
                   <li class="w3-padding-16"> 
                     <a href="https://code.visualstudio.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Visual Studio Code</a> 
@@ -261,6 +235,9 @@ export default {
                 <ul class="w3-ul w3-gray w3-center">
                   <li class="w3-black w3-padding-16" style="font-size: 12px">Other</li>
                   <li class="w3-padding-16"> 
+                    <a href="https://www.manictime.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">ManicTime</a> 
+                  </li>
+                  <li class="w3-padding-16"> 
                     <a href="https://www.notion.so/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Notion</a> 
                   </li>
                   <li class="w3-padding-16"> 
@@ -276,7 +253,7 @@ export default {
       <section class="hero">
         <div style="height: fit-content;">
           <div class="w3-container w3-content w3-right" style="max-width:1000px; padding: 2vw; padding-right: 5vh;">
-            <h2 class="w3-wide" style="color: white">LANGUAGES</h2>
+            <h2 class="w3-wide text-3xl pb-6" style="color: white">LANGUAGES</h2>
               <section class="box text-sm" data-astro-cid-ab4ihpzs=""> 
                 <div style="box-shadow: var(--shadow-2); padding: 1vh;">
                   <p style="color: white"><b>THAI</b></p>
@@ -303,7 +280,7 @@ export default {
       <section class="hero" style="height: fit-content; padding-top: 5vh;">
         <div style=" padding: 2vw; padding-right: 5vh;">
           <div class="box" style="padding: 2vh;">
-            <h2 class="w3-wide" style="color: white">ACTIVITIES</h2>
+            <h2 class="w3-wide text-3xl" style="color: white">ACTIVITIES</h2>
             <span class="px-1"></span>
             <div class="media-scroller snaps-inline" style="padding:2vh;">
               <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key">
@@ -340,7 +317,7 @@ export default {
 
 <style scoped>
 .grid-container {
-  columns: 5 300px;
+  columns: 5 350px;
   column-gap: 1.5rem;
   margin: 0 auto;
 

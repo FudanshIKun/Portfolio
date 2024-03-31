@@ -9,7 +9,7 @@ h3, h2 {
 
 html {
   color-scheme:unset;
-  --bg-background: #272926;
+  --bg-background: #141414;
   background-color: var(--bg-background);
   height: stretch;
   width: stretch;
@@ -31,7 +31,7 @@ main.page {
 }
 
 #__nuxt {
-  --bg-blue-background: #292929; /* Default blue background color */
+  --bg-blue-background: #141414;
   background-color: var(--bg-blue-background);
   @apply flex flex-col justify-between;
   border-radius: 7px;
@@ -73,11 +73,10 @@ main.page {
 
 
 /* MOBILE AND TABLET (SM - LG) */
-@media (max-width: 1026px) {
+@media (max-width: 1024px) {
 
   html {
     margin: 15px;
-    min-height: 100%;
     height: stretch;
     width: stretch;
   }
@@ -87,7 +86,6 @@ main.page {
     justify-content: space-between;
     height: auto;
     min-height: stretch;
-    width: 100%;
     width: auto;
   }
 
@@ -140,7 +138,7 @@ main.page {
 }
 
 /* LG - XL */
-@media (min-width: 1026px) {
+@media (min-width: 1024px) {
   #page-menu, #nav-logo, #filter-menu {
     min-width: 275px !important;
     max-width: 275px !important;
@@ -174,8 +172,6 @@ main.page {
 
 /* 2K */
 @media (min-width: 1920px) {
-
-
   #page-menu, #nav-logo, #filter-menu {
     min-width: 310px !important;
     max-width: 310px !important;

@@ -15,25 +15,35 @@ const { project, key, index } = defineProps(['project', 'key', 'index'])
 
         <div id="project-card" class="flex flex-col" style="width: 100%;">
             <div id="window">
-                <div class="flex right-3 top-3" style="position: absolute; z-index: 2;">
-                <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt="" class="w-6 h-6 mx-1">
-                </div>
                 <div class="container">
-                  <NuxtLink to="/">
+                  <NuxtLink :href="project.url" target="_self">
                     <img :src="project.img" alt="" class="image">
                     <video :src="project.video" autoplay='true' loop muted class="video"></video>
                   </NuxtLink>
                 </div>
             </div>
 
-            <div class="pb-8 pt-8 px-6">
-                <p class="text-menu-text font-fira_retina text-sm mb-5">
+            <div style="position: relative; padding: 2vh;">
+                <div style="display: flex; flex-direction: row-reverse;">
+                  <img v-for="tech in project.tech" :key="tech" :src="'/icons/techs/filled/' + tech + '.svg'" alt="" class="w-6 h-6 mx-1">
+                </div>
+                <span class="px-2"></span>
+                <p class="text-menu-text font-fira_retina mb-5" style="text-wrap: wrap; font-size: 1.25vh;">
                 {{ project.description }}
                 </p>
-                <span class="px-2"></span>
-                <NuxtLink id = "button" v-if="project.download && project.download !== ''" :href="project.download" target="_blank" class="text-white font-fira_retina py-2 px-4 w-fit text-xs rounded-lg">
-                  download
-                </NuxtLink>
+                <div style="display: flex;">
+                  <div>
+                  <NuxtLink id = "button" v-if="project.source && project.source !== ''" :href="project.source" target="_blank" class="text-white font-fira_retina py-2 px-4 text-xs w3-round-large">
+                    Github
+                  </NuxtLink>
+                  </div>
+                  <span class="px-2"></span>
+                  <div>
+                    <NuxtLink id = "button" v-if="project.download && project.download !== ''" :href="project.download" target="_blank" class="text-white font-fira_retina py-2 px-4 text-xs w3-round-large">
+                      download
+                    </NuxtLink>
+                  </div>
+                </div>
             </div>
         </div>
     </div>
@@ -67,10 +77,8 @@ const { project, key, index } = defineProps(['project', 'key', 'index'])
   z-index: 0;
 }
 
-.container:hover {
-  .image {
-    opacity: 0;
-  }
+.container:hover .image {
+  opacity: v-bind(project.video && project.video !== '' ? 0 : 1);
 }
 
 .image{

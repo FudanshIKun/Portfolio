@@ -104,7 +104,7 @@
 
     <!-- content -->
     <div class="flex flex-col lg:grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
-      <div id="left" class="w-full flex flex-col">
+      <div id="left" class="w-full flex flex-col border-right">
         
         <!-- windows tab desktop -->
         <div class="tab-height w-full hidden lg:flex border-bot items-center">
@@ -190,18 +190,8 @@
   border-right: 1px solid #454843;
 }
 
-#scroll-bar{
-  width: 20px;
-}
 
-#scroll {
-  width: 14px;
-  height: 7px;
-  background-color: #607B96;
-}
-
-
-@media (min-width: 1026px) {
+@media (min-width: 1024px) {
   #sections {
     display: block;
   }
@@ -260,8 +250,8 @@
   }
 
   #about {
-  min-height: stretch;
-}
+    min-height: stretch;
+  }
 }
 
 .section-arrow {

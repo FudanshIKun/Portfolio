@@ -2,7 +2,7 @@
     <main id="contact-me" class="page">
 
         <div id="mobile-page-title">
-            <h2>contact-me</h2>
+            <h2>Contact Me</h2>
         </div>
 
         <div id="page-menu" class="w-fullflex flex-col" style="height: 100%; border-right: 2px solid #454843;">
@@ -28,7 +28,7 @@
                 <div class="title" @click="open('find-me-in')">
                     <img class="arrow" src="/icons/arrow.svg">
                     <h3>
-                        find-me-also-in
+                        Also, you can find me in...
                     </h3>
                 </div>
                 <div id="links">
