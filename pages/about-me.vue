@@ -150,9 +150,9 @@
             <div class="flex flex-col" style="overflow-x: hidden; border-radius: 10px;">
               <!-- snippets -->
               <GistSnippet
-                v-if="config.public.dev.about.sections[currentSection].gist"
+                v-if="config.public.dev.about.sections['professional-info'].gist"
                 data-aos="fade-down"
-                v-for="(gist, key) in config.public.dev.about.sections[currentSection].gist"
+                v-for="(gist, key) in config.public.dev.about.sections['professional-info'].gist"
                 :key="key"
                 :id="gist"
               />

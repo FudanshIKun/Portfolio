@@ -102,7 +102,8 @@ export default {
                 <div class="card">
                   <div class="slide slide1" >
                     <div class="container h-auto">
-                      <video :src="highlights.video" autoplay='true' loop muted class="video"></video>
+                      <img :src="highlights.img" v-if="highlights.img !== ''" alt="" class="image">
+                      <video :src="highlights.video" v-if="highlights.img == ''" autoplay='true' loop muted class="video"></video>
                     </div>
                   </div>
                   <div style="width: 100%; padding: 2vh;">
@@ -211,7 +212,7 @@ export default {
                 <ul class="w3-ul w3-gray w3-center" >
                   <li class="w3-black w3-padding-16" style="font-size: 12px">Development</li>
                   <li class="w3-padding-16"> 
-                    <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Github</a> 
+                    <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Github CLI</a> 
                   </li>    
                   <li class="w3-padding-16"> 
                     <a href="https://code.visualstudio.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Visual Studio Code</a> 

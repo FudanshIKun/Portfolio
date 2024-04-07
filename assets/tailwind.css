@@ -74,7 +74,6 @@ main.page {
 
 /* MOBILE AND TABLET (SM - LG) */
 @media (max-width: 1024px) {
-
   html {
     margin: 15px;
     height: stretch;

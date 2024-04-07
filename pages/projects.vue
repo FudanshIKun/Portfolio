@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 const config = useRuntimeConfig()
-const techs = ['GAME', 'ILLUSTRATION', 'UNITY', 'SHADER']
+const techs = ['Art Design', 'Game Design', 'Game', 'Illustration', 'Modeling', 'Shader', 'Autodesk Maya', 'Unity']
 const filters = ref(['all'])
 const showFilters = ref(true)
 const projects = ref(config.public.dev.projects)
@@ -63,7 +63,7 @@ function filterProjectsBy(filters) {
       <nav id="filters" class="w-full flex-col" style="max-height: 100%;">
         <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
-          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
+          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-8 h-8 mx-4">
           <span :id="'title-tech-' + tech">{{ tech }}</span>
         </div>
       </nav>
