@@ -104,27 +104,12 @@
 
     <!-- content -->
     <div class="flex flex-col lg:grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
-      <div id="left" class="w-full flex flex-col border-right">
-        
-        <!-- windows tab desktop -->
-        <div class="tab-height w-full hidden lg:flex border-bot items-center">
-          <div class="flex items-center border-right h-full">
-            <p v-html="config.dev.about.sections[currentSection].title" class="font-fira_regular text-menu-text text-sm px-3"></p>
-            <img src="/icons/close.svg" alt="" class="mx-3">
-          </div>
-        </div>
-
-        <!-- windows tab mobile -->
-        <div id="tab-mobile" class="lg:hidden font-fira_retina" style="display: flex;">
-            <h3 class="text-white px-2">{{ config.dev.about.sections[currentSection].title }}</h3>
-            <h3 class="text-menu-text pl-2">[{{ config.dev.about.sections[currentSection].info[folder].title }}]</h3>
-        </div>
-        
+      <div id="left" class="w-full flex flex-col">
         <!-- text -->
         <div id="commented-text" class="flex h-full w-full">
 
-          <div class="w-full h-full ml-5 mr-10 lg:my-5" style="overflow-x: hidden; overflow-y:auto;">
-              <CommentedText :text="config.dev.about.sections[currentSection].info[folder].description" />
+          <div class="w-full h-full ml-5 mr-10 lg:my-5 text-base" style="overflow-x: hidden; overflow-y:auto;">
+              <CommentedText :text="config.dev.about.sections[currentSection].info[folder].description"/>
           </div>
         </div>
 
@@ -133,20 +118,26 @@
       <div id="right" class="max-w-full flex flex-col">   
 
         <!-- windows tab -->
-        <div class="tab-height w-full h-full hidden lg:flex border-bot items-center"></div>
+        <div class="tab-height w-full h-full hidden lg:flex items-center"></div>
         <!-- windows tab mobile -->
         <div class="tab-height w-full h-full flex-none lg:hidden items-center "></div>
           
           <div id="posts" v-if="currentSection === 'personal-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding: 20px;">
             <!-- title -->
             <div class="flex flex-col" style="overflow-x: hidden;">
-
+              <PostSnippet
+                v-if="config.public.dev.about.sections['personal-info'].post"
+                data-aos="fade-down"
+                v-for="(post, key) in config.public.dev.about.sections['personal-info'].post"
+                :key="key"
+                :id="post"
+              />
             </div>
           </div>
 
           <div id="gists" v-if="currentSection === 'professional-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding-left: 20px; padding-right: 20px;">
             <!-- title -->
-            <h3 class="text-white lg:text-menu-text mb-4 text-sm">Code snippet showcase:</h3>
+            <h3 class="text-white lg:text-menu-text mb-4 text-sm">ᴄᴏᴅᴇ ꜱɴɪᴘᴘᴇᴛ ꜱʜᴏᴡᴄᴀꜱᴇ:</h3>
             <div class="flex flex-col" style="overflow-x: hidden; border-radius: 10px;">
               <!-- snippets -->
               <GistSnippet
@@ -190,10 +181,16 @@
   border-right: 1px solid #454843;
 }
 
+#section-icon{
+  max-height: fit-content;
+}
+
 
 @media (min-width: 1024px) {
   #sections {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 

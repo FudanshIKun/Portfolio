@@ -62,15 +62,18 @@
                 "info": {
                     "experience": {
                         "title": "experience",
-                        "description": "Over the past 5 years, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": 
+                        "<br>███████╗██╗&nbsp;&nbsp;██╗██████╗&nbsp;███████╗██████╗&nbsp;██╗███████╗███╗&nbsp;&nbsp;&nbsp;██╗&nbsp;██████╗███████╗<br>██╔════╝╚██╗██╔╝██╔══██╗██╔════╝██╔══██╗██║██╔════╝████╗&nbsp;&nbsp;██║██╔════╝██╔════╝<br>█████╗&nbsp;&nbsp;&nbsp;╚███╔╝&nbsp;██████╔╝█████╗&nbsp;&nbsp;██████╔╝██║█████╗&nbsp;&nbsp;██╔██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█████╗&nbsp;&nbsp;<br>██╔══╝&nbsp;&nbsp;&nbsp;██╔██╗&nbsp;██╔═══╝&nbsp;██╔══╝&nbsp;&nbsp;██╔══██╗██║██╔══╝&nbsp;&nbsp;██║╚██╗██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══╝&nbsp;&nbsp;<br>███████╗██╔╝&nbsp;██╗██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██║&nbsp;&nbsp;██║██║███████╗██║&nbsp;╚████║╚██████╗███████╗<br>╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚═╝&nbsp;&nbsp;╚═══╝&nbsp;╚═════╝╚══════╝<br><br>Over the past 5 years, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                     },
                     "hard-skills": {
                         "title": "hard-skills",
-                        "description": "As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": 
+                        "<br>░░&nbsp;&nbsp;&nbsp;░░&nbsp;&nbsp;░░░░░&nbsp;&nbsp;░░░░░░&nbsp;&nbsp;░░░░░░&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;░░░░░░░&nbsp;░░&nbsp;&nbsp;&nbsp;░░&nbsp;░░&nbsp;░░&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;░░&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>▒▒&nbsp;&nbsp;&nbsp;▒▒&nbsp;▒▒&nbsp;&nbsp;&nbsp;▒▒&nbsp;▒▒&nbsp;&nbsp;&nbsp;▒▒&nbsp;▒▒&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;▒▒&nbsp;&nbsp;▒▒&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>▒▒▒▒▒▒▒&nbsp;▒▒▒▒▒▒▒&nbsp;▒▒▒▒▒▒&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒▒▒▒▒▒&nbsp;▒▒▒▒▒&nbsp;&nbsp;&nbsp;▒▒&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>▓▓&nbsp;&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;▓▓&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██&nbsp;&nbsp;&nbsp;██&nbsp;██&nbsp;&nbsp;&nbsp;██&nbsp;██&nbsp;&nbsp;&nbsp;██&nbsp;██████&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████&nbsp;██&nbsp;&nbsp;&nbsp;██&nbsp;██&nbsp;███████&nbsp;███████&nbsp;<br><br>As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                     },
                     "soft-skills": {
                         "title": "soft-skills",
-                        "description": "I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": 
+                        "<br>░░░░░░░&nbsp;&nbsp;░░░░░░&nbsp;&nbsp;░░░░░░░&nbsp;░░░░░░░░&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;░░░░░░░&nbsp;░░&nbsp;&nbsp;&nbsp;░░&nbsp;░░&nbsp;░░&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;░░&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;▒▒&nbsp;&nbsp;▒▒&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>▒▒▒▒▒▒▒&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;▒▒▒▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒▒▒▒▒▒&nbsp;▒▒▒▒▒&nbsp;&nbsp;&nbsp;▒▒&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▒▒&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;▓▓&nbsp;&nbsp;▓▓&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;▓▓&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████&nbsp;&nbsp;██████&nbsp;&nbsp;██&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████&nbsp;██&nbsp;&nbsp;&nbsp;██&nbsp;██&nbsp;███████&nbsp;███████&nbsp;<br><br>I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                     }
                 },
                 "gist": {
@@ -84,17 +87,20 @@
                 "info": { 
                     "bio": {
                         "title": "bio",
-                        "description": "About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
+                        "description": 
+                        "<br> ░▀▀█▀▀░▄▀▀▄░█▀▀▄░█░▒█░▀▀█▀▀░▄▀▀▄░█▀▀▄░█░▒█<br>░░▒█░░░█░░█░█▄▄▀░█░▒█░░▒█░░░█░░█░█▄▄▀░█░▒█<br>░░▒█░░░░▀▀░░▀░▀▀░░▀▀▀░░▒█░░░░▀▀░░▀░▀▀░░▀▀▀<br><br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
                         
                     },
                     "interests": {
                         "title": "interests",
-                        "description": "I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": 
+                        "<br>░▀█▀░█▀▀▄░▀█▀░█▀▀░█▀▀▄░█▀▀░█▀▀░▀█▀<br>░▒█░░█░▒█░░█░░█▀▀░█▄▄▀░█▀▀░▀▀▄░░█░<br>░▄█▄░▀░░▀░░▀░░▀▀▀░▀░▀▀░▀▀▀░▀▀▀░░▀░<br><br>I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                         
                     },
                     "education": {
                         "title": "education",
-                        "description": "I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        "description": 
+                        "<br>░▒█▀▀▀░▒█▀▀▄░▒█░▒█░▒█▀▀▄░█▀▀▄░▀▀█▀▀░▀█▀░▒█▀▀▀█░▒█▄░▒█<br>░▒█▀▀▀░▒█░▒█░▒█░▒█░▒█░░░▒█▄▄█░░▒█░░░▒█░░▒█░░▒█░▒█▒█▒█<br>░▒█▄▄▄░▒█▄▄█░░▀▄▄▀░▒█▄▄▀▒█░▒█░░▒█░░░▄█▄░▒█▄▄▄█░▒█░░▀█<br><br>I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 
                         "files": {
                             "Rangsit University": "The university..."
@@ -102,31 +108,43 @@
                     }
                 },
                 "post": {
+                    "Bio": {
 
+                    },
+                    "Interest": {
+
+                    },
+                    "Education": {
+                        
+                    }
                 }
             },
             "hobbies-info": {
                 "title": "hobbies-info",
                 "icon": "icons/info-hobbies.svg",
                 "info": {
-                    "Games": {
-                        "title": "Games",
-                        "description": "I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Game": {
+                        "title": "Game",
+                        "description": 
+                        "<br>▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄<br>██&nbsp;▄▄&nbsp;█&nbsp;▄▄▀██&nbsp;▄▀▄&nbsp;██&nbsp;▄▄▄██&nbsp;▄▄▄&nbsp;<br>██&nbsp;█▀▀█&nbsp;▀▀&nbsp;██&nbsp;█&nbsp;█&nbsp;██&nbsp;▄▄▄██▄▄▄▀▀<br>██&nbsp;▀▀▄█&nbsp;██&nbsp;██&nbsp;███&nbsp;██&nbsp;▀▀▀██&nbsp;▀▀▀&nbsp;<br>▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀<br><br>I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         
                     },
-                    "Digital-Art": {
-                        "title": "Digital-Art",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Art": {
+                        "title": "Art",
+                        "description": 
+                        "<br>▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄<br>█&nbsp;▄▄▀██&nbsp;▄▄▀█▄▄&nbsp;▄▄<br>█&nbsp;▀▀&nbsp;██&nbsp;▀▀▄███&nbsp;██<br>█&nbsp;██&nbsp;██&nbsp;██&nbsp;███&nbsp;██<br>▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀<br><br>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         
                     },
                     "Cosplay": {
                         "title": "Cosplay",
-                        "description": "I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": 
+                        "<br>▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄<br>██&nbsp;▄▄▀██&nbsp;▄▄▄&nbsp;██&nbsp;▄▄▄&nbsp;██&nbsp;▄▄&nbsp;██&nbsp;████&nbsp;▄▄▀██&nbsp;███&nbsp;<br>██&nbsp;█████&nbsp;███&nbsp;██▄▄▄▀▀██&nbsp;▀▀&nbsp;██&nbsp;████&nbsp;▀▀&nbsp;██▄▀▀▀▄<br>██&nbsp;▀▀▄██&nbsp;▀▀▀&nbsp;██&nbsp;▀▀▀&nbsp;██&nbsp;█████&nbsp;▀▀&nbsp;█&nbsp;██&nbsp;████&nbsp;██<br>▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀<br><br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                         
                     },
                     "Sport": {
                         "title": "Sport",
-                        "description": "I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description": 
+                        "<br>▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄<br>██&nbsp;▄▄▄&nbsp;██&nbsp;▄▄&nbsp;██&nbsp;▄▄▄&nbsp;██&nbsp;▄▄▀█▄▄&nbsp;▄▄<br>██▄▄▄▀▀██&nbsp;▀▀&nbsp;██&nbsp;███&nbsp;██&nbsp;▀▀▄███&nbsp;██<br>██&nbsp;▀▀▀&nbsp;██&nbsp;█████&nbsp;▀▀▀&nbsp;██&nbsp;██&nbsp;███&nbsp;██<br>▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀▀<br><br>I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                     }
                 },
                 "post": {
@@ -150,7 +168,7 @@
             },
             "facebook": {
                 "title": "Facebook",
-                "url": "https://facebook.com/",
+                "url": "https://m.facebook.com/",
                 "user": "torut0ru"
             },
             "instagram": {
@@ -160,8 +178,8 @@
             },
             "linkin": {
                 "title": "LinkIn",
-                "url": "https://www.instagram.com/",
-                "user": "torut0ru"
+                "url": "https://www.linkedin.com/in/",
+                "user": "panyawat-puengthamthanapoom-2a193821b/"
             }
         },
         "find_me_also_in": {
@@ -174,7 +192,7 @@
                 },
                 "facebook": {
                     "title": "Facebook",
-                    "url": "https://facebook.com/",
+                    "url": "https://m.facebook.com/",
                     "user": "torut0ru"
                 },
                 "instagram": {
@@ -184,14 +202,14 @@
                 },
                 "LinkIn": {
                     "title": "LinkIn",
-                    "url": "https://linkin.com/",
-                    "user": "torut0ru"
+                    "url": "https://www.linkedin.com/in/",
+                    "user": "panyawat-puengthamthanapoom-2a193821b/"
                 }
             }
         }
     },
     "projects": {
-        "10": {
+        "9": {
             "name": "2D TOPDOWN GAME",
             "title": "my-first-game",
             "description": "a simple TopdownPixel Game",
@@ -201,18 +219,6 @@
             "url": "",
             "source": "https://github.com/FudanshIKun/SimpleTopdownPixel-Game",
             "download": "https://drive.google.com/drive/folders/1O1MRghNCkVwfPQ-pRcqDU3nUYXhBi4Ax?usp=sharing",
-            "progress": 1
-        },
-        "9": {
-            "name": "SIMPLE ROOM",
-            "title": "university-assignment",
-            "description": "Short Isometric room animation",
-            "img": "/images/projects/ethereum.png",
-            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712466930/Projects/University/CGE108-2D-GAME-0.mp4",
-            "tech": ["Autodesk Maya", "Modeling", "Art Design"],
-            "url": "",
-            "source": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
-            "download": "",
             "progress": 1
         },
         "8": {

@@ -118,6 +118,10 @@ function filterProjectsBy(filters) {
 </template>
 
 <style scoped>
+.section-arrow {
+  transform: rotate(90deg);
+}
+
 .image {
   object-fit:contain;
   border-radius: inherit;

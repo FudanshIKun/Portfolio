@@ -3,10 +3,6 @@
       <nav class="w-full flex justify-between border-bot" style="align-items: center;">
 
           <div class="flex">
-            <RouterLink id="nav-logo" to="/">
-              {{ config.dev.logo_name }}
-            </RouterLink>
-
             <RouterLink id="nav-link" to="/" :class="{ active: isActive('/') }">
               Home
             </RouterLink>

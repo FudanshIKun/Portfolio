@@ -3,29 +3,25 @@
 
     <!-- header -->
     <div id="mobile-header" class="w-full h-16 flex justify-between items-center">
-      <NuxtLink class="text-menu-text font-fira_retina flex h-full items-center mx-5" to="/" @click="goHome()">
-        {{ config.dev.logo_name }}
-      </NuxtLink>
-      <img src="/icons/burger.svg" v-if="!menuOpen" @click="toggleMobileMenu()" class="w-5 h-5 mx-5 my-auto"/>
-      <img src="/icons/burger-close.svg" v-else @click="toggleMobileMenu()" name="icon-park-outline:close" class="w-5 h-5 mx-5 my-auto"/>
+      
     </div>
 
     <!-- mobile menu -->
-      <div id="menu" class="bg-mobile-menu-blue z-10 hidden">
+      <div id="menu" class="bg-mobile-menu-blue flex" style="flex-direction: column;">
         <RouterLink id="nav-link-mobile" to="/" :class="{ active: isActive('/') }" @click="toggleMobileMenu()">
-          Home
+          <p style="padding-left: 20px;">Home</p>
         </RouterLink>
   
-        <RouterLink id="nav-link-mobile" to="/about-me" :class="{ active: isActive('/about-me') }" @click="toggleMobileMenu()">
-          About me
+        <RouterLink id="nav-link-mobile" to="/about-me" :class="{ active: isActive('/about-me') }">
+          <p style="padding-left: 20px;">About me</p>
         </RouterLink>
   
-        <RouterLink id="nav-link-mobile" to="/projects" :class="{ active: isActive('/projects') }" @click="toggleMobileMenu()">
-          My Journey
+        <RouterLink id="nav-link-mobile" to="/projects" :class="{ active: isActive('/projects') }">
+          <p style="padding-left: 20px;">My Journey</p>
         </RouterLink>
 
-        <RouterLink id="nav-link-mobile" to="/contact-me" :class="{ active: isActive('/contact-me') }" @click="toggleMobileMenu()">
-          Contact me
+        <RouterLink id="nav-link-mobile" to="/contact-me" :class="{ active: isActive('/contact-me') }">
+          <p style="padding-left: 20px;">Contact me</p>
         </RouterLink>
     </div>
 
@@ -46,38 +42,19 @@ export default {
       config
     }
   },
+
   methods: {
-    toggleMobileMenu(){
 
-      this.menuOpen ? this.menuOpen = false : this.menuOpen = true
-
-      const menu = document.getElementById('menu');
-      menu.classList.toggle('hidden')
-
-      const page = document.getElementsByTagName('main')[0];
-      // Hide / show section
-      if (page.style.display === 'none') {
-        page.style.display = 'flex';
-      } else {
-        page.style.display = 'none';
-      }
-    },
-    goHome() {
-      const menu = document.getElementById('menu');
-      if(!menu.classList.contains('hidden')){
-        menu.classList.toggle('hidden')
-        document.getElementsByTagName('main')[0].style.display = 'flex';
-        this.menuOpen ? this.menuOpen = false : this.menuOpen = true
-      }
-    }
+    
   },
   computed: {
     // Set active class to current page link
     isActive() {
       return route => this.$route.path === route;
     },
-  }
+  },
 }
+
 </script>
 
 <style>
