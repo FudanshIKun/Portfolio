@@ -48,15 +48,15 @@ export default {
         <div style="height: 100%; justify-content: end;">
           
         </div>
-        <div class="head" style="padding-bottom: 5vh; color: white;">
+        <div class="head" style="padding-bottom: 5vh; color: white; padding-left: 5vh;">
           <h1>{{ config.dev.name }}</h1>
           <h2>> {{ config.dev.role }}</h2>
         </div>
 
       </section>
 
-      <section class="hero" style="height: fit-content;">
-        <div style="justify-content: center; margin: 0; padding-right: 5vw;">
+      <section class="hero" style="height: 100%;">
+        <div style="justify-content: center; margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 5vw;">
           <div class="w3-container w3-content w3-right" style="max-width:800px;">
             <h2 class="w3-wide text-3xl pb-6" style="color: white;">WHO AM I</h2>
             <p class="box text-sm" style="color: white;">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
@@ -90,10 +90,68 @@ export default {
         </div>
       </section>
 
-      <section class="hero" style="height: fit-content; padding-top: 5vh;">
+      <section class="hero" style="height: 100%; margin: auto; padding: 2vw;">
+        <div>
+          <div class="w3-content" style="margin: auto;">
+            <h2 class="w3-wide text-3xl pb-6" style="color: white;">WHAT I DO</h2>
+              <section class="box skills" style="width: fit-content;"> 
+
+                <div> 
+                  <i class="fa-regular fa-pen-to-square" style="font-size: 36px; color: white;"></i>
+                  <span class="px-1"></span>
+                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Design</h2> 
+                  <span class="px-1"></span>
+                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ready to exploring new concepts, ideas and Craft creative designs with passion.</p> 
+                </div> 
+
+                <div> 
+                  <i class="fa-solid fa-laptop-file" style="font-size: 36px; color: white;"></i>
+                  <span class="px-1"></span>
+                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Create</h2> 
+                  <span class="px-1"></span>
+                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Implement Features and script which easy to use and setup.</p> 
+                </div> 
+
+                <div> 
+                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
+                  <span class="px-1"></span>
+                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Coding</h2> 
+                  <span class="px-1"></span>
+                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
+                </div> 
+
+                <div> 
+                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
+                  <span class="px-1"></span>
+                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Coding</h2> 
+                  <span class="px-1"></span>
+                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
+                </div> 
+
+                <div> 
+                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
+                  <span class="px-1"></span>
+                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Coding</h2> 
+                  <span class="px-1"></span>
+                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
+                </div> 
+
+                <div> 
+                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
+                  <span class="px-1"></span>
+                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Coding</h2> 
+                  <span class="px-1"></span>
+                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
+                </div> 
+              </section>
+          </div>
+        </div>
+      </section>
+
+      <section class="hero" style="width: fit-content; padding-top: 5vh;">
         <div style=" padding: 2vw; padding-right: 5vh;">
           <div class="box" style="padding: 2vh;">
-            <h2 class="w3-wide text-3xl pb-2" style="color: white;">MY HIGHLIGHTS</h2>
+            <h2 class="w3-wide text-3xl pb-2" style="color: white;">GAME DEVELOPMENT</h2>
             <p class="w3-opacity" style="color: gray;"><i>Create with Passion</i></p>
             <span class="px-1"></span>
             
@@ -121,59 +179,22 @@ export default {
           <RouterLink 
           id="nav-link" 
           to="/projects" 
-          class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-left text-xs">
+          class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right text-xs">
             See more On My Journey
           </RouterLink>
         </div>
       </section>  
-      
-      <section class="hero">
-        <div style="justify-content: center;">
-          <div class="w3-container w3-content w3-right" style="max-width:800px; padding: 2vw; padding-right: 5vh;">
-            <h2 class="w3-wide text-3xl pb-6" style="color: white;">WHAT I DO</h2>
-              <section class="box skills" data-astro-cid-ab4ihpzs=""> 
-
-                <div class="stack gap-2 lg:gap-4" data-astro-cid-ab4ihpzs=""> 
-                  <i class="fa-regular fa-pen-to-square" style="font-size: 36px; color: white;"></i>
-                  <h2 data-astro-cid-ab4ihpzs="" style="color: white;">Design</h2> 
-                  <span class="px-1"></span>
-                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ready to exploring new concepts, ideas and Craft creative designs with passion.</p> 
-                </div> 
-
-                <div class="stack gap-2 lg:gap-4" data-astro-cid-ab4ihpzs=""> 
-                  <i class="fa-solid fa-laptop-file" style="font-size: 36px; color: white;"></i>
-                  <h2 data-astro-cid-ab4ihpzs="" style="color: white;">Create</h2> 
-                  <span class="px-1"></span>
-                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Implement Features and script which easy to use and setup.</p> 
-                </div> 
-
-                <div class="stack gap-2 lg:gap-4" data-astro-cid-ab4ihpzs=""> 
-                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
-                  <h2 data-astro-cid-ab4ihpzs="" style="color: white;">Coding</h2> 
-                  <span class="px-1"></span>
-                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
-                </div> 
-              </section>
-              <RouterLink 
-              id="nav-link" 
-              to="/about-me?topic=professional-info&folder=experience" 
-              class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right text-xs">
-                See more On My Experiences
-              </RouterLink>
-          </div>
-        </div>
-      </section>
 
       <section class="hero">
         <div>
-          <div class="w3-container" style="max-width:800px; padding-right: 5vh;">
+          <div class="w3-container" style="max-width:800px; padding: 2vw;">
             <h2 class="w3-wide text-3xl pb-2" style="color: white;">WHAT I USE</h2>
             <span class="px-2"></span>
 
-            <div class="w3-row-padding box" style="max-width:100%; height: fit-content; padding-right: 5vw; padding: 2vw;"> 
+            <div class="w3-row-padding box" style="max-width:85vw; height: fit-content;"> 
               <p class="w3-justify" style="padding: 2vh; color: white;">These're software, I've ever use in my journey.</p>
               <div class="w3-quarter">
-                <ul class="w3-ul w3-gray w3-center" style="min-width: 100px;">
+                <ul class="w3-ul w3-gray w3-center" >
                   <li class="w3-black w3-padding-16" style="font-size: 12px">Editing</li>    
                   <li class="w3-padding-16"> 
                     <a href="https://www.gimp.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Gimp</a> 
@@ -273,15 +294,61 @@ export default {
                   <p style="color: gray; padding-top: 1vh;">I understand well but my speaking and my grammar aren't so good.</p>
                 </div>
               </section>
-
           </div>
         </div>
       </section>
 
-      <section class="hero" style="height: fit-content; padding-top: 5vh;">
+      <section class="hero" style="padding-top: 5vh; padding-left: 5vh;">
         <div style=" padding: 2vw; padding-right: 5vh;">
           <div class="box" style="padding: 2vh;">
-            <h2 class="w3-wide text-3xl" style="color: white">ACTIVITIES</h2>
+            <h2 class="w3-wide text-3xl" style="color: white">WORK EXPERIENCE</h2>
+            <span class="px-1"></span>
+            <div id="not-found" class="flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
+              <span class="flex justify-center text-4xl pb-3">
+                T__T
+              </span>
+              <span class="flex justify-center">
+                NOOO!
+              </span>
+              <span class="text-white flex justify-center text-xl">
+                I don't have any experience yet.
+              </span>
+              <a href="/contact-me" class="hover:text-green-600"> Help me get one!</a>
+            </div>
+            <div class="media-scroller snaps-inline" style="padding:2vh;">
+              <div class="media-element container" v-for="(experience, key) in highlights.experience" :key="key">
+                <div class="card" style="width: 100%;">
+                  <div class="slide slide1">
+                    <NuxtLink>
+                      <img id="h-auto" :src="experience.img" style="inline-size: 100%; aspect-ratio: 16 / 9; object-fit:cover; border-radius: 5px;">
+                    </NuxtLink>
+                  </div>
+                  <div style="padding: 1vh;">
+                    <div style="width: 100%;">
+                      <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ experience.title}}</h3>
+                      <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ experience.title}}</h3>
+                      <p class="text-menu-text font-fira_retina text-sm mb-5">
+                        {{ experience.description }}
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <RouterLink 
+              id="nav-link" 
+              to="/about-me?topic=professional-info&folder=experience" 
+              class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right text-xs">
+                See more On My Experiences
+              </RouterLink>
+        </div>
+      </section>
+
+      <section class="hero" style="padding-top: 5vh; padding-left: 5vh;">
+        <div style=" padding: 2vw; padding-right: 5vh;">
+          <div class="box" style="padding: 2vh;">
+            <h2 class="w3-wide text-3xl" style="color: white">ADDITIONAL PROJECTS & EVENTS</h2>
             <span class="px-1"></span>
             <div class="media-scroller snaps-inline" style="padding:2vh;">
               <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key">
@@ -306,7 +373,7 @@ export default {
           </div>
           <RouterLink 
           id="nav-link" 
-          to="/about-me?topic=hobbies-info&folder=Games" 
+          to="/about-me?topic=hobbies-info&folder=Game" 
           class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-left text-xs">
               See more On My Hobbies
           </RouterLink>
@@ -317,15 +384,18 @@ export default {
 </template>
 
 <style scoped>
+
+
 .grid-container {
-  columns: 5 350px;
-  column-gap: 1.5rem;
+  columns: 3 350px;
+  column-gap: 3rem;
   margin: 0 auto;
 
   .card {
     display: inline-block;
     margin: 0 1.5rem 1.5rem 0;
     width: 100%;
+    
     box-shadow: 15px 15px 15px rgba(0,0,0,0.5);
     border-radius: 15px;
     border-top-right-radius: 15px;
@@ -427,7 +497,6 @@ text-align: center;
 #hello { 
   height: 100%;
   width: 100%;
-  padding-left: 5vh;
 }
 
 .hero {
@@ -459,6 +528,7 @@ text-align: center;
   font-size: 32px;
   line-height: 1;
   font-family: 'Fira Code Retina';
+  color: purple;
 }
 
 .box{
@@ -467,6 +537,7 @@ text-align: center;
   padding: 1.5rem;
   background-color: var(--gray-999_40);
   box-shadow: var(--shadow-sm);
+  
 }
 
 .skills{
@@ -475,17 +546,25 @@ text-align: center;
   gap: 3rem;
 }
 
+.skills div{
+  width: 100%;
+}
+
 
 @media (min-width: 50em){
   .skills{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 5rem;
+    grid-template-columns: repeat(3, 10fr);
+  }
+
+  .skills div{
+    max-width: 500px;
   }
 
   .box{
     border-radius: 1.5rem;
     padding: 2.5rem;
+    min-height: 350px;
   }
 }
 
@@ -504,7 +583,7 @@ text-align: center;
 
 	#hello .head h2 {
 		font-size: 20px;
-		color: #43D9AD;
+		color: purple;
 	}
 }
 
@@ -516,10 +595,13 @@ text-align: center;
 
 	#hello .hero {
 		display: flex;
+    min-height: 400px;
 		flex-direction: column;
-		justify-content: center;
-		margin: 1.75rem;
 	}
+
+  #hello .hero .head{
+    padding-top: 5vh;
+  }
 
   .w3-row-padding .box {
     display: flex;
@@ -528,43 +610,7 @@ text-align: center;
   }
 }
 
-@media (min-width: 1024px) and (max-width: 1320px) {
-	#hello {
-		padding-left: 135px;
-	}
-}
-
-
-/* LG */
-@media (min-width: 1024px) {
-  .css-blurry-gradient-blue {
-    position: fixed;
-    bottom: 10%;
-    right: 10%;
-    width: 500px;
-    height: 500px;
-    opacity: 0.7;
-    border-radius: 100% 50% 100% 0%;
-  }
-
-  .css-blurry-gradient-green {
-    position: fixed;
-    top: 10%;
-    right: 35%;
-    filter: blur(100px);
-    rotate: 10deg;
-    width: 400px;
-    height: 400px;
-    opacity: 0.5;
-    border-radius: 100% 0% 0% 0%;
-    rotate: 20deg;
-  }
-}
-
 @media (min-width: 1920px){
-	#hello {
-		padding-left: 310px;
-	}
 	#hello .head h1 {
 		font-size: 62px;
 	}

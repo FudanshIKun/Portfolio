@@ -1,3 +1,71 @@
+<script>
+export default {
+  data() {
+    if (this.$route.query.topic && this.$route.query.folder) {
+      console.log('topic:' + this.$route.query.topic + 'folder:' + this.$route.query.folder);
+
+      return {
+        currentSection: String(this.$route.query.topic),
+        folder: String(this.$route.query.folder),
+        loading: true,
+      };
+    }
+
+    return {
+      currentSection: 'personal-info',
+      folder: 'Bio',
+      loading: true,
+    };
+  },
+  /**
+   * In setup we can define the data we want to use in the component before the component is created.
+   */
+  setup() {
+    const config = useRuntimeConfig()
+    return {
+      config
+    }
+  },
+  computed: {
+    // Set active class to current page link
+    isActive() {
+      return folder => this.folder === folder;
+    },
+    isSectionActive() {
+      return section => this.currentSection === section;
+    },
+    isOpen() {
+      return folder => this.folder === folder;
+    },
+  },
+  methods: {
+    focusCurrentSection(section) {
+      this.currentSection = section.title
+      this.folder = Object.keys(section.info)[0]
+
+      document.getElementById('folders-' + section.title).classList.toggle('hidden') // show folders
+      document.getElementById('section-arrow-' + section.title).classList.toggle('rotate-90'); // rotate arrow
+    },
+    focusCurrentFolder(folder) {
+      this.folder = folder.title
+      // handle if folder belongs to the current section. It happens when you click on a folder from a different section in mobile view.
+      this.currentSection = this.config.dev.about.sections[this.currentSection].info[folder.title] ? this.currentSection : Object.keys(this.config.dev.about.sections).find(section => this.config.dev.about.sections[section].info[folder.title])
+    },
+    toggleFiles() {
+      document.getElementById('file-' + this.folder).classList.toggle('hidden')
+    },
+    /* Mobile */
+    showContacts() {
+      document.getElementById('contacts').classList.toggle('hidden')
+      document.getElementById('section-arrow').classList.toggle('rotate-90'); // rotate arrow
+    },
+  },
+  mounted(){
+    this.loading = false
+  }
+}
+</script>
+
 <template>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <main v-if="!loading" id="about-me" class="page" style="height: 100%;">
@@ -260,71 +328,3 @@
 }
 
 </style>
-
-<script>
-export default {
-  data() {
-    if (this.$route.query.topic && this.$route.query.folder) {
-      console.log('topic:' + this.$route.query.topic + 'folder:' + this.$route.query.folder);
-
-      return {
-        currentSection: String(this.$route.query.topic),
-        folder: String(this.$route.query.folder),
-        loading: true,
-      };
-    }
-
-    return {
-      currentSection: 'personal-info',
-      folder: 'bio',
-      loading: true,
-    };
-  },
-  /**
-   * In setup we can define the data we want to use in the component before the component is created.
-   */
-  setup() {
-    const config = useRuntimeConfig()
-    return {
-      config
-    }
-  },
-  computed: {
-    // Set active class to current page link
-    isActive() {
-      return folder => this.folder === folder;
-    },
-    isSectionActive() {
-      return section => this.currentSection === section;
-    },
-    isOpen() {
-      return folder => this.folder === folder;
-    },
-  },
-  methods: {
-    focusCurrentSection(section) {
-      this.currentSection = section.title
-      this.folder = Object.keys(section.info)[0]
-
-      document.getElementById('folders-' + section.title).classList.toggle('hidden') // show folders
-      document.getElementById('section-arrow-' + section.title).classList.toggle('rotate-90'); // rotate arrow
-    },
-    focusCurrentFolder(folder) {
-      this.folder = folder.title
-      // handle if folder belongs to the current section. It happens when you click on a folder from a different section in mobile view.
-      this.currentSection = this.config.dev.about.sections[this.currentSection].info[folder.title] ? this.currentSection : Object.keys(this.config.dev.about.sections).find(section => this.config.dev.about.sections[section].info[folder.title])
-    },
-    toggleFiles() {
-      document.getElementById('file-' + this.folder).classList.toggle('hidden')
-    },
-    /* Mobile */
-    showContacts() {
-      document.getElementById('contacts').classList.toggle('hidden')
-      document.getElementById('section-arrow').classList.toggle('rotate-90'); // rotate arrow
-    },
-  },
-  mounted(){
-    this.loading = false
-  }
-}
-</script>
