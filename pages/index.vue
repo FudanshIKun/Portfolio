@@ -69,7 +69,7 @@ export default {
             <div style="display:flex; flex-direction: row-reverse;">
               <RouterLink 
               id="nav-link" 
-              to="/about-me?topic=personal-info&folder=bio" 
+              to="/about-me?topic=personal-info&folder=Bio" 
               target="" 
               class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
               style="height: fit-content; text-align: center; text-wrap: nowrap;">
@@ -101,7 +101,7 @@ export default {
                   <span class="px-1"></span>
                   <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Design</h2> 
                   <span class="px-1"></span>
-                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ready to exploring new concepts, ideas and Craft creative designs with passion.</p> 
+                  <p style="color: gray;">Passionate about game design and innovation, with a focus on shaping captivating experiences in the gaming industry.</p>
                 </div> 
 
                 <div> 
@@ -109,7 +109,7 @@ export default {
                   <span class="px-1"></span>
                   <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Create</h2> 
                   <span class="px-1"></span>
-                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Implement Features and script which easy to use and setup.</p> 
+                  <p style="color: gray;">Specializing in designing, implementing, and testing game features to deliver immersive and engaging gameplay.</p>
                 </div> 
 
                 <div> 
@@ -117,32 +117,10 @@ export default {
                   <span class="px-1"></span>
                   <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Coding</h2> 
                   <span class="px-1"></span>
-                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
+                  <p style="color: gray;">Dedicated to maintaining code quality and readability, writing clean, reusable, and optimized code for efficient game development.</p>
                 </div> 
 
-                <div> 
-                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
-                  <span class="px-1"></span>
-                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Coding</h2> 
-                  <span class="px-1"></span>
-                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
-                </div> 
-
-                <div> 
-                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
-                  <span class="px-1"></span>
-                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Coding</h2> 
-                  <span class="px-1"></span>
-                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
-                </div> 
-
-                <div> 
-                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
-                  <span class="px-1"></span>
-                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Coding</h2> 
-                  <span class="px-1"></span>
-                  <p data-astro-cid-ab4ihpzs="" style="color: gray;">Ensured code quality for read and understand easily.</p>
-                </div> 
+                
               </section>
           </div>
         </div>
@@ -297,7 +275,7 @@ export default {
           </div>
         </div>
       </section>
-
+      <!--
       <section class="hero" style="padding-top: 5vh; padding-left: 5vh;">
         <div style=" padding: 2vw; padding-right: 5vh;">
           <div class="box" style="padding: 2vh;">
@@ -311,7 +289,7 @@ export default {
                 NOOO!
               </span>
               <span class="text-white flex justify-center text-xl">
-                I don't have any experience yet.
+                I don't have any work experience yet.
               </span>
               <a href="/contact-me" class="hover:text-green-600"> Help me get one!</a>
             </div>
@@ -338,28 +316,28 @@ export default {
           </div>
           <RouterLink 
               id="nav-link" 
-              to="/about-me?topic=professional-info&folder=experience" 
+              to="/about-me?topic=professional-info&folder=Experience" 
               class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right text-xs">
                 See more On My Experiences
               </RouterLink>
         </div>
-      </section>
-
-      <section class="hero" style="padding-top: 5vh; padding-left: 5vh;">
-        <div style=" padding: 2vw; padding-right: 5vh;">
+      </section>-->
+      
+      <section class="hero" style="padding-top: 5vh; padding-left: 5vh; padding-right: 5vh;">
+        <div>
           <div class="box" style="padding: 2vh;">
             <h2 class="w3-wide text-3xl" style="color: white">ADDITIONAL PROJECTS & EVENTS</h2>
             <span class="px-1"></span>
-            <div class="media-scroller snaps-inline" style="padding:2vh;">
+            <div class="media-scroller " style="padding:2vh;">
               <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key">
-                <div class="card" style="width: 100%;">
+                <div class="card">
                   <div class="slide slide1">
                     <NuxtLink>
-                      <img id="h-auto" :src="activities.img" style="inline-size: 100%; aspect-ratio: 16 / 9; object-fit:cover; border-radius: 5px;">
+                      <img id="h-auto" :src="activities.img" >
                     </NuxtLink>
                   </div>
                   <div style="padding: 1vh;">
-                    <div style="width: 100%;">
+                    <div>
                       <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ activities.name}}</h3>
                       <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ activities.name}}</h3>
                       <p class="text-menu-text font-fira_retina text-sm mb-5">
@@ -384,8 +362,6 @@ export default {
 </template>
 
 <style scoped>
-
-
 .grid-container {
   columns: 3 350px;
   column-gap: 3rem;
@@ -409,37 +385,27 @@ export default {
   }
 }
 
-/* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
-  display: none;
-}
-
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-}
-
 @import "https://unpkg.com/open-props";
 @import "https://unpkg.com/open-props/normalize.min.css";
 
 .media-scroller {
-  display: grid;
-  column-gap: 40px;
-  grid-template-columns: min-content;
-  grid-auto-flow: column;
+  display: flex;
+  flex-wrap: nowrap;
   overflow-x: auto;
   overflow-y: hidden;
-  overscroll-behavior-inline: contain;
+  scroll-behavior: smooth;
+  scroll-snap-type: x mandatory;
+  scrollbar-width: thin;
+  -ms-overflow-style: none; /* Hide scrollbar for IE and Edge */
 }
 
 .media-element {
-  display: grid;
-  border-radius: var(--radius-2);
-  box-shadow: var(--shadow-2);
-  width: 70vw; 
-  max-width: 350px; 
+  scroll-snap-align: start;
+  flex: 0 0 auto;
+  width: 70vw;
+  max-width: 350px;
   min-height: 17.5rem;
+  margin-right: 1rem; /* Add some spacing between elements */
 }
 
 .container .card {
@@ -456,22 +422,16 @@ z-index: 1;
 transition: .7s;
 }
 
-.container .card:hover .slide.slide1{
-transform: translateY(0px);
-
-}
-
 .container .card .slide.slide2 {
 position: relative;
 display: flex;
 justify-content: center;
 align-items: center;
 box-sizing: border-box;
-transition: .8s;
-transform: translateY(-100px);
+
 }
 
-.container .card:hover .slide.slide2{
+.container .card:hover .slide .slide2{
 transform: translateY(0);
 }
 
@@ -497,6 +457,7 @@ text-align: center;
 #hello { 
   height: 100%;
   width: 100%;
+  border-top: 2px solid #454843;
 }
 
 .hero {
@@ -537,6 +498,7 @@ text-align: center;
   padding: 1.5rem;
   background-color: var(--gray-999_40);
   box-shadow: var(--shadow-sm);
+  
   
 }
 

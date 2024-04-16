@@ -1,5 +1,5 @@
 <template>
-    <main id="contact-me" class="page">
+    <main id="contact-me" class="page" style="border-top: 2px solid #454843;">
 
         <div id="mobile-page-title">
             <h2>Contact Me</h2>
@@ -25,7 +25,7 @@
             <div id="find-me-in" class="submenu border-top">
                 <div class="title">
                     <img class="arrow" src="/icons/arrow.svg">
-                    <h3>You can also find me in...</h3>
+                    <h3 style="font-size: 12px;">You can also find me in...</h3>
                 </div>
                 <div id="links">
                     <div v-for="(source, key) in contact.find_me_also_in.sources" :key="key" class="link">
