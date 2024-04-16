@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 const config = useRuntimeConfig()
-const techs = ['unity', 'shader']
+const techs = ['Art Design', 'Game Design', 'Game', 'Illustration', 'Modeling', 'Shader', 'Autodesk Maya', 'Unity']
 const filters = ref(['all'])
 const showFilters = ref(true)
 const projects = ref(config.public.dev.projects)
@@ -35,13 +35,14 @@ function filterProjectsBy(filters) {
     return filters.some(filter => project.tech.includes(filter))
   })
 }
+
 </script>
 
 <template>
-  <main class="flex flex-col flex-auto lg:flex-row" style="height: 100%; overflow: hidden;">
+  <main class="flex flex-col flex-auto lg:flex-row" style="height: 100%; overflow: hidden; border-top: 2px solid #454843;">
 
     <div id="mobile-page-title">
-      <h2>projects</h2>
+      <h2>My Journey</h2>
     </div>
 
     <!-- section title (mobile) -->
@@ -51,6 +52,7 @@ function filterProjectsBy(filters) {
     </div>
     
     <div v-if="showFilters" id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text lg:flex">
+
       <!-- title -->
       <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
         <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3">
@@ -59,13 +61,13 @@ function filterProjectsBy(filters) {
 
       <!-- filter menu -->
       <nav id="filters" class="w-full flex-col" style="max-height: 100%;">
-  
         <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
-          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-5 h-5 mx-4">
+          <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-8 h-8 mx-4">
           <span :id="'title-tech-' + tech">{{ tech }}</span>
         </div>
       </nav>
+
     </div>
 
     <!-- content -->
@@ -94,11 +96,11 @@ function filterProjectsBy(filters) {
           <span class="flex justify-center text-4xl pb-3">
             X__X
           </span>
+          <span class="flex justify-center">
+            OOP!
+          </span>
           <span class="text-white flex justify-center text-xl">
             No matching projects
-          </span>
-          <span class="flex justify-center">
-            for these technologies
           </span>
         </div>
         
@@ -110,11 +112,37 @@ function filterProjectsBy(filters) {
         />
 
       </div>
+      
   </div>
 </main>
 </template>
 
-<style>
+<style scoped>
+.section-arrow {
+  transform: rotate(90deg);
+}
+
+.image {
+  object-fit:contain;
+  border-radius: inherit;
+  opacity: 1;
+  transition: 300ms ease;
+  border-radius: var(--radius-2);
+}
+
+.video {
+  border-radius: inherit;
+  inset: 0;
+  z-index: -1;
+}
+
+.container:hover {
+  .image {
+    opacity: 0;
+  }
+}
+
+
 #filters {
   padding: 10px 25px;
 }

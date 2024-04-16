@@ -1,35 +1,31 @@
 <template>
-    <main id="contact-me" class="page" style="height: 100%;">
+    <main id="contact-me" class="page" style="border-top: 2px solid #454843;">
 
         <div id="mobile-page-title">
-            <h2>contact-me</h2>
+            <h2>Contact Me</h2>
         </div>
 
         <div id="page-menu" class="w-fullflex flex-col" style="height: 100%; border-right: 2px solid #454843;">
 
             <!-- contacts -->
-            <div id="contacts" class="submenu" style="height: 100%;">
-                <div class="title" @click="open('contacts')">
+            <div id="contacts" class="submenu">
+                <div class="title">
                     <img class="arrow" src="/icons/arrow.svg">
-                    <h3>
-                        contacts
-                    </h3>
+                    <h3>contacts</h3>
                 </div>
                 <div id="links">
                     <div v-for="(source, key) in contact.direct.sources" :key="key" class="link">
                         <img :src="'/icons/' + key + '.svg'">
-                        <a v-html="source" href="/" class="font-fira_retina text-menu-text hover:text-white"></a>
+                        <a v-html="source" class="font-fira_retina text-menu-text hover:text-white"></a>
                     </div>
                 </div>
             </div>
 
             <!-- find me also in -->
             <div id="find-me-in" class="submenu border-top">
-                <div class="title" @click="open('find-me-in')">
+                <div class="title">
                     <img class="arrow" src="/icons/arrow.svg">
-                    <h3>
-                        find-me-also-in
-                    </h3>
+                    <h3 style="font-size: 12px;">You can also find me in...</h3>
                 </div>
                 <div id="links">
                     <div v-for="(source, key) in contact.find_me_also_in.sources" :key="key" class="link">
@@ -42,23 +38,10 @@
         </div>
             
         <div class="flex flex-col w-full">
-
-        <!-- windows tab -->
-        <div class="tab-height w-full hidden lg:flex border-right border-bot items-center">
-
-                <div class="flex items-center border-right h-full">
-                    <p class="font-fira_regular text-menu-text text-sm px-3">contacts</p>
-                    <img src="/icons/close.svg" alt="" class="m-3">
-                </div>
-
-            </div>
-
             <!-- main -->
-            <div class="flex lg:grid lg:grid-cols-2 h-full w-full">
-        
+            <div class="flex lg:grid lg:grid-cols-2 w-full" style="min-height: 550px;">
                 <div id="left" class="h-full w-full flex flex-col items-center">
                     <ContactForm :name="name" :subject="subject" :email="email" :message="message" />
-
                 </div>
 
                 <div id="right" class="h-full w-full hidden lg:flex">
@@ -78,21 +61,6 @@ export default {
 
         return {
             contact
-        }
-    },
-    methods: {
-        open(elementId) {
-            const element = document.getElementById(elementId);
-            const arrow = element.querySelector('.arrow');
-            const links = element.querySelector('#links');
-
-            if (links.style.display === 'block') {
-                links.style.display = 'none';
-                arrow.style.transform = 'rotate(0deg)';
-            } else {
-                links.style.display = 'block';
-                arrow.style.transform = 'rotate(90deg)';
-            }
         }
     },
     mounted(){
@@ -121,6 +89,7 @@ export default {
     margin-right: 10px;
     width: 9px;
     height: 9px;
+    transform: rotate(90deg);
 }
 
 .submenu {

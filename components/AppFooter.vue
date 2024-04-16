@@ -8,20 +8,17 @@
                 find me:
             </span>
             <div id="social-icons" class="flex" style="padding-left: 1vw;">
-                <NuxtLink :to="social.facebook.url + social.facebook.user" target="_blank" class="flex" style="justify-content: center; align-items: center;">
-                    <i class="fa fa-facebook-f" style="font-size: 20px"></i>
-                </NuxtLink>
                 <NuxtLink :to="social.instagram.url + social.instagram.user" target="_blank" class="flex justify-center items-center">
                     <i class="fa fa-instagram" style="font-size: 20px;"></i>
                 </NuxtLink>
-                <NuxtLink :to="social.linkin.url + social.linkin.user" target="_blank" class="flex justify-center items-center">
+                <NuxtLink :to="social.linkin.url + social.linkin.user" target="_blank" class="flex justify-center items-center ">
                     <i class="fa fa-linkedin-square" style="font-size: 20px;"></i>
                 </NuxtLink>
             </div>
         </div>
 
         <!-- github user -->
-        <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-5">
+        <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-5 border-left hover:text-white">
             @{{ social.github.user }}
             <i class="fa fa-github" style="font-size:20px"></i>
         </NuxtLink>

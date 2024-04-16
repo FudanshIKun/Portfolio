@@ -1,3 +1,64 @@
+<script>
+export default {
+  data() {
+    if (this.$route.query.topic && this.$route.query.folder) {
+      console.log('topic:' + this.$route.query.topic + 'folder:' + this.$route.query.folder);
+
+      return {
+        currentSection: String(this.$route.query.topic),
+        folder: String(this.$route.query.folder),
+        loading: true,
+      };
+    }
+
+    return {
+      currentSection: 'personal-info',
+      folder: 'Bio',
+      loading: true,
+    };
+  },
+  /**
+   * In setup we can define the data we want to use in the component before the component is created.
+   */
+  setup() {
+    const config = useRuntimeConfig()
+    return {
+      config
+    }
+  },
+  computed: {
+    // Set active class to current page link
+    isActive() {
+      return folder => this.folder === folder;
+    },
+    isSectionActive() {
+      return section => this.currentSection === section;
+    },
+  },
+  methods: {
+    focusCurrentSection(section) {
+      this.currentSection = section.title
+      this.folder = Object.keys(section.info)[0]
+      document.getElementById('section-arrow-' + section.title).classList.toggle('rotate-90');
+    },
+    focusCurrentFolder(folder) {
+      this.folder = folder.title
+      // handle if folder belongs to the current section. It happens when you click on a folder from a different section in mobile view.
+      this.currentSection = this.config.dev.about.sections[this.currentSection].info[folder.title] ? this.currentSection : Object.keys(this.config.dev.about.sections).find(section => this.config.dev.about.sections[section].info[folder.title])
+      document.getElementById('folder-arrow-' + folder.title).classList.toggle('rotate-90');
+    },
+    /* Mobile */
+    showContacts() {
+      document.getElementById('contacts').classList.toggle('hidden')
+      document.getElementById('section-arrow').classList.toggle('rotate-90'); // rotate arrow
+    },
+  },
+  mounted(){
+    this.loading = false
+  }
+}
+</script>
+
 <template>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <main v-if="!loading" id="about-me" class="page" style="height: 100%;">
@@ -7,36 +68,32 @@
     </div>
 
     <div id="page-menu" class="w-full flex" style="height: 100%;">
-      <!-- DESKTOP section icons -->
-      <div id="sections">
-        <div id="section-icon" v-for="section in config.dev.about.sections" :key="section.title" :class="{ active: isSectionActive(section.title)}">
-          <img :id="'section-icon-' + section.title" :src="section.icon" :alt="section.title + '-section'" @click="focusCurrentSection(section)">
-        </div>
-      </div>
-
       <!-- focused section content -->
       <div id="section-content" class="hidden lg:block w-full h-full border-right" style="height: 100%;">
-        <!-- title -->
-        <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
-          <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">
-          <p v-html="config.dev.about.sections[currentSection].title" class="font-fira_regular text-white text-sm"></p>
-        </div>
+        <div v-for="(section, index) in config.dev.about.sections" :key="index">
+          <!-- title -->
+          <div id="section-content-title" class="lg:flex items-center min-w-full border-top">
+            <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3">
+            <p class="font-fira_regular text-white text-sm">{{ section.title }}</p>
+          </div>
 
-        <!-- folders -->
-        <div>
-          <div v-for="(folder, key, index) in config.dev.about.sections[currentSection].info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text" @click="focusCurrentFolder(folder)">
-            <div class="flex col-span-2 hover:text-white hover:cursor-pointer">
-              <img id="diple" src="/icons/diple.svg" alt="" :class="{ open: isOpen(folder.title)}">
-              <img :src="'/icons/folder' + (index+1) + '.svg'" alt="" class="mr-3">
-              <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
-            </div>
-            <div v-if="folder.files !== undefined" class="col-span-2">
-              <div v-for="(file, key) in folder.files" :key="key" class="hover:text-white hover:cursor-pointer flex my-2">
-                <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3"/>
-                <p >{{ key }}</p>
-              </div> 
+          <!-- folders -->
+          <div>
+            <div v-for="(folder, key) in section.info" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text" @click="focusCurrentFolder(folder)">
+              <div class="flex col-span-2 hover:text-white hover:cursor-pointer">
+                <img  id="diple" src="/icons/diple.svg" alt="">
+                <img :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 16px">
+                <p :id="folder.title" :key="key" :class="{ active: isActive(folder.title)}">{{ folder.title }}</p>
+              </div>
+              <div v-if="folder.files !== undefined" class="col-span-2">
+                <div v-for="(file, key) in folder.files" :key="key" class="hover:text-white hover:cursor-pointer flex my-2">
+                  <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3"/>
+                  <p >{{ key }}</p>
+                </div> 
+              </div>
             </div>
           </div>
+
         </div>
 
         <!-- contact -->
@@ -59,17 +116,17 @@
         <div v-for="section in config.dev.about.sections" :key="section.title">
           
           <!-- section title (mobile) -->
-          <div :key="section.title" :src="section.icon" id="section-content-title" class="flex lg:hidden mb-1" @click="focusCurrentSection(section)">
+          <div :key="section.title" id="section-content-title" class="flex mb-1">
             <img src="/icons/arrow.svg" :id="'section-arrow-' + section.title" alt="" class="section-arrow">
             <p v-html="section.title" class=" text-white text-sm"></p>
           </div>
 
           <!-- folders -->
-          <div :id="'folders-' + section.title" class="hidden">
-            <div v-for="(folder, key, index) in config.dev.about.sections[section.title].info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text hover:text-white hover:cursor-pointer" @click="focusCurrentFolder(folder)">
+          <div :id="'folders-' + section.title">
+            <div v-for="(folder, key, index) in section.info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text hover:text-white hover:cursor-pointer" @click="focusCurrentFolder(folder)">
               <div class="flex col-span-2">
                 <img id="diple" src="/icons/diple.svg">
-                <img :src="'icons/folder' + (index+1) + '.svg'" alt="" class="mr-3">
+                <img :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 16px">
                 <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
               </div>
               <div v-if="folder.files !== undefined" class="col-span-2">
@@ -93,7 +150,7 @@
         <div id="contacts" class="hidden">
           <div v-for="(source, key) in config.dev.contacts.direct.sources" :key="key" class="flex items-center my-2">
             <img :src="'/icons/' + key + '.svg'" alt="">
-            <a v-html="source" href="/" class="font-fira_retina text-menu-text hover:text-white ml-4"></a>
+            <a v-html="source" class="font-fira_retina text-menu-text hover:text-white ml-4"></a>
           </div>
         </div>
 
@@ -103,28 +160,16 @@
     <!-- MENU END -->
 
     <!-- content -->
-    <div class="flex flex-col lg:grid" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+    <div class="flex flex-col lg:grid" style="grid-template-columns: repeat(2, minmax(0, 1fr)); border-top: 2px solid #454843;">
       <div id="left" class="w-full flex flex-col">
-        
-        <!-- windows tab desktop -->
-        <div class="tab-height w-full hidden lg:flex border-bot items-center">
-          <div class="flex items-center border-right h-full">
-            <p v-html="config.dev.about.sections[currentSection].title" class="font-fira_regular text-menu-text text-sm px-3"></p>
-            <img src="/icons/close.svg" alt="" class="mx-3">
-          </div>
-        </div>
-
-        <!-- windows tab mobile -->
-        <div id="tab-mobile" class="lg:hidden font-fira_retina" style="display: flex;">
-            <h3 class="text-white px-2">{{ config.dev.about.sections[currentSection].title }}</h3>
-            <h3 class="text-menu-text pl-2">[{{ config.dev.about.sections[currentSection].info[folder].title }}]</h3>
-        </div>
-        
         <!-- text -->
         <div id="commented-text" class="flex h-full w-full">
 
-          <div class="w-full h-full ml-5 mr-10 lg:my-5" style="overflow-x: hidden; overflow-y:auto;">
-              <CommentedText :text="config.dev.about.sections[currentSection].info[folder].description" />
+          <div class="w-full h-full ml-5 mr-10 lg:my-5 text-base" style="overflow-x: hidden; overflow-y:auto;">
+              <CommentedText 
+                :head="config.dev.about.sections[currentSection].info[folder].header" 
+                :text="config.dev.about.sections[currentSection].info[folder].description"
+              />
           </div>
         </div>
 
@@ -133,36 +178,45 @@
       <div id="right" class="max-w-full flex flex-col">   
 
         <!-- windows tab -->
-        <div class="tab-height w-full h-full hidden lg:flex border-bot items-center"></div>
+        <div class="tab-height w-full h-full hidden lg:flex items-center"></div>
         <!-- windows tab mobile -->
         <div class="tab-height w-full h-full flex-none lg:hidden items-center "></div>
           
-          <div id="posts" v-if="currentSection === 'personal-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding: 20px;">
+          <div id="posts" v-if="currentSection === 'personal-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: auto; padding: 20px;">
+            
+
             <!-- title -->
             <div class="flex flex-col" style="overflow-x: hidden;">
-
+              <PostSnippet
+                v-for="(blog, key) in config.public.dev.about.sections['personal-info'].blogs" 
+                :key="key" 
+                :blog="blog"
+              />
             </div>
           </div>
 
           <div id="gists" v-if="currentSection === 'professional-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding-left: 20px; padding-right: 20px;">
             <!-- title -->
-            <h3 class="text-white lg:text-menu-text mb-4 text-sm">Code snippet showcase:</h3>
             <div class="flex flex-col" style="overflow-x: hidden; border-radius: 10px;">
               <!-- snippets -->
               <GistSnippet
-                v-if="config.public.dev.about.sections[currentSection].gist"
-                data-aos="fade-down"
-                v-for="(gist, key) in config.public.dev.about.sections[currentSection].gist"
+                v-for="(gist, key) in config.public.dev.about.sections['professional-info'].gist"
                 :key="key"
                 :id="gist"
               />
             </div>
           </div>
 
-          <div id="posts" v-if="currentSection === 'hobbies-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding: 20px;">
+          <div id="posts" v-if="currentSection === 'hobbies-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: auto; padding: 20px;">
+            
+
             <!-- title -->
             <div class="flex flex-col" style="overflow-x: hidden;">
-
+              <PostSnippet
+                v-for="(blog, key) in config.public.dev.about.sections['hobbies-info'].blogs" 
+                :key="key" 
+                :blog="blog"
+              />
             </div>
           </div>
 
@@ -190,20 +244,16 @@
   border-right: 1px solid #454843;
 }
 
-#scroll-bar{
-  width: 20px;
-}
-
-#scroll {
-  width: 14px;
-  height: 7px;
-  background-color: #607B96;
+#section-icon{
+  max-height: fit-content;
 }
 
 
-@media (min-width: 1026px) {
+@media (min-width: 1024px) {
   #sections {
-    display: block;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
   }
 }
 
@@ -247,12 +297,23 @@
   overflow: hidden;
 }
 
+#posts-content {
+  height: 100%;
+  overflow: hidden;
+}
+
 #gists-content {
   height: 100%;
   overflow: hidden;
 }
 
 @media (max-width: 1024px) {
+  #posts-content {
+    height: 100%;
+    padding: 0px 25px;
+    overflow: hidden;
+  }
+
   #gists-content {
     height: 100%;
     padding: 0px 25px;
@@ -260,8 +321,8 @@
   }
 
   #about {
-  min-height: stretch;
-}
+    min-height: stretch;
+  }
 }
 
 .section-arrow {
@@ -273,71 +334,3 @@
 }
 
 </style>
-
-<script>
-export default {
-  data() {
-    if (this.$route.query.topic && this.$route.query.folder) {
-      console.log('topic:' + this.$route.query.topic + 'folder:' + this.$route.query.folder);
-
-      return {
-        currentSection: String(this.$route.query.topic),
-        folder: String(this.$route.query.folder),
-        loading: true,
-      };
-    }
-
-    return {
-      currentSection: 'personal-info',
-      folder: 'bio',
-      loading: true,
-    };
-  },
-  /**
-   * In setup we can define the data we want to use in the component before the component is created.
-   */
-  setup() {
-    const config = useRuntimeConfig()
-    return {
-      config
-    }
-  },
-  computed: {
-    // Set active class to current page link
-    isActive() {
-      return folder => this.folder === folder;
-    },
-    isSectionActive() {
-      return section => this.currentSection === section;
-    },
-    isOpen() {
-      return folder => this.folder === folder;
-    },
-  },
-  methods: {
-    focusCurrentSection(section) {
-      this.currentSection = section.title
-      this.folder = Object.keys(section.info)[0]
-
-      document.getElementById('folders-' + section.title).classList.toggle('hidden') // show folders
-      document.getElementById('section-arrow-' + section.title).classList.toggle('rotate-90'); // rotate arrow
-    },
-    focusCurrentFolder(folder) {
-      this.folder = folder.title
-      // handle if folder belongs to the current section. It happens when you click on a folder from a different section in mobile view.
-      this.currentSection = this.config.dev.about.sections[this.currentSection].info[folder.title] ? this.currentSection : Object.keys(this.config.dev.about.sections).find(section => this.config.dev.about.sections[section].info[folder.title])
-    },
-    toggleFiles() {
-      document.getElementById('file-' + this.folder).classList.toggle('hidden')
-    },
-    /* Mobile */
-    showContacts() {
-      document.getElementById('contacts').classList.toggle('hidden')
-      document.getElementById('section-arrow').classList.toggle('rotate-90'); // rotate arrow
-    },
-  },
-  mounted(){
-    this.loading = false
-  }
-}
-</script>

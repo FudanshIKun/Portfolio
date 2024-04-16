@@ -23,19 +23,19 @@ export default defineNuxtConfig({
       meta: [
         { charset: 'utf-8' },
         { name: 'viewport', content: 'width=device-width, initial-scale=1' },
-        { hid: 'description', name: 'description', content: 'A awesome developer portfolio design.' },
+        { hid: 'description', name: 'description', content: 'Portfolio' },
         { hid: 'og:title', property: 'og:title', content: siteTitle },
-        { hid: 'og:description', property: 'og:description', content: 'A awesome developer portfolio design.' },
-        { hid: 'og:image', property: 'og:image', content: 'demo-share.jpg' },
-        { hid: 'og:url', property: 'og:url', content: 'https://developer-portfolio-v1.netlify.app/' },
-        { name: 'theme-color', content: '#010C15' },
-        // ...
+        { hid: 'og:description', property: 'og:description', content: 'Portfolio' },
+        { hid: 'og:image', property: 'og:image', content: 'share-cover.jpg' },
       ],
       link: [
+        {rel: 'stylesheet', href: 'https://www.w3schools.com/w3css/4/w3.css'},
         { rel: 'manifest', href: 'pwa/manifest.json' },
         { rel: 'apple-touch-icon', href: 'pwa/icons/apple-touch-icon.png' },
       ],
       script: [
+        {src: 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js'},
+        {src: 'https://kit.fontawesome.com/d3a076a782.js'},
         {src: 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js'},
         {innerHTML: 'emailjs.init(\'2z2G1Z5GbSaziHlBg\')'}
       ]
@@ -52,7 +52,11 @@ export default defineNuxtConfig({
   ],
 
   content: {
-    
+    markdown: {
+      prism: {
+        theme: 'prism-themes/themes/prism-material-oceanic.css'
+      }
+    }
   },
 
   components: {

@@ -4,105 +4,216 @@
     "role": "Game Developer",
     "highlights": {
         "activities": {
-            "2": {
-                "name": "RSU OpenHouse 2023",
+            "5": {
+                "name": "RSU OpenHouse Mini Cosplay Contest 2023",
                 "description": "small cosplay contest in my university",
-                "img": "/images/projects/ethereum.png"
+                "img": "/images/activities/02 (1).jpg"
+            },
+            "4": {
+                "name": "CosNatsu Xmas2022",
+                "description": "CosNatsu in Christmas theme",
+                "img": "/images/activities/logo.png"
+            },
+            "3": {
+                "name": "CosCosSuki#6",
+                "description": "Just cosplay for fun in the event",
+                "img": "/images/activities/coscossuki.jpg"
+            },
+            "2": {
+                "name": "Maruya#35",
+                "description": "Cosplay with my friend",
+                "img": "/images/activities/maruya.png"
             },
             "1": {
                 "name": "Fit Game Jam 2022: Fine Arts Department Thailand",
                 "description": "",
-                "img": "/images/activities/1711301047896.jpg"
+                "img": "/images/activities/fgKWua.jpg"
             }
         },
         "projects": {
-            "2": {
-                "name": "RYTHM GAME",
+            "6": {
+                "name": "Simple Shader",
                 "description": "University-Assignment",
-                "img": "/images/projects/(University)SimpleRythmGame.png",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4"
+                "img": "",
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712471368/Projects/University/VFX_Highlights_fjhw1b.mp4",
+                "progress": 1
+            },
+            "5": {
+                "name": "3D Mobile Game Prototype",
+                "description": "University-Assignment",
+                "img": "",
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712468108/Projects/University/CGE109-3D-GAME-DEVELOPMENT.mp4",
+                "progress": 1
+            },
+            "4": {
+                "name": "Simple Rythm Game",
+                "description": "University-Assignment",
+                "img": "",
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711813160/Projects/University/Simple_Rythm_Game_Showreel_hw5mxq.mp4",
+                "progress": 1
+            },
+            "3": {
+                "name": "ANTARCTIC ADVENTURE [REMAKE]",
+                "description": "University-Assignment",
+                "img": "",
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711809903/Projects/University/Antarctic_Adventure_Remake_Showreel_m01zb9.mp4",
+                "progress": 1
+            },
+            "2": {
+                "name": "Sprite Shader [ASSET]",
+                "description": "University-Assignment",
+                "img": "",
+                "video": "",
+                "progress": 1
             },
             "1": {
-                "name": "ANTARCTIC ADVENTURE [REMAKE]",
-                "description": "Game remake of Antarctic Adventure(1983)",
-                "img": "/images/projects/(University)Antarctic Adventure Remake.jpeg",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711296494/Projects/University/CGE381-Gameplay_360p_lbgggm.mp4"
+                "name": "BEAT'EM UP [THE LOST TABE]",
+                "description": "University-Assignment",
+                "img": "",
+                "video": "",
+                "progress": 1
             }
         }
     },
     "about": {
         "sections": {
-            "professional-info": {
-                "title": "professional-info",
-                "icon": "icons/info-professional.svg",
-                "info": {
-                    "experience": {
-                        "title": "experience",
-                        "description": "Over the past 5 years, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                    },
-                    "hard-skills": {
-                        "title": "hard-skills",
-                        "description": "As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                    },
-                    "soft-skills": {
-                        "title": "soft-skills",
-                        "description": "I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
-                    }
-                },
-                "gist": {
-                    "1": "2e27f55acf3477526b5d9c4a191203bd",
-                    "2": "694c1f32332788a2ac7f37b09e5aa40e",
-                    "3": "694c1f32332788a2ac7f37b09e5aa40e",
-                    "4": "694c1f32332788a2ac7f37b09e5aa40e",
-                    "5": "694c1f32332788a2ac7f37b09e5aa40e"
-                }
-            },
             "personal-info": {
-                "title": "personal-info",
+                "title": "Personal",
                 "icon": "icons/info-personal.svg",
                 "info": { 
-                    "bio": {
-                        "title": "bio",
-                        "description": "About me <br> I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
+                    "Bio": {
+                        "icon": "",
+                        "title": "Bio",
+                        "header": "<br>██████╗&nbsp;██╗&nbsp;██████╗&nbsp;<br>██╔══██╗██║██╔═══██╗<br>██████╔╝██║██║&nbsp;&nbsp;&nbsp;██║<br>██╔══██╗██║██║&nbsp;&nbsp;&nbsp;██║<br>██████╔╝██║╚██████╔╝<br>╚═════╝&nbsp;╚═╝&nbsp;╚═════╝&nbsp;<br><br>",
+                        "description": 
+                        " I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
                         
                     },
-                    "interests": {
-                        "title": "interests",
-                        "description": "I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    "Interest": {
+                        "icon": "",
+                        "title": "Interest",
+                        "header": "<br>██╗███╗&nbsp;&nbsp;&nbsp;██╗████████╗███████╗██████╗&nbsp;███████╗███████╗████████╗<br>██║████╗&nbsp;&nbsp;██║╚══██╔══╝██╔════╝██╔══██╗██╔════╝██╔════╝╚══██╔══╝<br>██║██╔██╗&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;█████╗&nbsp;&nbsp;██████╔╝█████╗&nbsp;&nbsp;███████╗&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██║██║╚██╗██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██╔══╝&nbsp;&nbsp;██╔══██╗██╔══╝&nbsp;&nbsp;╚════██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██║██║&nbsp;╚████║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;███████╗██║&nbsp;&nbsp;██║███████╗███████║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>╚═╝╚═╝&nbsp;&nbsp;╚═══╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚══════╝╚══════╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
+                        "description": 
+                        "I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                         
                     },
-                    "education": {
-                        "title": "education",
-                        "description": "I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                    "Education": {
+                        "icon": "",
+                        "title": "Education",
+                        "header": "<br>███████╗██████╗&nbsp;██╗&nbsp;&nbsp;&nbsp;██╗&nbsp;██████╗&nbsp;█████╗&nbsp;████████╗██╗&nbsp;██████╗&nbsp;███╗&nbsp;&nbsp;&nbsp;██╗<br>██╔════╝██╔══██╗██║&nbsp;&nbsp;&nbsp;██║██╔════╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗&nbsp;&nbsp;██║<br>█████╗&nbsp;&nbsp;██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;██║██╔██╗&nbsp;██║<br>██╔══╝&nbsp;&nbsp;██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;██║██║╚██╗██║<br>███████╗██████╔╝╚██████╔╝╚██████╗██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║╚██████╔╝██║&nbsp;╚████║<br>╚══════╝╚═════╝&nbsp;&nbsp;╚═════╝&nbsp;&nbsp;╚═════╝╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;╚═══╝<br><br>",
+                        "description": 
+                        "I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
 
                         "files": {
                             "Rangsit University": "The university..."
                         }
                     }
+                },
+                "blogs": {
+                    "3": {
+                        "avatar": "icons/avatar.jpg",
+                        "username": "ToruKun",
+                        "content": "",
+                        "img": "",
+                        "continue": ""
+                    },
+                    "2": {
+                        "avatar": "icons/avatar.jpg",
+                        "username": "ToruKun",
+                        "content": "",
+                        "img": "",
+                        "continue": ""
+                    },
+                    "1": {
+                        "avatar": "icons/avatar.jpg",
+                        "username": "ToruKun",
+                        "content": "",
+                        "img": "",
+                        "continue": ""
+                    }
+                }
+            },
+            "professional-info": {
+                "title": "Professional",
+                "icon": "icons/info-professional.svg",
+                "info": {
+                    "Experience": {
+                        "icon": "",
+                        "title": "Experience",
+                        "header": "<br>███████╗██╗&nbsp;&nbsp;██╗██████╗&nbsp;███████╗██████╗&nbsp;██╗███████╗███╗&nbsp;&nbsp;&nbsp;██╗&nbsp;██████╗███████╗<br>██╔════╝╚██╗██╔╝██╔══██╗██╔════╝██╔══██╗██║██╔════╝████╗&nbsp;&nbsp;██║██╔════╝██╔════╝<br>█████╗&nbsp;&nbsp;&nbsp;╚███╔╝&nbsp;██████╔╝█████╗&nbsp;&nbsp;██████╔╝██║█████╗&nbsp;&nbsp;██╔██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█████╗&nbsp;&nbsp;<br>██╔══╝&nbsp;&nbsp;&nbsp;██╔██╗&nbsp;██╔═══╝&nbsp;██╔══╝&nbsp;&nbsp;██╔══██╗██║██╔══╝&nbsp;&nbsp;██║╚██╗██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══╝&nbsp;&nbsp;<br>███████╗██╔╝&nbsp;██╗██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██║&nbsp;&nbsp;██║██║███████╗██║&nbsp;╚████║╚██████╗███████╗<br>╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚═╝&nbsp;&nbsp;╚═══╝&nbsp;╚═════╝╚══════╝<br><br>",
+                        "description": 
+                        "Over the past 5 years, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    "Hard-skills": {
+                        "icon": "",
+                        "title": "Hard-skills",
+                        "header": "<br>██╗&nbsp;&nbsp;██╗&nbsp;█████╗&nbsp;██████╗&nbsp;██████╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██╗&nbsp;&nbsp;██╗██╗██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██║&nbsp;&nbsp;██║██╔══██╗██╔══██╗██╔══██╗&nbsp;&nbsp;&nbsp;&nbsp;██╔════╝██║&nbsp;██╔╝██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████║███████║██████╔╝██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;███████╗█████╔╝&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██╔══██║██╔══██║██╔══██╗██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;╚════██║██╔═██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██║██████╔╝&nbsp;&nbsp;&nbsp;&nbsp;███████║██║&nbsp;&nbsp;██╗██║███████╗███████╗<br>╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝╚═════╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚══════╝<br><br>",
+                        "description": 
+                        "As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    },
+                    "Soft-skills": {
+                        "icon": "",
+                        "title": "Soft-skills",
+                        "header": "<br>███████╗&nbsp;██████╗&nbsp;███████╗████████╗&nbsp;&nbsp;&nbsp;&nbsp;███████╗██╗&nbsp;&nbsp;██╗██╗██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██╔════╝██╔═══██╗██╔════╝╚══██╔══╝&nbsp;&nbsp;&nbsp;&nbsp;██╔════╝██║&nbsp;██╔╝██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████╗██║&nbsp;&nbsp;&nbsp;██║█████╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗█████╔╝&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>╚════██║██║&nbsp;&nbsp;&nbsp;██║██╔══╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚════██║██╔═██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████║╚██████╔╝██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████║██║&nbsp;&nbsp;██╗██║███████╗███████╗<br>╚══════╝&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚══════╝<br><br>",
+                        "description": 
+                        "I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+                },
+                "gist": {
+                    "1": "2e27f55acf3477526b5d9c4a191203bd",
+                    "2": "694c1f32332788a2ac7f37b09e5aa40e"
                 }
             },
             "hobbies-info": {
-                "title": "hobbies-info",
+                "title": "Hobbies",
                 "icon": "icons/info-hobbies.svg",
                 "info": {
-                    "Games": {
-                        "title": "Games",
-                        "description": "I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Game": {
+                        "icon": "",
+                        "title": "Game",
+                        "header": "<br>&nbsp;██████╗&nbsp;&nbsp;█████╗&nbsp;███╗&nbsp;&nbsp;&nbsp;███╗███████╗<br>██╔════╝&nbsp;██╔══██╗████╗&nbsp;████║██╔════╝<br>██║&nbsp;&nbsp;███╗███████║██╔████╔██║█████╗&nbsp;&nbsp;<br>██║&nbsp;&nbsp;&nbsp;██║██╔══██║██║╚██╔╝██║██╔══╝&nbsp;&nbsp;<br>╚██████╔╝██║&nbsp;&nbsp;██║██║&nbsp;╚═╝&nbsp;██║███████╗<br>&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚═╝╚══════╝<br><br>",
+                        "description": 
+                        "I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         
                     },
-                    "Digital-Art": {
-                        "title": "Digital-Art",
-                        "description": "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                    "Art": {
+                        "icon": "",
+                        "title": "Art",
+                        "header": "<br>&nbsp;█████╗&nbsp;██████╗&nbsp;████████╗<br>██╔══██╗██╔══██╗╚══██╔══╝<br>███████║██████╔╝&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██╔══██║██╔══██╗&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
+                        "description": 
+                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
                         
                     },
                     "Cosplay": {
+                        "icon": "",
                         "title": "Cosplay",
-                        "description": "I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "header": "<br>&nbsp;██████╗&nbsp;██████╗&nbsp;███████╗██████╗&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█████╗&nbsp;██╗&nbsp;&nbsp;&nbsp;██╗<br>██╔════╝██╔═══██╗██╔════╝██╔══██╗██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══██╗╚██╗&nbsp;██╔╝<br>██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║███████╗██████╔╝██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████║&nbsp;╚████╔╝&nbsp;<br>██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║╚════██║██╔═══╝&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══██║&nbsp;&nbsp;╚██╔╝&nbsp;&nbsp;<br>╚██████╗╚██████╔╝███████║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>&nbsp;╚═════╝&nbsp;╚═════╝&nbsp;╚══════╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
+                        "description": 
+                        "I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                         
                     },
                     "Sport": {
+                        "icon": "",
                         "title": "Sport",
-                        "description": "I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "header": "<br>███████╗██████╗&nbsp;&nbsp;██████╗&nbsp;██████╗&nbsp;████████╗<br>██╔════╝██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝<br>███████╗██████╔╝██║&nbsp;&nbsp;&nbsp;██║██████╔╝&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>╚════██║██╔═══╝&nbsp;██║&nbsp;&nbsp;&nbsp;██║██╔══██╗&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>███████║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚██████╔╝██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>╚══════╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
+                        "description": 
+                        "I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                    }
+                },
+                "blogs": {
+                    "2": {
+                        "avatar": "icons/avatar.jpg",
+                        "username": "ToruKun",
+                        "content": "",
+                        "img": "",
+                        "continue": ""
+                    },
+                    "1": {
+                        "avatar": "icons/avatar.jpg",
+                        "username": "ToruKun",
+                        "content": "",
+                        "img": "",
+                        "continue": ""
                     }
                 }
             }
@@ -123,7 +234,7 @@
             },
             "facebook": {
                 "title": "Facebook",
-                "url": "https://facebook.com/",
+                "url": "https://m.facebook.com/",
                 "user": "torut0ru"
             },
             "instagram": {
@@ -133,23 +244,13 @@
             },
             "linkin": {
                 "title": "LinkIn",
-                "url": "https://www.instagram.com/",
-                "user": "torut0ru"
+                "url": "https://www.linkedin.com/in/",
+                "user": "panyawat-puengthamthanapoom-2a193821b/"
             }
         },
         "find_me_also_in": {
             "title": "find me",
             "sources": {
-                "youtube": {
-                    "title": "YouTube channel",
-                    "url": "https://www.youtube.com/",
-                    "user": "@ToruToru4096"
-                },
-                "facebook": {
-                    "title": "Facebook",
-                    "url": "https://facebook.com/",
-                    "user": "torut0ru"
-                },
                 "instagram": {
                     "title": "Instagram",
                     "url": "https://instagram.com/",
@@ -157,8 +258,8 @@
                 },
                 "LinkIn": {
                     "title": "LinkIn",
-                    "url": "https://linkin.com/",
-                    "user": "torut0ru"
+                    "url": "https://www.linkedin.com/in/",
+                    "user": "panyawat-puengthamthanapoom-2a193821b/"
                 }
             }
         }
@@ -169,80 +270,107 @@
             "title": "my-first-game",
             "description": "a simple TopdownPixel Game",
             "img": "/images/projects/(University)SimplePixelGame.png",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/SimpleTopdownPixel-Game",
-            "download": "https://drive.google.com/drive/folders/1O1MRghNCkVwfPQ-pRcqDU3nUYXhBi4Ax?usp=sharing"
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712467975/Projects/University/my%20first%20game.mp4",
+            "tech": ["Game", "Unity"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/SimpleTopdownPixel-Game",
+            "download": "https://drive.google.com/drive/folders/1O1MRghNCkVwfPQ-pRcqDU3nUYXhBi4Ax?usp=sharing",
+            "progress": 1
         },
         "8": {
-            "name": "RYTHM GAME",
-            "title": "university-assignment",
-            "description": "a simple Rythm Game",
-            "img": "/images/projects/(University)SimpleRythmGame.png",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE105-GAME-DESIGN-AND-PRODUCTION",
-            "download": "https://drive.google.com/drive/folders/1mELtGkeWayQo36ntAxyJNsD1cktXuagI?usp=sharing"
-        },
-        "7": {
             "name": "2D TOPDOWN SHOOTING GAME",
             "title": "university-assignment",
             "description": "a simple TopdownShooting Game",
             "img": "/images/projects/(University)SimpleTopdownShooting.png",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
-            "download": "https://drive.google.com/drive/folders/13gkD1whO_OHhgaH46nEJYjCv2uKrnSRJ?usp=sharing"
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712466930/Projects/University/CGE108-2D-GAME-0.mp4",
+            "tech": ["Unity", "Game"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
+            "download": "https://drive.google.com/drive/folders/13gkD1whO_OHhgaH46nEJYjCv2uKrnSRJ?usp=sharing",
+            "progress": 1
         },
-        "6": {
+        "7": {
             "name": "OTOME GAME",
             "title": "university-assignment",
             "description": "a simple Otome Game",
             "img": "/images/projects/(University)OtomeProject.png",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
-            "download": "https://drive.google.com/drive/folders/13gkD1whO_OHhgaH46nEJYjCv2uKrnSRJ?usp=sharing"
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712468047/Projects/University/CGE108-2D-Game-1.mov",
+            "tech": ["Unity", "Game"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
+            "download": "https://drive.google.com/drive/folders/13gkD1whO_OHhgaH46nEJYjCv2uKrnSRJ?usp=sharing",
+            "progress": 1
+        },
+        "6": {
+            "name": "RYTHM GAME",
+            "title": "university-assignment",
+            "description": "a simple Rythm Game",
+            "img": "/images/projects/(University)SimpleRythmGame.png",
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4",
+            "tech": ["Unity", "Game", "Game Design"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE105-GAME-DESIGN-AND-PRODUCTION",
+            "download": "https://drive.google.com/drive/folders/1mELtGkeWayQo36ntAxyJNsD1cktXuagI?usp=sharing",
+            "progress": 1
         },
         "5": {
             "name": "3D MOBILE GAME",
             "title": "university-assignment",
             "description": "a simple 3D ArrowShooting Mobile Game \nInspired from game \"Pathless\" \nwith Firebase Integration",
             "img": "/images/projects/(University)SimpleThirdPersonArrowShooting.png",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE109-3DIMENSIONAL-GAME-DEVELOPMENT",
-            "download": "https://drive.google.com/drive/folders/1LUvXaE2oQ8Q8yfCHSdcvFi6Qabcz3xs0?usp=sharing"
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712468108/Projects/University/CGE109-3D-GAME-DEVELOPMENT.mp4",
+            "tech": ["Unity", "Game"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE109-3DIMENSIONAL-GAME-DEVELOPMENT",
+            "download": "https://drive.google.com/drive/folders/1LUvXaE2oQ8Q8yfCHSdcvFi6Qabcz3xs0?usp=sharing",
+            "progress": 1
         },
         "4": {
             "name": "Simple Shader",
             "title": "university-assignment",
             "description": "a pack of simple shader created within unity",
             "img": "/images/projects/(University)CGE499-VisualEffect.png",
-            "tech": ["unity", "shader"],
-            "url": "https://github.com/FudanshIKun/CGE499-VisualEffect/"
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712471368/Projects/University/VFX_Highlights_fjhw1b.mp4",
+            "tech": ["Unity", "Shader"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE499-VisualEffect/",
+            "progress": 1
         },
         "3": {
             "name": "ANTARCTIC ADVENTURE [REMAKE]",
             "title": "university-assignment",
             "description": "a remake of Antarctic Adventure(1983)",
-            "img": "/images/projects/(University)Antarctic Adventure Remake.jpeg",
-            "tech": ["unity"],
-            "url": "https://github.com/FudanshIKun/CGE381-GAME-PROJECT-I",
-            "download": "https://drive.google.com/drive/folders/1cbSIuSNrVkI3U6n1CDs2PqYQo597L6Ba?usp=sharing"
+            "img": "/images/projects/(University)Antarctic Adventure Remake.png",
+            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711772354/Projects/University/Antarctic_Adventure_Remake_Gameplay_sj4wve.mp4",
+            "tech": ["Unity", "Game"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE381-GAME-PROJECT-I",
+            "download": "https://drive.google.com/drive/folders/1cbSIuSNrVkI3U6n1CDs2PqYQo597L6Ba?usp=sharing",
+            "progress": 1
         },
         "2": {
             "name": "Lit Sprite Shader",
             "title": "personal-project",
             "description": "shader for sprite created with hlsl and shaderlab",
             "img": "/images/projects/ethereum.png",
-            "tech": ["unity", "shader"],
-            "url": "/sprite-shader",
-            "download": ""
+            "video": "",
+            "tech": ["Unity", "Shader"],
+            "url": "",
+            "source": "",
+            "download": "",
+            "progress": 0
         },
         "1": {
             "name": "BEAT'EM UP [THE LOST TABE]",
             "title": "university-assignment",
             "description": "a game where injustice becomes law, so you do crime and save the day.",
             "img": "/images/projects/ethereum.png",
-            "tech": ["unity"],
-            "url": "/beat-em-up",
-            "download": ""
+            "video": "",
+            "tech": ["Unity", "Game","Game Design"],
+            "url": "/blogs/beatproject",
+            "source": "",
+            "download": "",
+            "progress": 0
         }
     }
 }
