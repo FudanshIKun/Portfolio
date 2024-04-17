@@ -1,6 +1,6 @@
 <script>
 import hljsVuePlugin from "@highlightjs/vue-plugin";
-import 'highlight.js/lib/common';
+import 'highlight.js';
 
 export default {
     name: 'GistSnippet',
@@ -73,7 +73,7 @@ export default {
             
         </div>
 
-        <highlightjs class="snippet-container" :code="content" style="overflow: hidden; font-size: 1vh;"/>
+        <highlightjs class="snippet-container" :language="this.language" :code="content" style="overflow: hidden; font-size: 1vh;"/>
     </div>
 </template>
 
