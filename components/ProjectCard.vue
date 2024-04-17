@@ -1,5 +1,13 @@
 <script setup>
 const { project, key, index } = defineProps(['project', 'key', 'index'])
+
+const imageOpacity = computed(() => {
+  return project.video && project.video !== '' ? 0 : 1
+})
+
+const overlayOpacity = computed(() => {
+  return project.progress && project.progress === 1 ? 0 : 1
+})
 </script>
 
 <template>
@@ -99,15 +107,15 @@ const { project, key, index } = defineProps(['project', 'key', 'index'])
 }
 
 .container:hover .image {
-  opacity: v-bind(project.video && project.video !== '' ? 0 : 1);
+  opacity: v-bind(imageOpacity);
 }
 
 .container:hover .button {
-  opacity: v-bind(project.video && project.video !== '' ? 0 : 1);
+  opacity: v-bind(imageOpacity);
 }
 
-.container:hover .content-overlay{
-  opacity: v-bind(project.progress && project.progress == 1 ? 0 : 1);
+.container:hover .content-overlay {
+  opacity: v-bind(overlayOpacity);
 }
 
 .content .content-overlay {
