@@ -30,6 +30,7 @@ export default defineNuxtConfig({
       ],
       link: [
         {rel: 'stylesheet', href: 'https://www.w3schools.com/w3css/4/w3.css'},
+        {rel: 'stylesheet', href: 'https://unpkg.com/prismjs/themes/prism.css'},
         { rel: 'manifest', href: 'pwa/manifest.json' },
         { rel: 'apple-touch-icon', href: 'pwa/icons/apple-touch-icon.png' },
       ],
@@ -37,6 +38,7 @@ export default defineNuxtConfig({
         {src: 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js'},
         {src: 'https://kit.fontawesome.com/d3a076a782.js'},
         {src: 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js'},
+        {src: 'https://unpkg.com/prismjs'},
         {innerHTML: 'emailjs.init(\'2z2G1Z5GbSaziHlBg\')'}
       ]
     },

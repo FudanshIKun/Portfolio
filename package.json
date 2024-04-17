@@ -21,6 +21,8 @@
     "aos": "^3.0.0-beta.6",
     "destr": "^2.0.3",
     "highlight.js": "^11.7.0",
-    "jquery": "^3.7.1"
+    "jquery": "^3.7.1",
+    "prismjs": "^1.29.0",
+    "vue-prism-component": "^2.0.0"
   }
 }
