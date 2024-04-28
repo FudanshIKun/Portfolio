@@ -41,35 +41,35 @@ export default {
 </script>
 
 <template>
-    <form id="contact-form" class="text-sm">
+    <form id="contact-form" class="text-sm source-code-pro">
         <div class="flex flex-col">
-            <label for="name" class="mb-3">name:</label>
+            <label for="name" class="mb-3">Name:</label>
             <input type="text" id="name-input" name="name" :placeholder="name" class="p-2 mb-5 placeholder-slate-600" required>
         </div>
         <div class="flex flex-col">
-            <label for="subject" class="mb-3">subject:</label>
-            <input type="text" id="subject-input" name="subject" :placeholder="subject" class="p-2 mb-5 placeholder-slate-600" required>
-        </div>
-        <div class="flex flex-col">
-            <label for="email" class="mb-3">email:</label>
+            <label for="email" class="mb-3"><i class="ri-emotion-happy-fill"></i>Email:</label>
             <input type="email" id="email-input" name="email" :placeholder="email" class="p-2 mb-5 placeholder-slate-600" required>
         </div>
         <div class="flex flex-col">
-            <label for="message" class="mb-3">message:</label>
+            <label for="subject" class="mb-3">Subject:</label>
+            <input type="text" id="subject-input" name="subject" :placeholder="subject" class="p-2 mb-5 placeholder-slate-600" required>
+        </div>
+        <div class="flex flex-col">
+            <label for="message" class="mb-3">Message:</label>
             <textarea id="message-input" name="message" :placeholder="message" class="placeholder-slate-600" required></textarea>
         </div>
-        <button id="submit-button" type="submit" class="py-2 px-4">submit-message</button>
+        <button id="submit-button" type="submit" class="py-2 px-4">Submit</button>
     </form>
 </template>
 
 <style>
-
 form {
-    @apply font-fira_retina text-menu-text
+    @apply text-menu-text
 }
+
 input {
-    background-color: #011221;
-    border: 2px solid #1E2D3D;
+    background-color: #040404;
+    border: 2px solid #454843;
     border-radius: 7px;
     
 }
@@ -89,8 +89,8 @@ select:-webkit-autofill:focus {
 }
 
 #message-input {
-    background-color: #011221;
-    border: 2px solid #1E2D3D;
+    background-color: #040404;
+    border: 2px solid #454843;
     border-radius: 7px;
     resize: none;
     height: 150px;
@@ -98,7 +98,7 @@ select:-webkit-autofill:focus {
 }
 
 #submit-button {
-    @apply font-fira_retina text-white text-sm;
+    @apply  text-white text-sm;
     background-color: #1E2D3D;
     border-radius: 7px;
     margin-top: 20px;

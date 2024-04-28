@@ -11,12 +11,12 @@
             <div id="contacts" class="submenu">
                 <div class="title">
                     <img class="arrow" src="/icons/arrow.svg">
-                    <h3>contacts</h3>
+                    <h3 class="source-code-pro">contacts</h3>
                 </div>
                 <div id="links">
                     <div v-for="(source, key) in contact.direct.sources" :key="key" class="link">
                         <img :src="'/icons/' + key + '.svg'">
-                        <a v-html="source" class="font-fira_retina text-menu-text hover:text-white"></a>
+                        <a v-html="source" class="source-code-pro text-menu-text hover:text-white"></a>
                     </div>
                 </div>
             </div>
@@ -25,12 +25,12 @@
             <div id="find-me-in" class="submenu border-top">
                 <div class="title">
                     <img class="arrow" src="/icons/arrow.svg">
-                    <h3 style="font-size: 12px;">You can also find me in...</h3>
+                    <h3 class="source-code-pro" style="font-size: 12px;">You can also find me in...</h3>
                 </div>
                 <div id="links">
                     <div v-for="(source, key) in contact.find_me_also_in.sources" :key="key" class="link">
                         <img src="/icons/link.svg">
-                        <a :href="source.url + source.user" class="font-fira_retina text-menu-text hover:text-white" target="_blank">{{ source.title }}</a>
+                        <a :href="source.url + source.user" class="source-code-pro text-menu-text hover:text-white" target="_blank">{{ source.title }}</a>
                     </div>
                 </div>
             </div>
@@ -63,22 +63,6 @@ export default {
             contact
         }
     },
-    mounted(){
-        /**
-         * * Close all submenus
-         * ! This is a temporary solution.
-         * ! This is needed because when the page is loaded, height style on #links are not applied.
-         */
-        const links = document.getElementsByClassName('submenu');
-        for (let i = 0; i < links.length; i++) {
-            if(window.innerWidth > 1024){ 
-                links[i].querySelector("#links").style.display = "block";
-                links[i].querySelector(".arrow").style.transform = "rotate(90deg)";
-            } else {
-                links[i].querySelector("#links").style.display = "none";
-            }
-        }
-    },
 }
 </script>
 
@@ -98,7 +82,6 @@ export default {
 }
 
 .submenu .title h3 {
-    @apply font-fira_regular;
     color: white;
     font-size: 16px;
 }
@@ -131,7 +114,7 @@ export default {
     .submenu .title {
         display: flex;
         align-items: center;
-        border-bottom: 1px solid #1E2D3D;
+        border-bottom: 2px solid #454843;
         padding: 0px 25px;
         height: 35px;
         padding: 0px 25px;

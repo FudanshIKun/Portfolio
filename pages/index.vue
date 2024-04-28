@@ -43,46 +43,59 @@ export default {
 
 <template>
   	<main v-if="!loading" id="hello" class="max-w-full h-full" style="overflow-y: scroll; overflow-x: hidden;">
-
       <section class="hero" style="height: 100%;">
         <div style="height: 100%; justify-content: end;">
           
         </div>
         <div class="head" style="padding-bottom: 5vh; color: white; padding-left: 5vh;">
-          <h1>{{ config.dev.name }}</h1>
-          <h2>> {{ config.dev.role }}</h2>
+          <h1 class="jersey-15-regular" style="font-size: 80px;">{{ config.dev.realname }}</h1>
+          <h2 class="jersey-15-regular">> {{ config.dev.role }}</h2>
+          <!--
+          <h2 class="jersey-15-regular" style="font-size: 40px;">{{ config.dev.name }}</h2>
+          -->
         </div>
 
       </section>
 
-      <section class="hero" style="height: 100%;">
+      <section class="hero source-code-pro" style="height: 60%;">
         <div style="justify-content: center; margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 5vw;">
           <div class="w3-container w3-content w3-right" style="max-width:800px;">
-            <h2 class="w3-wide text-3xl pb-6" style="color: white;">WHO AM I</h2>
-            <p class="box text-sm" style="color: white;">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
-              I've passion for both art and coding for games and interested in games with unique design and artstyle ( <b>Mostly Stylized</b> ).
-              I like to solve problems and improve game quality, create tools for artists in my team.
-              <br>
-              <br>Most of my work often come from my personal interests, which sometimes become a challenging task I haven't experienced.
-              That's why I'm aways strive for new experience and do my best in any given task.
-            </p>
-            <div style="display:flex; flex-direction: row-reverse;">
+            <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white;">WHO AM I</h2>
+            <div class="box">
+              <p class="text-base p-4" style="color: white;">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
+                I've passion to create unique artstyle and refined mechanics for game ( <b>Mostly Stylized</b> ).
+                I also enjoy creating tools for artists in my team and solve problems to improve quality in my game.
+                <br>
+                <br>Most of my work often come from my personal interests, Sometimes it's become a challenging task I never experienced.
+                Which's why I'm always strive for new experience and do my best in any given task.
+              </p>
+              <div class="p-6 flex flex-row-reverse">
+                <a class="pill">
+                  <i class="fa-solid fa-code" style="font-size: 16px; color: white;"></i>
+                  Developer
+                </a>
+                <span class="px-2"></span>
+              </div>
+            </div>
+          
+            
+            <div class="source-code-pro" style="display:flex; flex-direction: row-reverse;">
               <RouterLink 
               id="nav-link" 
               to="/about-me?topic=personal-info&folder=Bio" 
               target="" 
-              class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
-              style="height: fit-content; text-align: center; text-wrap: nowrap;">
-                See more On About Me
+              class="w3-round-large w3-padding-large w3-margin-top w3-right text-xs" 
+              style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
+                See more About Me
               </RouterLink>
               <span class="px-2"></span>
               <button 
-              class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
-              style="height: fit-content; width: fit-content; text-align: center;">
+              class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
+              style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
                 <div style="display: flex; flex-direction: row; align-items: center">
                   <i class="fa fa-download" style="padding-top: .6px;"></i> 
                   <span class="px-1"></span>
-                  <p style="text-wrap: nowrap;">Download CV</p>
+                  <p   style="text-wrap: nowrap;">Download CV</p>
                 </div>
               </button>
             </div>
@@ -90,34 +103,34 @@ export default {
         </div>
       </section>
 
-      <section class="hero" style="height: 100%; margin: auto; padding: 2vw;">
+      <section class="hero" style="height: 60%; margin: auto; padding: 2vw;">
         <div>
           <div class="w3-content" style="margin: auto;">
-            <h2 class="w3-wide text-3xl pb-6" style="color: white;">WHAT I DO</h2>
+            <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white;">WHAT I DO</h2>
               <section class="box skills" style="width: fit-content;"> 
 
                 <div> 
-                  <i class="fa-regular fa-pen-to-square" style="font-size: 36px; color: white;"></i>
+                  <i class="fa-regular fa-pen-to-square" style="font-size: 36px; color: #F73D93;"></i>
                   <span class="px-1"></span>
-                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Design</h2> 
+                  <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #F73D93;">Design</h2> 
                   <span class="px-1"></span>
-                  <p style="color: gray;">Passionate about game design and innovation, with a focus on shaping captivating experiences in the gaming industry.</p>
+                  <p class="source-code-pro" style="color: gray;">Passionate about game design and innovation, with a focus on shaping captivating experiences in the gaming industry.</p>
                 </div> 
 
                 <div> 
-                  <i class="fa-solid fa-laptop-file" style="font-size: 36px; color: white;"></i>
+                  <i class="fa-solid fa-laptop-file" style="font-size: 36px; color: #7547f3;"></i>
                   <span class="px-1"></span>
-                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Create</h2> 
+                  <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #7547f3;">Create</h2> 
                   <span class="px-1"></span>
-                  <p style="color: gray;">Specializing in designing, implementing, and testing game features to deliver immersive and engaging gameplay.</p>
+                  <p class="source-code-pro" style="color: gray;">Specializing in designing, implementing, and testing game features to deliver immersive and engaging gameplay.</p>
                 </div> 
 
                 <div> 
-                  <i class="fa-solid fa-code" style="font-size: 36px; color: white;"></i>
+                  <i class="fa-solid fa-code" style="font-size: 36px; color: #525CEB;"></i>
                   <span class="px-1"></span>
-                  <h2 data-astro-cid-ab4ihpzs="" style="font-size: 36px; color: white;">Coding</h2> 
+                  <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #525CEB;">Coding</h2> 
                   <span class="px-1"></span>
-                  <p style="color: gray;">Dedicated to maintaining code quality and readability, writing clean, reusable, and optimized code for efficient game development.</p>
+                  <p class="source-code-pro" style="color: gray;">Dedicated to maintaining code quality and readability, writing clean, reusable, and optimized code for efficient game development.</p>
                 </div> 
 
                 
@@ -129,8 +142,8 @@ export default {
       <section class="hero" style="width: fit-content; padding-top: 5vh;">
         <div style=" padding: 2vw; padding-right: 5vh;">
           <div class="box" style="padding: 2vh;">
-            <h2 class="w3-wide text-3xl pb-2" style="color: white;">GAME DEVELOPMENT</h2>
-            <p class="w3-opacity" style="color: gray;"><i>Create with Passion</i></p>
+            <h2 class="w3-wide text-3xl pb-2 silkscreen-regular" style="color: white;">GAME DEVELOPMENT</h2>
+            <p class="w3-opacity source-code-pro" style="color: white"><i>Create with Passion</i></p>
             <span class="px-1"></span>
             
             <div class="grid-container">
@@ -143,9 +156,9 @@ export default {
                     </div>
                   </div>
                   <div style="width: 100%; padding: 2vh;">
-                      <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white;">{{ highlights.name}}</h3>
+                      <h3 v-if="index == null" class="source-code-pro mr-3" style="font-size:smaller; text-wrap:wrap; color: white;">{{ highlights.name}}</h3>
                       <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white;">{{ highlights.name}}</h3>
-                      <p class="text-menu-text font-fira_retina text-sm mb-5">
+                      <p class="text-menu-text source-code-pro text-sm mb-5 source-code-pro">
                         {{ highlights.description }}
                       </p>
                   </div>
@@ -157,23 +170,24 @@ export default {
           <RouterLink 
           id="nav-link" 
           to="/projects" 
-          class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right text-xs">
-            See more On My Journey
+          class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right text-xs source-code-pro"
+          style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
+            More about My Journey
           </RouterLink>
         </div>
       </section>  
 
-      <section class="hero">
+      <section class="hero" style="height: 50%;">
         <div>
-          <div class="w3-container" style="max-width:800px; padding: 2vw;">
-            <h2 class="w3-wide text-3xl pb-2" style="color: white;">WHAT I USE</h2>
+          <div class="w3-container source-code-pro" style="max-width:800px; padding: 2vw;">
+            <h2 class="w3-wide text-3xl pb-2 silkscreen-regular" style="color: white;">WHAT I USE</h2>
             <span class="px-2"></span>
 
             <div class="w3-row-padding box" style="max-width:85vw; height: fit-content;"> 
-              <p class="w3-justify" style="padding: 2vh; color: white;">These're software, I've ever use in my journey.</p>
+              <p class="w3-justify source-code-pro" style="padding: 2vh; color: white;">These are the software I've encountered throughout my journey. The ones highlighted in bold represent my areas of expertise, favourite or interest one.</p>
               <div class="w3-quarter">
                 <ul class="w3-ul w3-gray w3-center" >
-                  <li class="w3-black w3-padding-16" style="font-size: 12px">Editing</li>    
+                  <li class="w3-black w3-padding-16" style="font-size: 12px">USEFUL TOOLS</li>    
                   <li class="w3-padding-16"> 
                     <a href="https://www.gimp.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Gimp</a> 
                   </li>
@@ -191,15 +205,18 @@ export default {
 
               <div class="w3-quarter">
                 <ul class="w3-ul w3-gray w3-center" style="min-width: 100px;">
-                  <li class="w3-black w3-padding-16" style="font-size: 12px">Design</li>
+                  <li class="w3-black w3-padding-16" style="font-size: 12px">DESIGN TOOLS</li>
                   <li class="w3-padding-16"> 
-                    <a href="https://www.figma.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Figma</a> 
+                    <a href="https://www.figma.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Figma</a> 
                   </li>
                   <li class="w3-padding-16"> 
                     <a href="https://procreate.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Procreate</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://en.wikipedia.org/wiki/Autodesk_Maya" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Autodesk Maya</a> 
+                    <a href="https://www.blender.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Blender</a> 
+                  </li>
+                  <li class="w3-padding-16"> 
+                    <a href="https://en.wikipedia.org/wiki/Autodesk_Maya" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Autodesk Maya</a> 
                   </li>
                   <li class="w3-padding-16"> 
                     <a href="https://store.steampowered.com/app/2718190/Substance_3D_Painter_2024/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Subtance Painter</a> 
@@ -209,40 +226,58 @@ export default {
 
               <div class="w3-quarter">
                 <ul class="w3-ul w3-gray w3-center" >
-                  <li class="w3-black w3-padding-16" style="font-size: 12px">Development</li>
+                  <li class="w3-black w3-padding-16" style="font-size: 12px">DEVELOPMENT TOOLS</li>
                   <li class="w3-padding-16"> 
-                    <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Github CLI</a> 
+                    <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Git</a> 
                   </li>    
                   <li class="w3-padding-16"> 
                     <a href="https://code.visualstudio.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Visual Studio Code</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://www.jetbrains.com/rider/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Jetbrain Rider</a> 
+                    <a href="https://www.jetbrains.com/rider/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Jetbrain Rider</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://unity.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">UnityEngine C#</a> 
+                    <a href="https://unity.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Unity Game Engine</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://www.fmod.com/unity" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px">FMOD</a> 
+                    <a href="https://www.fmod.com/unity" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px;">Unity FMOD</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://www.yarnspinner.dev/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px;">Yarn Spinner</a> 
+                    <a href="https://www.yarnspinner.dev/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px; font-style:italic ; font-weight: 1000;">Unity Yarn Spinner</a> 
                   </li>
+                  <li class="w3-padding-16"> 
+                    <a href="https://firebase.google.com/docs/unity/setup" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Unity Firebase Integration</a> 
+                  </li>   
                 </ul>
               </div>
 
               <div class="w3-quarter">
                 <ul class="w3-ul w3-gray w3-center">
-                  <li class="w3-black w3-padding-16" style="font-size: 12px">Other</li>
+                  <li class="w3-black w3-padding-16" style="font-size: 12px">PROFICIENCIES</li>
                   <li class="w3-padding-16"> 
-                    <a href="https://www.manictime.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">ManicTime</a> 
+                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Algorithms</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://www.notion.so/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Notion</a> 
+                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">C# Scripting</a> 
                   </li>
                   <li class="w3-padding-16"> 
-                    <a href="https://www.notion.so/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Miro</a> 
-                  </li>                 
+                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Backend</a> 
+                  </li>    
+                  <li class="w3-padding-16"> 
+                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">HTML & CSS</a> 
+                  </li> 
+                  <li class="w3-padding-16"> 
+                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Nuxt.js</a> 
+                  </li> 
+                  <li class="w3-padding-16"> 
+                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">UX/UI</a> 
+                  </li>             
+                  <li class="w3-padding-16"> 
+                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Shaders</a> 
+                  </li>
+                  <li class="w3-padding-16"> 
+                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">VFXs</a> 
+                  </li>
                 </ul>
               </div>
             </div>
@@ -253,8 +288,8 @@ export default {
       <section class="hero">
         <div style="height: fit-content;">
           <div class="w3-container w3-content w3-right" style="max-width:1000px; padding: 2vw; padding-right: 5vh;">
-            <h2 class="w3-wide text-3xl pb-6" style="color: white">LANGUAGES</h2>
-              <section class="box text-sm" data-astro-cid-ab4ihpzs=""> 
+            <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white">LANGUAGES</h2>
+              <section class="box text-sm source-code-pro" data-astro-cid-ab4ihpzs=""> 
                 <div style="box-shadow: var(--shadow-2); padding: 1vh;">
                   <p style="color: white"><b>THAI</b></p>
                   <span class="px-0.5"></span>
@@ -275,6 +310,7 @@ export default {
           </div>
         </div>
       </section>
+
       <!--
       <section class="hero" style="padding-top: 5vh; padding-left: 5vh;">
         <div style=" padding: 2vw; padding-right: 5vh;">
@@ -321,12 +357,13 @@ export default {
                 See more On My Experiences
               </RouterLink>
         </div>
-      </section>-->
+      </section>
+      -->
       
       <section class="hero" style="padding-top: 5vh; padding-left: 5vh; padding-right: 5vh;">
         <div>
           <div class="box" style="padding: 2vh;">
-            <h2 class="w3-wide text-3xl" style="color: white">ADDITIONAL PROJECTS & EVENTS</h2>
+            <h2 class="w3-wide text-3xl silkscreen-regular" style="color: white">ADDITIONAL PROJECTS & EVENTS</h2>
             <span class="px-1"></span>
             <div class="media-scroller " style="padding:2vh;">
               <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key">
@@ -338,9 +375,9 @@ export default {
                   </div>
                   <div style="padding: 1vh;">
                     <div>
-                      <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ activities.name}}</h3>
+                      <h3 v-if="index == null" class="source-code-pro mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ activities.name}}</h3>
                       <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ activities.name}}</h3>
-                      <p class="text-menu-text font-fira_retina text-sm mb-5">
+                      <p class="text-menu-text source-code-pro text-sm mb-5">
                         {{ activities.description }}
                       </p>
                     </div>
@@ -352,8 +389,9 @@ export default {
           <RouterLink 
           id="nav-link" 
           to="/about-me?topic=hobbies-info&folder=Game" 
-          class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-left text-xs">
-              See more On My Hobbies
+          class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-left text-xs source-code-pro"
+          style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
+              More about My Hobbies
           </RouterLink>
         </div>
       </section>
@@ -362,6 +400,49 @@ export default {
 </template>
 
 <style scoped>
+#nav-link {
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+#nav-link:hover {
+  transform: scale(1.05); /* Increase the scale on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+}
+
+button {
+  transition: all 0.3s ease; /* Add transition for smooth effect */
+}
+
+button:hover {
+  transform: scale(1.05); /* Increase the scale on hover */
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.3); /* Add a box shadow on hover */
+}
+
+.pill {
+  background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));
+  border-radius: 500px;
+  border-width: 0;
+  box-shadow: rgba(0,0,0,.25) 0 1px 3px,rgba(0,0,0,.12) 0 4px 10px;
+  box-sizing: border-box;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.5;
+  font-weight: 500;
+  margin: 0;
+  overflow: hidden;
+  padding: .3em 1em;
+  text-decoration: none;
+  text-overflow: ellipsis;
+  vertical-align: baseline;
+  white-space: nowrap;
+  cursor: default;
+}
+
+.pill:hover {
+  filter: brightness(1.1);
+  outline: 0;
+}
+
 .grid-container {
   columns: 3 350px;
   column-gap: 3rem;
@@ -414,44 +495,44 @@ export default {
 }
 
 .container .card .slide.slide1 {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-z-index: 1;
-transition: .7s;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 1;
+  transition: .7s;
 }
 
 .container .card .slide.slide2 {
-position: relative;
-display: flex;
-justify-content: center;
-align-items: center;
-box-sizing: border-box;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
 
 }
 
 .container .card:hover .slide .slide2{
-transform: translateY(0);
+  transform: translateY(0);
 }
 
 .container .card .slide.slide2::after{
-content: "";
-bottom: 15px;
-transform: translateX(-50%);
+  content: "";
+  bottom: 15px;
+  transform: translateX(-50%);
 }
 
 .container .card .slide.slide2 .content p {
-margin: 0;
-padding: 0;
-text-align: center;
+  margin: 0;
+  padding: 0;
+  text-align: center;
 }
 
 .container .card .slide.slide2 .content h3 {
-margin: 0 0 10px 0;
-padding: 0;
-font-size: 24px;
-text-align: center;
+  margin: 0 0 10px 0;
+  padding: 0;
+  font-size: 24px;
+  text-align: center;
 } 
 
 #hello { 
@@ -472,24 +553,19 @@ text-align: center;
 
 
 #hello .head span {
-  font-size: 18px;
   line-height: 1;
   color: #E5E9F0;
-  font-family: 'Fira Code Retina';
 }
 
 #hello .head h1 {
-  font-size: 58px;
   line-height: 1;
   color: #E5E9F0;
-  font-family: 'Fira Code Regular';
 }
 
 #hello .head h2 {
-  font-size: 32px;
+  font-size: 48px;
   line-height: 1;
-  font-family: 'Fira Code Retina';
-  color: purple;
+  color: #F73D93;
 }
 
 .box{

@@ -240,8 +240,8 @@ main.page {
 /* width */
 ::-webkit-scrollbar {
   width: 20px;
-  border-left: 1px solid #1E2D3D;
-  display: none;
+  border: 1px solid #454843;
+
 }
 
 /* Track */
@@ -251,7 +251,8 @@ main.page {
 
 /* Handle */
 ::-webkit-scrollbar-thumb {
-  background: #607B96;
+  background: #454843;
+  border-radius: 3px;
 }
 
 /* Handle on hover */
@@ -260,38 +261,39 @@ main.page {
 }
 
 /* Fonts */
-
-@font-face {
-    font-family: "Fira Code Light";
-    src: url("./fonts/fira-code/FiraCode-Light.ttf") format('truetype');
+.rubik-mono-one-regular {
+  font-family: "Rubik Mono One", monospace;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: "Fira Code Regular";
-  src: url("./fonts/fira-code/FiraCode-Regular.ttf") format('truetype');
+.source-code-pro {
+  font-family: "Source Code Pro", monospace;
+  font-optical-sizing: auto;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: "Fira Code Retina";
-  src: url("./fonts/fira-code/FiraCode-Retina.ttf") format('truetype');
+.silkscreen-regular {
+  font-family: "Silkscreen", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: "Fira Code Medium";
-  src: url("./fonts/fira-code/FiraCode-Medium.ttf") format('truetype');
+.sedgwick-ave-display-regular {
+  font-family: "Sedgwick Ave Display", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: "Fira Code SemiBold";
-  src: url("./fonts/fira-code/FiraCode-SemiBold.ttf") format('truetype');
+.permanent-marker-regular {
+  font-family: "Permanent Marker", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
-@font-face {
-  font-family: "Fira Code Bold";
-  src: url("./fonts/fira-code/FiraCode-Bold.ttf") format('truetype');
-}
-
-@font-face {
-  font-family: "Fira Code Variable";
-  src: url("./fonts/fira-code/FiraCode-Variable.ttf") format('truetype');
+.jersey-15-regular {
+  font-family: "Jersey 15", sans-serif;
+  font-weight: 400;
+  font-style: normal;
 }

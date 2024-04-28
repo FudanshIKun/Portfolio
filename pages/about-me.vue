@@ -74,20 +74,22 @@ export default {
           <!-- title -->
           <div id="section-content-title" class="lg:flex items-center min-w-full border-top">
             <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3">
-            <p class="font-fira_regular text-white text-sm">{{ section.title }}</p>
+            <p class="source-code-pro text-white text-sm">{{ section.title }}</p>
           </div>
 
           <!-- folders -->
           <div>
-            <div v-for="(folder, key) in section.info" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text" @click="focusCurrentFolder(folder)">
+            <div v-for="(folder, key) in section.info" class="grid grid-cols-2 items-center my-2 source-code-pro text-menu-text" @click="focusCurrentFolder(folder)">
               <div class="flex col-span-2 hover:text-white hover:cursor-pointer">
                 <img  id="diple" src="/icons/diple.svg" alt="">
-                <img :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 16px">
+                <img v-if="section.title == 'Personal'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(44%) sepia(26%) saturate(7447%) hue-rotate(308deg) brightness(96%) contrast(101%);">
+                <img v-if="section.title == 'Profession'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(25%) sepia(71%) saturate(6497%) hue-rotate(249deg) brightness(105%) contrast(91%);">
+                <img v-if="section.title == 'Hobbies'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(38%) sepia(83%) saturate(1439%) hue-rotate(201deg) brightness(92%) contrast(89%);">
                 <p :id="folder.title" :key="key" :class="{ active: isActive(folder.title)}">{{ folder.title }}</p>
               </div>
               <div v-if="folder.files !== undefined" class="col-span-2">
                 <div v-for="(file, key) in folder.files" :key="key" class="hover:text-white hover:cursor-pointer flex my-2">
-                  <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3"/>
+                  <img src="/icons/markdown.svg" alt="" class="ml-8 mr-3" style="width: 22px;"/>
                   <p >{{ key }}</p>
                 </div> 
               </div>
@@ -99,34 +101,36 @@ export default {
         <!-- contact -->
         <div id="section-content-title-contact" class="flex items-center min-w-full border-top">
           <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3 open">
-          <p v-html="config.dev.contacts.direct.title" class="font-fira_regular text-white text-sm"></p>
+          <p v-html="config.dev.contacts.direct.title" class="source-code-pro text-white text-sm"></p>
         </div>
         <div id="contact-sources" class="hidden lg:flex lg:flex-col my-2">
           <div v-for="(source, key) in config.dev.contacts.direct.sources" :key="key" class="flex items-center mb-2">
             <img :src="'/icons/' + key + '.svg'" alt="" class="mx-4">
-            <a v-html="source" class="font-fira_retina text-menu-text hover:text-white"></a>
+            <a v-html="source" class="source-code-pro text-menu-text hover:text-white"></a>
           </div>
         </div>
 
       </div>
 
       <!-- mobile -->
-      <div id="section-content" class="lg:hidden w-full font-fira_regular">
+      <div id="section-content" class="lg:hidden w-full">
 
         <div v-for="section in config.dev.about.sections" :key="section.title">
           
           <!-- section title (mobile) -->
           <div :key="section.title" id="section-content-title" class="flex mb-1">
             <img src="/icons/arrow.svg" :id="'section-arrow-' + section.title" alt="" class="section-arrow">
-            <p v-html="section.title" class=" text-white text-sm"></p>
+            <p v-html="section.title" class=" text-white text-sm jersey-15-regular"></p>
           </div>
 
           <!-- folders -->
           <div :id="'folders-' + section.title">
-            <div v-for="(folder, key, index) in section.info" :key="key" class="grid grid-cols-2 items-center my-2 font-fira_regular text-menu-text hover:text-white hover:cursor-pointer" @click="focusCurrentFolder(folder)">
+            <div v-for="(folder, key, index) in section.info" :key="key" class="grid grid-cols-2 items-center my-2 jersey-15-regular text-menu-text hover:text-white hover:cursor-pointer" @click="focusCurrentFolder(folder)">
               <div class="flex col-span-2">
                 <img id="diple" src="/icons/diple.svg">
-                <img :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 16px">
+                <img v-if="section.title == 'Personal'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(44%) sepia(26%) saturate(7447%) hue-rotate(308deg) brightness(96%) contrast(101%);">
+                <img v-if="section.title == 'Profession'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(25%) sepia(71%) saturate(6497%) hue-rotate(249deg) brightness(105%) contrast(91%);">
+                <img v-if="section.title == 'Hobbies'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(38%) sepia(83%) saturate(1439%) hue-rotate(201deg) brightness(92%) contrast(89%);">
                 <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
               </div>
               <div v-if="folder.files !== undefined" class="col-span-2">
@@ -143,14 +147,14 @@ export default {
         <!-- section content title -->
         <div id="section-content-title" class="flex items-center min-w-full" @click="showContacts()">
           <img src="/icons/arrow.svg" alt="" id="section-arrow" class="section-arrow">
-          <p v-html="config.dev.contacts.direct.title" class="font-fira_regular text-white text-sm"></p>
+          <p v-html="config.dev.contacts.direct.title" class="jersey-15-regular text-white text-sm"></p>
         </div>
 
         <!-- section content folders -->
         <div id="contacts" class="hidden">
           <div v-for="(source, key) in config.dev.contacts.direct.sources" :key="key" class="flex items-center my-2">
             <img :src="'/icons/' + key + '.svg'" alt="">
-            <a v-html="source" class="font-fira_retina text-menu-text hover:text-white ml-4"></a>
+            <a v-html="source" class="jersey-15-regular text-menu-text hover:text-white ml-4"></a>
           </div>
         </div>
 
@@ -166,8 +170,10 @@ export default {
         <div id="commented-text" class="flex h-full w-full">
 
           <div class="w-full h-full ml-5 mr-10 lg:my-5 text-base" style="overflow-x: hidden; overflow-y:auto;">
+              <span v-if="currentSection == 'personal-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style='color: #F73D93; font-family: "Lucida Console"; line-height: .75vw; font-size: .63vw; display: inline-block;'></span>
+              <span v-if="currentSection == 'professional-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style='color: #7547f3; font-family: "Lucida Console"; line-height: .75vw; font-size: .63vw; display: inline-block;'></span>
+              <span v-if="currentSection == 'hobbies-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style='color: #525CEB; font-family: "Lucida Console"; line-height: .75vw; font-size: .63vw; display: inline-block;'></span>
               <CommentedText 
-                :head="config.dev.about.sections[currentSection].info[folder].header" 
                 :text="config.dev.about.sections[currentSection].info[folder].description"
               />
           </div>
@@ -182,22 +188,14 @@ export default {
         <!-- windows tab mobile -->
         <div class="tab-height w-full h-full flex-none lg:hidden items-center "></div>
           
-          <div id="posts" v-if="currentSection === 'personal-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: auto; padding: 20px;">
-            
-
-            <!-- title -->
-            <div class="flex flex-col" style="overflow-x: hidden;">
-              <PostSnippet
-                v-for="(blog, key) in config.public.dev.about.sections['personal-info'].blogs" 
-                :key="key" 
-                :blog="blog"
-              />
-            </div>
+          <div v-if="currentSection === 'personal-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: auto; padding: 20px;">
+          
           </div>
 
-          <div id="gists" v-if="currentSection === 'professional-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; padding-left: 20px; padding-right: 20px;">
+          <div id="gists" v-if="currentSection === 'professional-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; ">
             <!-- title -->
-            <div class="flex flex-col" style="overflow-x: hidden; border-radius: 10px;">
+            <p class="rubik-mono-one-regular" style="color: white; padding-left: 20px;">My code snippets From Github Gist</p>
+            <div class="flex flex-col p-3" style="overflow-x: hidden; border-top-left-radius: 10px; border-bottom-left-radius: 10px; margin-top: 20px;">
               <!-- snippets -->
               <GistSnippet
                 v-for="(gist, key) in config.public.dev.about.sections['professional-info'].gist"
@@ -207,12 +205,11 @@ export default {
             </div>
           </div>
 
-          <div id="posts" v-if="currentSection === 'hobbies-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: auto; padding: 20px;">
-            
-
+          <div id="posts" v-if="currentSection === 'hobbies-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: auto; ">
             <!-- title -->
+            <p class="rubik-mono-one-regular" style="color: white; padding-left: 20px;">Short blogs</p>
             <div class="flex flex-col" style="overflow-x: hidden;">
-              <PostSnippet
+              <BlogSnippet
                 v-for="(blog, key) in config.public.dev.about.sections['hobbies-info'].blogs" 
                 :key="key" 
                 :blog="blog"
@@ -227,14 +224,13 @@ export default {
 
 <style scoped>
 /* Hide scrollbar for Chrome, Safari and Opera */
-.example::-webkit-scrollbar {
+::-webkit-scrollbar {
   display: none;
+
 }
 
-/* Hide scrollbar for IE, Edge and Firefox */
-.example {
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
+.section-arrow {
+  transform: rotate(90deg);
 }
 
 #sections {
@@ -297,29 +293,8 @@ export default {
   overflow: hidden;
 }
 
-#posts-content {
-  height: 100%;
-  overflow: hidden;
-}
-
-#gists-content {
-  height: 100%;
-  overflow: hidden;
-}
 
 @media (max-width: 1024px) {
-  #posts-content {
-    height: 100%;
-    padding: 0px 25px;
-    overflow: hidden;
-  }
-
-  #gists-content {
-    height: 100%;
-    padding: 0px 25px;
-    overflow: hidden;
-  }
-
   #about {
     min-height: stretch;
   }

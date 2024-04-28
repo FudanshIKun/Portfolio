@@ -2,8 +2,7 @@
   <div class="code-container flex font-fira_retina text-menu-text">
     <!-- text -->
     <div class="text-container">
-      <span v-html="head" style='font-family: "Lucida Console"; line-height: .75vw;font-size: .63vw; display: inline-block;'></span>
-      <p v-html="text"></p>
+      <p v-html="text" class="text-gray-300 source-code-pro"></p>
     </div>
   </div>
 </template>
@@ -12,10 +11,6 @@
 
 export default {
   props: {
-    head: {
-      type: String,
-      required: true
-    },
     text: {
       type: String,
       required: true
@@ -63,5 +58,13 @@ export default {
   padding-top: 10px;
   padding-left: 10px;
   word-wrap: break-word;
+}
+
+.text-container span{
+
+}
+
+.text-container p{
+
 }
 </style>

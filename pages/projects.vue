@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 const config = useRuntimeConfig()
-const techs = ['Art Design', 'Game Design', 'Game', 'Illustration', 'Modeling', 'Shader', 'Autodesk Maya', 'Unity']
+const techs = ['Graphic Design', 'Illustration', 'Modeling', 'Autodesk Maya', 'Game Design', 'Game', 'Unity', 'Shader']
 const filters = ref(['all'])
 const showFilters = ref(true)
 const projects = ref(config.public.dev.projects)
@@ -48,7 +48,7 @@ function filterProjectsBy(filters) {
     <!-- section title (mobile) -->
     <div id="section-content-title" class="flex lg:hidden" @click="showFilters = !showFilters">
       <img :class="showFilters ? 'section-arrow rotate-90' : 'section-arrow'" src="/icons/arrow.svg">
-      <span class="font-fira_regular text-white text-sm">projects</span>
+      <span class="source-code-pro text-white text-sm">projects</span>
     </div>
     
     <div v-if="showFilters" id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text lg:flex">
@@ -56,12 +56,12 @@ function filterProjectsBy(filters) {
       <!-- title -->
       <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
         <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3">
-        <p class="font-fira_regular text-white text-sm">projects</p>
+        <p class="source-code-pro text-white text-sm">projects</p>
       </div>
 
       <!-- filter menu -->
       <nav id="filters" class="w-full flex-col" style="max-height: 100%;">
-        <div v-for="tech in techs" :key="tech" class="flex items-center py-2">
+        <div v-for="tech in techs" :key="tech" class="flex items-center py-2 source-code-pro">
           <input type="checkbox" :id="tech" @click="filterProjects(tech)">
           <img :id="'icon-tech-' + tech" :src="'/icons/techs/' + tech + '.svg'" alt="" class="tech-icon w-8 h-8 mx-4">
           <span :id="'title-tech-' + tech">{{ tech }}</span>
@@ -91,7 +91,7 @@ function filterProjectsBy(filters) {
       </div>
 
       <!-- projects -->
-      <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full lg:self-center" style="overflow: scroll;">
+      <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full lg:self-center" style="overflow-y: scroll;">
         <div id="not-found" class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
           <span class="flex justify-center text-4xl pb-3">
             X__X
@@ -118,6 +118,12 @@ function filterProjectsBy(filters) {
 </template>
 
 <style scoped>
+/* Hide scrollbar for Chrome, Safari and Opera */
+::-webkit-scrollbar {
+  display: none;
+
+}
+
 .section-arrow {
   transform: rotate(90deg);
 }

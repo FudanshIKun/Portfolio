@@ -1,10 +1,14 @@
 <template>
-    <header id="navbar" class="w-full hidden lg:flex flex-col">
-      <nav class="w-full flex justify-between" style="align-items: center;">
+    <header id="navbar" class="w-full hidden lg:flex flex-col jersey-15-regular">
+      <nav class="w-full flex justify-between" style="align-items: center; font-size: 23px;">
 
-          <div class="flex">
+          <div class="flex" style="font-size: 18px;">
             <RouterLink id="nav-link" to="/" :class="{ active: isActive('/') }">
-              Home
+              Welcome!
+            </RouterLink>
+
+            <RouterLink id="nav-link" :to="{name: 'beatproject' }" :class="{ active: isActive('/beatproject') }">
+              BEATPROJECT
             </RouterLink>
   
             <RouterLink id="nav-link" :to="{name: 'about-me' }" :class="{ active: isActive('/about-me') }">
@@ -16,7 +20,7 @@
             </RouterLink>
           </div>
 
-          <RouterLink id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
+          <RouterLink style="font-size: 18px;" id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
            Contact me
           </RouterLink>
       
@@ -29,11 +33,11 @@
 <style>
 
 #nav-link {
-  @apply text-menu-text font-fira_retina px-6 h-full flex items-center;
+  @apply text-menu-text px-6 h-full flex items-center;
 }
 
 #nav-link-contact {
-  @apply text-menu-text font-fira_retina px-6 h-full flex items-center;
+  @apply text-menu-text px-6 h-full flex items-center;
 }
 
 #nav-link:hover, #nav-link-contact:hover {
@@ -41,7 +45,7 @@
 }
 
 #nav-logo {
-  @apply text-menu-text font-fira_retina px-6 h-full flex items-center;
+  @apply px-6 h-full flex items-center;
 }
 
 #nav-logo:hover {
@@ -54,7 +58,6 @@
 
 #nav-logo.router-link-active {
   border-bottom: none;
-  @apply text-menu-text;
 }
 
 #navbar > nav {
