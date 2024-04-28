@@ -16,13 +16,13 @@ const overlayOpacity = computed(() => {
         <span class="flex text-sm my-3">
             <div style="display: flex; flex-direction: column;">
               <NuxtLink :href="project.url" target="_self">
-                <h3 v-if="index == null" :class="['text-purplefy font-fira_bold',project.url && project.url !== '' ? 'hover:text-green-600' : '',]">
+                <h3 v-if="index == null" :class="['text-purplefy source-code-pro',project.url && project.url !== '' ? 'hover:text-green-600' : '',]">
                   {{ project.name }}
                 </h3>
-                <h3 v-else :class="['text-purplefy font-fira_bold', project.url && project.url !== '' ? 'hover:text-green-600' : '',]">
+                <h3 v-else :class="['text-purplefy source-code-pro', project.url && project.url !== '' ? 'hover:text-green-600' : '',]">
                   {{ project.name }}
                 </h3>
-                <h4 class="font-fira_retina text-menu-text">{{ project.title }}</h4>
+                <h4 class="source-code-pro text-menu-text">{{ project.title }}</h4>
               </NuxtLink>
             </div>
         </span>
@@ -30,14 +30,14 @@ const overlayOpacity = computed(() => {
         <div id="project-card" class="flex flex-col" style="width: 100%;">
             <div id="window">
                 <div class="container">
-                  <div class="content">
-                    <div class="content-overlay">
+                  <div class="content" >
+                    <div class="content-overlay source-code-pro" style="height: 100%;">
                       <div class="content-details">
                         <h3>WORK IN PROGRESS</h3>
                         <p>This project isn't ready to be viewed</p>
                       </div>
                     </div>
-                    <img :src="project.img" alt="" class="image">
+                    <img :src="project.img" alt="" class="image" >
                     <video :src="project.video" autoplay='true' loop muted class="video"></video> 
                     </div>
                 </div>
@@ -45,7 +45,7 @@ const overlayOpacity = computed(() => {
 
             <div style="position: relative; padding: 2vh;">
                 <div style="display: flex; flex-direction: row;">
-                  <p class="text-menu-text font-fira_retina mb-5 w-full" style="text-wrap: wrap; font-size: 1.25vh;">
+                  <p class="text-menu-text source-code-pro mb-5 w-full" style="text-wrap: wrap; font-size: 1.25vh;">
                     {{ project.description }}
                   </p>
                   <span class="px-2"></span>
@@ -54,18 +54,18 @@ const overlayOpacity = computed(() => {
                 <span class="px-2"></span>
                 <div style="display: flex;">
                   <div>
-                  <NuxtLink id = "button" v-if="project.source && project.source !== ''" :href="project.source" target="_blank" class="text-white font-fira_retina py-2 px-4 text-xs w3-round-large">
+                  <NuxtLink id = "button" v-if="project.source && project.source !== ''" :href="project.source" target="_blank" class="text-white source-code-pro py-2 px-4 text-xs w3-round-large">
                     Github
                   </NuxtLink>
                   </div>
                   <span class="px-1"></span>
                   <div>
-                  <NuxtLink id = "button" v-if="project.download && project.download !== ''" :href="project.download" target="_blank" class="text-white font-fira_retina py-2 px-4 text-xs w3-round-large">
+                  <NuxtLink id = "button" v-if="project.download && project.download !== ''" :href="project.download" target="_blank" class="text-white source-code-pro py-2 px-4 text-xs w3-round-large">
                     Download
                   </NuxtLink>
                   </div>
                   <div style="margin-left: auto;">
-                    <NuxtLink id = "button" v-if="project.url && project.url !== ''" :href="project.url" target="_self" class="text-white font-fira_retina py-2 px-4 text-xs w3-round-large ">
+                    <NuxtLink id = "button" v-if="project.url && project.url !== ''" :href="project.url" target="_self" class="text-white source-code-pro py-2 px-4 text-xs w3-round-large ">
                     Read more
                   </NuxtLink>
                   </div>

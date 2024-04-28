@@ -1,11 +1,11 @@
 <template>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
-    <footer class='flex md:justify-between border-top text-menu-text font-fira_retina'>
+    <footer class='flex md:justify-between border-top text-menu-text source-code-pro'>
 
         <!-- social icons -->
         <div class="w-full flex justify-between md:justify-start" style="align-items: center;">
             <span id="social-title" class="h-full flex justify-center items-center border-right px-5">
-                find me:
+                Find me:
             </span>
             <div id="social-icons" class="flex" style="padding-left: 1vw;">
                 <NuxtLink :to="social.instagram.url + social.instagram.user" target="_blank" class="flex justify-center items-center">

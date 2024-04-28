@@ -1,6 +1,6 @@
 {
     "name": "ToruKun",
-    "logo_name": "ToruKun",
+    "realname": "Panyawat Puengthamthanapoom",
     "role": "Game Developer",
     "highlights": {
         "activities": {
@@ -32,43 +32,43 @@
         },
         "projects": {
             "6": {
+                "name": "2D TOPDOWN SHOOTING GAME",
+                "description": "University-Assignment",
+                "img": "",
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712466930/Projects/University/CGE108-2D-GAME-0.mp4",
+                "progress": 1
+            },
+            "5": {
                 "name": "Simple Shader",
                 "description": "University-Assignment",
                 "img": "",
                 "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712471368/Projects/University/VFX_Highlights_fjhw1b.mp4",
                 "progress": 1
             },
-            "5": {
+            "4": {
                 "name": "3D Mobile Game Prototype",
                 "description": "University-Assignment",
                 "img": "",
                 "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712468108/Projects/University/CGE109-3D-GAME-DEVELOPMENT.mp4",
                 "progress": 1
             },
-            "4": {
+            "3": {
                 "name": "Simple Rythm Game",
                 "description": "University-Assignment",
                 "img": "",
                 "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711813160/Projects/University/Simple_Rythm_Game_Showreel_hw5mxq.mp4",
                 "progress": 1
             },
-            "3": {
+            "2": {
                 "name": "ANTARCTIC ADVENTURE [REMAKE]",
                 "description": "University-Assignment",
                 "img": "",
                 "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711809903/Projects/University/Antarctic_Adventure_Remake_Showreel_m01zb9.mp4",
                 "progress": 1
             },
-            "2": {
-                "name": "Sprite Shader [ASSET]",
-                "description": "University-Assignment",
-                "img": "",
-                "video": "",
-                "progress": 1
-            },
             "1": {
-                "name": "BEAT'EM UP [THE LOST TABE]",
-                "description": "University-Assignment",
+                "name": "BEATPRROJECT",
+                "description": "Personal-Project",
                 "img": "",
                 "video": "",
                 "progress": 1
@@ -79,22 +79,20 @@
         "sections": {
             "personal-info": {
                 "title": "Personal",
-                "icon": "icons/info-personal.svg",
                 "info": { 
                     "Bio": {
                         "icon": "",
                         "title": "Bio",
                         "header": "<br>██████╗&nbsp;██╗&nbsp;██████╗&nbsp;<br>██╔══██╗██║██╔═══██╗<br>██████╔╝██║██║&nbsp;&nbsp;&nbsp;██║<br>██╔══██╗██║██║&nbsp;&nbsp;&nbsp;██║<br>██████╔╝██║╚██████╔╝<br>╚═════╝&nbsp;╚═╝&nbsp;╚═════╝&nbsp;<br><br>",
                         "description": 
-                        " I have 5 years of experience in web development lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. <br><br> Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat  nulla pariatur. Excepteur sint occaecat  officia deserunt mollit anim id est laborum."
-                        
+                        "<br>I stated my journey in game development during my first year at university. Over three years in university, I've been foscued on honing my skills, exploring the realms of design, programming, and artistic expression. To craft refined gameplay mechanics. I'm always embraced new challenge with passion and dedication, To proved and replicated my idea and passion. <br><br>Now, equipped with knowledge, creativity and the same passion as when I stated my journey. I want to continue to push my boundaries into the game industry. To find out possibility in my creativity and grasp more knowledge, I may never be able to alone. "
                     },
                     "Interest": {
                         "icon": "",
                         "title": "Interest",
                         "header": "<br>██╗███╗&nbsp;&nbsp;&nbsp;██╗████████╗███████╗██████╗&nbsp;███████╗███████╗████████╗<br>██║████╗&nbsp;&nbsp;██║╚══██╔══╝██╔════╝██╔══██╗██╔════╝██╔════╝╚══██╔══╝<br>██║██╔██╗&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;█████╗&nbsp;&nbsp;██████╔╝█████╗&nbsp;&nbsp;███████╗&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██║██║╚██╗██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██╔══╝&nbsp;&nbsp;██╔══██╗██╔══╝&nbsp;&nbsp;╚════██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██║██║&nbsp;╚████║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;███████╗██║&nbsp;&nbsp;██║███████╗███████║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>╚═╝╚═╝&nbsp;&nbsp;╚═══╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚══════╝╚══════╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
-                        "description": 
-                        "I am constantly learning and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description":             
+                        "I've always been passionate to create unique game with outstanding graphic style. I enjoy learning new things and taking on different challenges along the development. My interests often involve improving game features and visuals, including mechanics, backend work, shaders, and more. But I also always looking for new solutions and style to innovate and make games more engaging."
                         
                     },
                     "Education": {
@@ -102,86 +100,61 @@
                         "title": "Education",
                         "header": "<br>███████╗██████╗&nbsp;██╗&nbsp;&nbsp;&nbsp;██╗&nbsp;██████╗&nbsp;█████╗&nbsp;████████╗██╗&nbsp;██████╗&nbsp;███╗&nbsp;&nbsp;&nbsp;██╗<br>██╔════╝██╔══██╗██║&nbsp;&nbsp;&nbsp;██║██╔════╝██╔══██╗╚══██╔══╝██║██╔═══██╗████╗&nbsp;&nbsp;██║<br>█████╗&nbsp;&nbsp;██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;██║██╔██╗&nbsp;██║<br>██╔══╝&nbsp;&nbsp;██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║██║&nbsp;&nbsp;&nbsp;██║██║╚██╗██║<br>███████╗██████╔╝╚██████╔╝╚██████╗██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║╚██████╔╝██║&nbsp;╚████║<br>╚══════╝╚═════╝&nbsp;&nbsp;╚═════╝&nbsp;&nbsp;╚═════╝╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;╚═══╝<br><br>",
                         "description": 
-                        "I have always been passionate about lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.",
+                        "Driven by my passion for gaming, I pursued a major in Game Development & Esports at Rangsit University. Since then, I've always embraced every opportunity to experiment and innovate, immersing myself in game development. Explore new ideas and push the boundaries of my game design and programming skills. Inspired by indie games, I constantly seek to replicate and enhance elements from the games I love. Every trial, error, and practice session fuels my growth and propels me toward new challenges. While many endeavors result in failure or remain unfinished, each step forward fuels my growth and knowledge.",
 
                         "files": {
-                            "Rangsit University": "The university..."
+                            "Rangsit University": ""
                         }
-                    }
-                },
-                "blogs": {
-                    "3": {
-                        "avatar": "icons/avatar.jpg",
-                        "username": "ToruKun",
-                        "content": "",
-                        "img": "",
-                        "continue": ""
-                    },
-                    "2": {
-                        "avatar": "icons/avatar.jpg",
-                        "username": "ToruKun",
-                        "content": "",
-                        "img": "",
-                        "continue": ""
-                    },
-                    "1": {
-                        "avatar": "icons/avatar.jpg",
-                        "username": "ToruKun",
-                        "content": "",
-                        "img": "",
-                        "continue": ""
                     }
                 }
             },
             "professional-info": {
-                "title": "Professional",
-                "icon": "icons/info-professional.svg",
+                "title": "Profession",
                 "info": {
                     "Experience": {
                         "icon": "",
                         "title": "Experience",
                         "header": "<br>███████╗██╗&nbsp;&nbsp;██╗██████╗&nbsp;███████╗██████╗&nbsp;██╗███████╗███╗&nbsp;&nbsp;&nbsp;██╗&nbsp;██████╗███████╗<br>██╔════╝╚██╗██╔╝██╔══██╗██╔════╝██╔══██╗██║██╔════╝████╗&nbsp;&nbsp;██║██╔════╝██╔════╝<br>█████╗&nbsp;&nbsp;&nbsp;╚███╔╝&nbsp;██████╔╝█████╗&nbsp;&nbsp;██████╔╝██║█████╗&nbsp;&nbsp;██╔██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█████╗&nbsp;&nbsp;<br>██╔══╝&nbsp;&nbsp;&nbsp;██╔██╗&nbsp;██╔═══╝&nbsp;██╔══╝&nbsp;&nbsp;██╔══██╗██║██╔══╝&nbsp;&nbsp;██║╚██╗██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══╝&nbsp;&nbsp;<br>███████╗██╔╝&nbsp;██╗██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██║&nbsp;&nbsp;██║██║███████╗██║&nbsp;╚████║╚██████╗███████╗<br>╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚═╝&nbsp;&nbsp;╚═══╝&nbsp;╚═════╝╚══════╝<br><br>",
                         "description": 
-                        "Over the past 5 years, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "<br>While I've not yet had the opportunity to immerse myself in the industry, I eagerly anticipate the chance to gain valuable hands-on experience. I am enthusiastic about the prospect of contributing to real-world projects and collaborating with professionals. Each day, I actively seek out opportunities to learn and grow, preparing myself and my skills for when the time comes"
                     },
                     "Hard-skills": {
                         "icon": "",
                         "title": "Hard-skills",
                         "header": "<br>██╗&nbsp;&nbsp;██╗&nbsp;█████╗&nbsp;██████╗&nbsp;██████╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██╗&nbsp;&nbsp;██╗██╗██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██║&nbsp;&nbsp;██║██╔══██╗██╔══██╗██╔══██╗&nbsp;&nbsp;&nbsp;&nbsp;██╔════╝██║&nbsp;██╔╝██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████║███████║██████╔╝██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;███████╗█████╔╝&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██╔══██║██╔══██║██╔══██╗██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;╚════██║██╔═██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██║██████╔╝&nbsp;&nbsp;&nbsp;&nbsp;███████║██║&nbsp;&nbsp;██╗██║███████╗███████╗<br>╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝╚═════╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚══════╝<br><br>",
                         "description": 
-                        "As a front-end developer, Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "I'm not a professional but as a gamer, I believe that the essence of game development is its features and graphic. That's why I've dedicated myself to mastering coding, programming and shader. I'm passionate about crafting immersive experiences and bringing worlds to life. while also keeping the code clean and readable for future reference, When I come back to it. Every project is an opportunity for me to refine my skills, and gain another experiences to create even better games"
                     },
                     "Soft-skills": {
                         "icon": "",
                         "title": "Soft-skills",
                         "header": "<br>███████╗&nbsp;██████╗&nbsp;███████╗████████╗&nbsp;&nbsp;&nbsp;&nbsp;███████╗██╗&nbsp;&nbsp;██╗██╗██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██╔════╝██╔═══██╗██╔════╝╚══██╔══╝&nbsp;&nbsp;&nbsp;&nbsp;██╔════╝██║&nbsp;██╔╝██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████╗██║&nbsp;&nbsp;&nbsp;██║█████╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗█████╔╝&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>╚════██║██║&nbsp;&nbsp;&nbsp;██║██╔══╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚════██║██╔═██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████║╚██████╔╝██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████║██║&nbsp;&nbsp;██╗██║███████╗███████╗<br>╚══════╝&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚══════╝<br><br>",
-                        "description": 
-                        "I bring more than Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br><br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "description":                   
+                        "I believe that soft skills are essential for effective teamwork. Strong communication skills, a collaborative mindset, and the ability to foster a productive environment are crucial for achieving our game development goals. I'm dedicated to continuous learning, self-improvement and approach challenges with creativity and resilience."
                     }
                 },
                 "gist": {
                     "1": "2e27f55acf3477526b5d9c4a191203bd",
-                    "2": "694c1f32332788a2ac7f37b09e5aa40e"
+                    "2": "947078403aa6833fb0981b9d2390422f",
+                    "3": ""
                 }
             },
             "hobbies-info": {
                 "title": "Hobbies",
-                "icon": "icons/info-hobbies.svg",
-                "info": {
+                 "info": {
                     "Game": {
                         "icon": "",
                         "title": "Game",
                         "header": "<br>&nbsp;██████╗&nbsp;&nbsp;█████╗&nbsp;███╗&nbsp;&nbsp;&nbsp;███╗███████╗<br>██╔════╝&nbsp;██╔══██╗████╗&nbsp;████║██╔════╝<br>██║&nbsp;&nbsp;███╗███████║██╔████╔██║█████╗&nbsp;&nbsp;<br>██║&nbsp;&nbsp;&nbsp;██║██╔══██║██║╚██╔╝██║██╔══╝&nbsp;&nbsp;<br>╚██████╔╝██║&nbsp;&nbsp;██║██║&nbsp;╚═╝&nbsp;██║███████╗<br>&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚═╝╚══════╝<br><br>",
                         "description": 
-                        "I am a passionate gamer with Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
-                        
+                        "I'm an avid gamer, Exploring and seeking out new games is what I do in my free time. While I occasional enjoy the AAA title, most of my inspiration come from in indie games. Indie titles is special for me, they offer creativity and innovation that's hard to find elsewhere. Sure, not every indie game I play is a masterpiece, but each one provides valuable insights and inspiration for my own projects. Some games spark new ideas or challenge me to think differently about game design, They're even cheaper compare to most AAA title. Regardless of the game, I played. I always approach it with an open mind and enjoy to learn something from it. After all, every gaming experience no matter how big or small helps shape me to be better as game developer."
                     },
                     "Art": {
                         "icon": "",
                         "title": "Art",
                         "header": "<br>&nbsp;█████╗&nbsp;██████╗&nbsp;████████╗<br>██╔══██╗██╔══██╗╚══██╔══╝<br>███████║██████╔╝&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██╔══██║██╔══██╗&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
                         "description": 
-                        "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. <br><br> Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum."
+                        "I've always had a strong interest for art, both in 2D and 3D formats. I firmly believe that graphics are essential for making a good games. While I've dabbled in art as a hobby or when required for university projects, My goal is to gradually refine my skills, ensuring that my projects benefit from visually designs and art skills while balancing my responsibilities as a developer. <br><br>"
                         
                     },
                     "Cosplay": {
@@ -189,29 +162,35 @@
                         "title": "Cosplay",
                         "header": "<br>&nbsp;██████╗&nbsp;██████╗&nbsp;███████╗██████╗&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█████╗&nbsp;██╗&nbsp;&nbsp;&nbsp;██╗<br>██╔════╝██╔═══██╗██╔════╝██╔══██╗██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══██╗╚██╗&nbsp;██╔╝<br>██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║███████╗██████╔╝██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████║&nbsp;╚████╔╝&nbsp;<br>██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║╚════██║██╔═══╝&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══██║&nbsp;&nbsp;╚██╔╝&nbsp;&nbsp;<br>╚██████╗╚██████╔╝███████║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>&nbsp;╚═════╝&nbsp;╚═════╝&nbsp;╚══════╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
                         "description": 
-                        "I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
+                        "I embarked on my cosplay journey during my freshman year at university when I decided to join my major's cosplay contest alongside my friends. While the experience was enjoyable and filled with camaraderie, I didn't delve as deeply into it as some of my peers did. Instead, I dabbled in it occasionally or participated when invited by friends. But I didn't hate it tho, already have something more enjoyable to do."
                         
-                    },
-                    "Sport": {
-                        "icon": "",
-                        "title": "Sport",
-                        "header": "<br>███████╗██████╗&nbsp;&nbsp;██████╗&nbsp;██████╗&nbsp;████████╗<br>██╔════╝██╔══██╗██╔═══██╗██╔══██╗╚══██╔══╝<br>███████╗██████╔╝██║&nbsp;&nbsp;&nbsp;██║██████╔╝&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>╚════██║██╔═══╝&nbsp;██║&nbsp;&nbsp;&nbsp;██║██╔══██╗&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>███████║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚██████╔╝██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>╚══════╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
-                        "description": 
-                        "I am an avid sports enthusiast and lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. <br> Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur."
                     }
                 },
                 "blogs": {
+                    "3": {
+                        "avatar": "icons/avatar.jpg",
+                        "username": "ToruKun",
+                        "date": "April 28, 2024",
+                        "title": "My First Cosplay!",
+                        "content": "RSU OpenHouse Mini Cosplay Contest 2023",
+                        "img": "/images/blogs/first-cosplay.jpg",
+                        "continue": ""
+                    },
                     "2": {
                         "avatar": "icons/avatar.jpg",
                         "username": "ToruKun",
-                        "content": "",
-                        "img": "",
+                        "date": "April 28, 2024",
+                        "title": "My new favourite game! UNBEATABLE [white label]",
+                        "content": "A young girl learns a song. An exclusive side-story set in the world of D-CELL GAMES' upcoming rhythm-adventure.",
+                        "img": "/images/blogs/unbeatable.jpg",
                         "continue": ""
                     },
                     "1": {
                         "avatar": "icons/avatar.jpg",
                         "username": "ToruKun",
-                        "content": "",
+                        "date": "April 28, 2024",
+                        "title": "My First ITX PC build!",
+                        "content": "Well, I hated notebook so... <br>K39v2 (white): <br>i5-12400 <br>Noctua NH-L9i-chroma black <br>Asus ROG Strix b660-i Motherboard Geforce GTX 1650 <br>16GB PNY DDR5 4800MHz <br>512GB SSD M.2 HIKSEMI E3000 <br>500GB WD BLACK SN750 2280 <br>Dianjipa MF500F Platinum+ Flex PSU",
                         "img": "",
                         "continue": ""
                     }
@@ -268,7 +247,7 @@
         "9": {
             "name": "2D TOPDOWN GAME",
             "title": "my-first-game",
-            "description": "a simple TopdownPixel Game",
+            "description": "A Simple TopdownPixel Game",
             "img": "/images/projects/(University)SimplePixelGame.png",
             "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712467975/Projects/University/my%20first%20game.mp4",
             "tech": ["Game", "Unity"],
@@ -280,7 +259,7 @@
         "8": {
             "name": "2D TOPDOWN SHOOTING GAME",
             "title": "university-assignment",
-            "description": "a simple TopdownShooting Game",
+            "description": "A Simple TopdownShooting Game",
             "img": "/images/projects/(University)SimpleTopdownShooting.png",
             "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712466930/Projects/University/CGE108-2D-GAME-0.mp4",
             "tech": ["Unity", "Game"],
@@ -292,7 +271,7 @@
         "7": {
             "name": "OTOME GAME",
             "title": "university-assignment",
-            "description": "a simple Otome Game",
+            "description": "A Simple Otome Game",
             "img": "/images/projects/(University)OtomeProject.png",
             "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712468047/Projects/University/CGE108-2D-Game-1.mov",
             "tech": ["Unity", "Game"],
@@ -304,7 +283,7 @@
         "6": {
             "name": "RYTHM GAME",
             "title": "university-assignment",
-            "description": "a simple Rythm Game",
+            "description": "A Simple Rythm Game",
             "img": "/images/projects/(University)SimpleRythmGame.png",
             "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4",
             "tech": ["Unity", "Game", "Game Design"],
@@ -316,7 +295,7 @@
         "5": {
             "name": "3D MOBILE GAME",
             "title": "university-assignment",
-            "description": "a simple 3D ArrowShooting Mobile Game \nInspired from game \"Pathless\" \nwith Firebase Integration",
+            "description": "A Simple 3D ArrowShooting Mobile Game \nInspired from game \"Pathless\" \nwith Firebase Integration",
             "img": "/images/projects/(University)SimpleThirdPersonArrowShooting.png",
             "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712468108/Projects/University/CGE109-3D-GAME-DEVELOPMENT.mp4",
             "tech": ["Unity", "Game"],
@@ -328,7 +307,7 @@
         "4": {
             "name": "Simple Shader",
             "title": "university-assignment",
-            "description": "a pack of simple shader created within unity",
+            "description": "A Pack of simple shader created within unity",
             "img": "/images/projects/(University)CGE499-VisualEffect.png",
             "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712471368/Projects/University/VFX_Highlights_fjhw1b.mp4",
             "tech": ["Unity", "Shader"],
@@ -339,35 +318,35 @@
         "3": {
             "name": "ANTARCTIC ADVENTURE [REMAKE]",
             "title": "university-assignment",
-            "description": "a remake of Antarctic Adventure(1983)",
+            "description": "A Remake of Antarctic Adventure(1983)",
             "img": "/images/projects/(University)Antarctic Adventure Remake.png",
             "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711772354/Projects/University/Antarctic_Adventure_Remake_Gameplay_sj4wve.mp4",
             "tech": ["Unity", "Game"],
-            "url": "",
+            "url": "/blogs/gameprojecti",
             "source": "https://github.com/FudanshIKun/CGE381-GAME-PROJECT-I",
             "download": "https://drive.google.com/drive/folders/1cbSIuSNrVkI3U6n1CDs2PqYQo597L6Ba?usp=sharing",
             "progress": 1
         },
         "2": {
-            "name": "Lit Sprite Shader",
+            "name": "BEATPROJECT",
             "title": "personal-project",
-            "description": "shader for sprite created with hlsl and shaderlab",
-            "img": "/images/projects/ethereum.png",
+            "description": "A Game where injustice becomes law, so you do crime and save the day.",
+            "img": "/images/projects/(University)BEATPROJECT.png",
             "video": "",
-            "tech": ["Unity", "Shader"],
-            "url": "",
+            "tech": ["Unity", "Game","Game Design"],
+            "url": "/blogs/beatproject",
             "source": "",
             "download": "",
             "progress": 0
         },
         "1": {
-            "name": "BEAT'EM UP [THE LOST TABE]",
+            "name": "Default Cube",
             "title": "university-assignment",
-            "description": "a game where injustice becomes law, so you do crime and save the day.",
-            "img": "/images/projects/ethereum.png",
+            "description": "Simple Multiplayer Game using Unity Services and Netcode for Gameobject",
+            "img": "/images/projects/(University)Netcode.png",
             "video": "",
-            "tech": ["Unity", "Game","Game Design"],
-            "url": "/blogs/beatproject",
+            "tech": ["Unity", "Shader"],
+            "url": "",
             "source": "",
             "download": "",
             "progress": 0
