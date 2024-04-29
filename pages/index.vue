@@ -114,7 +114,7 @@ export default {
                   <span class="px-1"></span>
                   <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #F73D93;">Design</h2> 
                   <span class="px-1"></span>
-                  <p class="source-code-pro" style="color: gray;">Passionate about game design and innovation, with a focus on shaping captivating experiences in the gaming industry.</p>
+                  <p class="source-code-pro" style="color: gray;">Passionate about game design and innovation, with a focus on shaping experiences in the gaming industry.</p>
                 </div> 
 
                 <div> 
@@ -122,15 +122,15 @@ export default {
                   <span class="px-1"></span>
                   <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #7547f3;">Create</h2> 
                   <span class="px-1"></span>
-                  <p class="source-code-pro" style="color: gray;">Specializing in designing, implementing, and testing game features to deliver immersive and engaging gameplay.</p>
+                  <p class="source-code-pro" style="color: gray;">Designing, Implementing, and Testing features to deliver immersive and engaging gameplay.</p>
                 </div> 
 
                 <div> 
                   <i class="fa-solid fa-code" style="font-size: 36px; color: #525CEB;"></i>
                   <span class="px-1"></span>
-                  <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #525CEB;">Coding</h2> 
+                  <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #525CEB;">Code</h2> 
                   <span class="px-1"></span>
-                  <p class="source-code-pro" style="color: gray;">Dedicated to maintaining code quality and readability, writing clean, reusable, and optimized code for efficient game development.</p>
+                  <p class="source-code-pro" style="color: gray;">Maintaining code quality and efficiency, writing clean, reusable and optimized code to ensure smooth gaming experiences</p>
                 </div> 
 
                 
@@ -177,7 +177,7 @@ export default {
         </div>
       </section>  
 
-      <section class="hero" style="height: 50%;">
+      <section class="hero" style="height: 45%;">
         <div>
           <div class="w3-container source-code-pro" style="max-width:800px; padding: 2vw;">
             <h2 class="w3-wide text-3xl pb-2 silkscreen-regular" style="color: white;">WHAT I USE</h2>

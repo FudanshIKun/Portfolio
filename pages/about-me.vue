@@ -63,10 +63,6 @@ export default {
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <main v-if="!loading" id="about-me" class="page" style="height: 100%;">
 
-    <div id="mobile-page-title">
-      <h2>About me</h2>
-    </div>
-
     <div id="page-menu" class="w-full flex" style="height: 100%;">
       <!-- focused section content -->
       <div id="section-content" class="hidden lg:block w-full h-full border-right" style="height: 100%;">
@@ -120,7 +116,7 @@ export default {
           <!-- section title (mobile) -->
           <div :key="section.title" id="section-content-title" class="flex mb-1">
             <img src="/icons/arrow.svg" :id="'section-arrow-' + section.title" alt="" class="section-arrow">
-            <p v-html="section.title" class=" text-white text-sm jersey-15-regular"></p>
+            <p v-html="section.title" class=" text-white text-sm source-code-pro"></p>
           </div>
 
           <!-- folders -->
@@ -147,14 +143,14 @@ export default {
         <!-- section content title -->
         <div id="section-content-title" class="flex items-center min-w-full" @click="showContacts()">
           <img src="/icons/arrow.svg" alt="" id="section-arrow" class="section-arrow">
-          <p v-html="config.dev.contacts.direct.title" class="jersey-15-regular text-white text-sm"></p>
+          <p v-html="config.dev.contacts.direct.title" class="source-code-pro text-white text-sm"></p>
         </div>
 
         <!-- section content folders -->
         <div id="contacts" class="hidden">
           <div v-for="(source, key) in config.dev.contacts.direct.sources" :key="key" class="flex items-center my-2">
             <img :src="'/icons/' + key + '.svg'" alt="">
-            <a v-html="source" class="jersey-15-regular text-menu-text hover:text-white ml-4"></a>
+            <a v-html="source" class="source-code-pro text-menu-text hover:text-white ml-4"></a>
           </div>
         </div>
 
@@ -170,9 +166,9 @@ export default {
         <div id="commented-text" class="flex h-full w-full">
 
           <div class="w-full h-full ml-5 mr-10 lg:my-5 text-base" style="overflow-x: hidden; overflow-y:auto;">
-              <span v-if="currentSection == 'personal-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style='color: #F73D93; font-family: "Lucida Console"; line-height: .75vw; font-size: .63vw; display: inline-block;'></span>
-              <span v-if="currentSection == 'professional-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style='color: #7547f3; font-family: "Lucida Console"; line-height: .75vw; font-size: .63vw; display: inline-block;'></span>
-              <span v-if="currentSection == 'hobbies-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style='color: #525CEB; font-family: "Lucida Console"; line-height: .75vw; font-size: .63vw; display: inline-block;'></span>
+              <p><span v-if="currentSection == 'personal-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #F73D93; font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
+              <p><span v-if="currentSection == 'professional-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #7547f3; font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
+              <p><span v-if="currentSection == 'hobbies-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #525CEB; font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
               <CommentedText 
                 :text="config.dev.about.sections[currentSection].info[folder].description"
               />
@@ -194,7 +190,7 @@ export default {
 
           <div id="gists" v-if="currentSection === 'professional-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: hidden; ">
             <!-- title -->
-            <p class="rubik-mono-one-regular" style="color: white; padding-left: 20px;">My code snippets From Github Gist</p>
+            <p class="rubik-mono-one-regular" style="color: white; padding-left: 20px;">My Github Gists</p>
             <div class="flex flex-col p-3" style="overflow-x: hidden; border-top-left-radius: 10px; border-bottom-left-radius: 10px; margin-top: 20px;">
               <!-- snippets -->
               <GistSnippet

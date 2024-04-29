@@ -1,10 +1,6 @@
 <template>
     <main id="contact-me" class="page" style="border-top: 2px solid #454843;">
 
-        <div id="mobile-page-title">
-            <h2>Contact Me</h2>
-        </div>
-
         <div id="page-menu" class="w-fullflex flex-col" style="height: 100%; border-right: 2px solid #454843;">
 
             <!-- contacts -->
@@ -109,6 +105,7 @@ export default {
     overflow-y: auto;
     font-size: 15px;
 }
+
 @media (min-width: 1024px) {
     
     .submenu .title {
