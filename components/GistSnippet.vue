@@ -64,16 +64,26 @@ export default {
             </div>
             
         </div>
-        <pre class="snippet-container" style="padding: 2rem; background-color: #141414;"><fit-text class="text-xs" style="display: inline-block; color: white;"><code>{{ content}}</code></fit-text></pre>
+        <pre style="padding: 2rem; background-color: #141414; overflow-x: scroll;"><fit-text class="text-xs" style="display: inline-block; color: white;">{{ content}}</fit-text></pre>
     </div>
   </div>
     
 </template>
 
 <style>
+::-webkit-scrollbar {
+  display: none;
+
+}
+
 @import "https://unpkg.com/fit-text-webcomponent";
 #username:hover {
     color: #5e6ef2;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+	
 }
 
 </style>

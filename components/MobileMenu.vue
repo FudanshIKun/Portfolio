@@ -63,8 +63,8 @@ export default {
   position: relative;
   left: 50%;
   display: block;
-  margin: 0 auto;
-  border-radius: 1.5rem;
+  margin-top: 10px;
+  margin-bottom: 10px;
   transform: translate(-50%, 0);
 }
 
@@ -76,8 +76,6 @@ export default {
 
 .navigation ul li {
   height: 35px;
-  width: 35px;
-  margin: 1rem;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -97,11 +95,31 @@ export default {
 .navigation ul li a.active::after {
   content: '';
   position: absolute;
-  left: 0;
-  bottom: -5px;
+  
   width: 100%;
   height: 2px;
   transition: transform 0.3s ease;
 }
+
+/* mobile */
+@media (max-width: 768px) {
+  .navigation {
+    ransform: translate(-50%, 0);
+  }
+
+  .navigation ul li a {
+    padding-left: none;
+  }
+
+  .navigation ul {
+    flex-direction: column;
+  }
+
+  .navigation ul li {
+    margin: 0.5rem;
+  }
+}
+
+
 
 </style>

@@ -47,8 +47,8 @@ export default {
         <div style="height: 100%; justify-content: end;">
           
         </div>
-        <div class="head" style="padding-bottom: 5vh; color: white; padding-left: 5vh;">
-          <h1 class="jersey-15-regular" style="font-size: 80px;">{{ config.dev.realname }}</h1>
+        <div class="head" style="padding-bottom: 5vh; color: white; padding-left: 5vw; padding-top: 2vh;">
+          <h1 class="jersey-15-regular">{{ config.dev.realname }}</h1>
           <h2 class="jersey-15-regular">> {{ config.dev.role }}</h2>
           <!--
           <h2 class="jersey-15-regular" style="font-size: 40px;">{{ config.dev.name }}</h2>
@@ -58,10 +58,11 @@ export default {
       </section>
 
       <section class="hero source-code-pro" style="height: 60%;">
-        <div style="justify-content: center; margin-top: auto; margin-bottom: auto; margin-left: auto; padding-right: 5vw;">
+        <div style="justify-content: center; margin-top: auto; margin-bottom: auto; margin-left: auto; ">
           <div class="w3-container w3-content w3-right" style="max-width:800px;">
             <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white;">WHO AM I</h2>
             <div class="box">
+              
               <p class="text-base p-4" style="color: white;">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
                 I've passion to create unique artstyle and refined mechanics for game ( <b>Mostly Stylized</b> ).
                 I also enjoy creating tools for artists in my team and solve problems to improve quality in my game.
@@ -103,18 +104,17 @@ export default {
         </div>
       </section>
 
-      <section class="hero" style="height: 60%; margin: auto; padding: 2vw;">
+      <section class="hero" style="height: 60%; margin: auto; padding: 2vw; text-align: center;">
         <div>
-          <div class="w3-content" style="margin: auto;">
-            <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white;">WHAT I DO</h2>
-              <section class="box skills" style="width: fit-content;"> 
-
+          <h2 class="w3-wide text-3xl silkscreen-regular pb-6" style="color: white;">WHAT I DO</h2>
+          <div class="w3-content box">
+              <section class="skills" style="width: fit-content;"> 
                 <div> 
                   <i class="fa-regular fa-pen-to-square" style="font-size: 36px; color: #F73D93;"></i>
                   <span class="px-1"></span>
                   <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #F73D93;">Design</h2> 
                   <span class="px-1"></span>
-                  <p class="source-code-pro" style="color: gray;">Passionate about game design and innovation, with a focus on shaping experiences in the gaming industry.</p>
+                  <p class="source-code-pro" style="color: gray;">Possess passion in game & graphic design with a focus on shaping experiences for players</p>
                 </div> 
 
                 <div> 
@@ -140,8 +140,8 @@ export default {
       </section>
 
       <section class="hero" style="width: fit-content; padding-top: 5vh;">
-        <div style=" padding: 2vw; padding-right: 5vh;">
-          <div class="box" style="padding: 2vh;">
+        <div style="padding: 2vw;">
+          <div class="box" style="padding: 2vw;">
             <h2 class="w3-wide text-3xl pb-2 silkscreen-regular" style="color: white;">GAME DEVELOPMENT</h2>
             <p class="w3-opacity source-code-pro" style="color: white"><i>Create with Passion</i></p>
             <span class="px-1"></span>
@@ -180,11 +180,9 @@ export default {
       <section class="hero" style="height: 45%;">
         <div>
           <div class="w3-container source-code-pro" style="max-width:800px; padding: 2vw;">
-            <h2 class="w3-wide text-3xl pb-2 silkscreen-regular" style="color: white;">WHAT I USE</h2>
-            <span class="px-2"></span>
-
+            <h2 class="w3-wide text-3xl pb-3 silkscreen-regular" style="color: white;">WHAT I USE</h2>
             <div class="w3-row-padding box" style="max-width:85vw; height: fit-content;"> 
-              <p class="w3-justify source-code-pro" style="padding: 2vh; color: white;">These are the software I've encountered throughout my journey. The ones highlighted in bold represent my areas of expertise, favourite or interest one.</p>
+              <p class="source-code-pro" style="padding: 1vh; color: white;">These are the software I've encountered throughout my journey. The ones highlighted in bold represent my areas of expertise, favourite or interest one.</p>
               <div class="w3-quarter">
                 <ul class="w3-ul w3-gray w3-center" >
                   <li class="w3-black w3-padding-16" style="font-size: 12px">USEFUL TOOLS</li>    
@@ -285,11 +283,11 @@ export default {
         </div>
       </section>
 
-      <section class="hero">
+      <section class="hero" style="height: 55%;">
         <div style="height: fit-content;">
-          <div class="w3-container w3-content w3-right" style="max-width:1000px; padding: 2vw; padding-right: 5vh;">
-            <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white">LANGUAGES</h2>
-              <section class="box text-sm source-code-pro" data-astro-cid-ab4ihpzs=""> 
+          <div class="w3-container w3-content w3-right" style="max-width:1000px; padding: 2vw;">
+            <section class="box text-sm source-code-pro"> 
+                <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white">LANGUAGES</h2>
                 <div style="box-shadow: var(--shadow-2); padding: 1vh;">
                   <p style="color: white"><b>THAI</b></p>
                   <span class="px-0.5"></span>
@@ -306,7 +304,7 @@ export default {
                   </div>
                   <p style="color: gray; padding-top: 1vh;">I understand well but my speaking and my grammar aren't so good.</p>
                 </div>
-              </section>
+            </section>
           </div>
         </div>
       </section>
@@ -360,7 +358,7 @@ export default {
       </section>
       -->
       
-      <section class="hero" style="padding-top: 5vh; padding-left: 5vh; padding-right: 5vh;">
+      <section class="hero" style="padding-top: 5vh; padding-left: 5vw; padding-right: 5vw;">
         <div>
           <div class="box" style="padding: 2vh;">
             <h2 class="w3-wide text-3xl silkscreen-regular" style="color: white">ADDITIONAL PROJECTS & EVENTS</h2>
@@ -616,12 +614,14 @@ button:hover {
 		display: flex;
 		flex-direction: column;
 		justify-content: space-between;
-		margin: 1.75rem;
+	}
+
+  #hello .head h1 {
+		font-size: 30px;
 	}
 
 	#hello .head h2 {
 		font-size: 20px;
-		color: purple;
 	}
 }
 
@@ -635,6 +635,7 @@ button:hover {
 		display: flex;
     min-height: 400px;
 		flex-direction: column;
+    margin: auto;
 	}
 
   #hello .hero .head{
@@ -646,11 +647,19 @@ button:hover {
 		flex-direction: column;
     justify-content: center;
   }
+
+  #hello .head h1 {
+		font-size: 50px;
+	}
+
+	#hello .head h2 {
+		font-size: 60px;
+	}
 }
 
-@media (min-width: 1920px){
+@media (min-width: 1025px){
 	#hello .head h1 {
-		font-size: 62px;
+		font-size: 100px;
 	}
 }
 

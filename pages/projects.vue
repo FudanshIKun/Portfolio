@@ -88,7 +88,7 @@ function filterProjectsBy(filters) {
 
       <!-- projects -->
       <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full lg:self-center" style="overflow-y: scroll;">
-        <div id="not-found" class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
+        <div id="not-found" class="hidden flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
           <span class="flex justify-center text-4xl pb-3">
             X__X
           </span>
@@ -117,31 +117,6 @@ function filterProjectsBy(filters) {
 
 }
 
-.section-arrow {
-  transform: rotate(90deg);
-}
-
-.image {
-  object-fit:contain;
-  border-radius: inherit;
-  opacity: 1;
-  transition: 300ms ease;
-  border-radius: var(--radius-2);
-}
-
-.video {
-  border-radius: inherit;
-  inset: 0;
-  z-index: -1;
-}
-
-.container:hover {
-  .image {
-    opacity: 0;
-  }
-}
-
-
 #filters {
   padding: 10px 25px;
 }
@@ -161,14 +136,6 @@ function filterProjectsBy(filters) {
 
 #title-tech.active {
   color: white;
-}
-
-#view-button {
-  background-color: #1C2B3A;
-}
-
-#view-button:hover {
-  background-color: #263B50;
 }
 
 input[type="checkbox"] {
