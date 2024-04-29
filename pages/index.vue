@@ -60,7 +60,7 @@ export default {
       <section class="hero source-code-pro" style="height: 100%;">
         <div style="justify-content: center; margin-top: auto; margin-bottom: auto; margin-left: auto; ">
           <div class="w3-container w3-content w3-right" style="max-width:800px;">
-            <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white;">WHO AM I</h2>
+            <h2 class="w3-wide text-3xl pl-6 pb-6 silkscreen-regular custom" style="color: white;">WHO AM I</h2>
             <div class="box">
               
               <p class="text-base p-4" style="color: white;">I'm a game developer and currently a Computer Game and Esport student at Rangsit University. 
@@ -180,7 +180,7 @@ export default {
       <section class="hero" style="height: 50%;">
         <div>
           <div class="w3-container source-code-pro" style="max-width:800px; padding: 2vw;">
-            <h2 class="w3-wide text-3xl pb-3 silkscreen-regular" style="color: white;">WHAT I USE</h2>
+            <h2 class="w3-wide text-3xl pl-6 pb-3 silkscreen-regular custom" style="color: white;">WHAT I USE</h2>
             <div class="w3-row-padding box" style="max-width:85vw; height: fit-content;"> 
               <p class="source-code-pro" style="padding: 1vh; color: white;">These are the software I've encountered throughout my journey. The ones highlighted in bold represent my areas of expertise, favourite or interest one.</p>
               <div class="w3-quarter">
@@ -358,10 +358,10 @@ export default {
       </section>
       -->
       
-      <section class="hero" style="padding-top: 5vh; padding-left: 5vw; padding-right: 5vw;">
+      <section class="hero" style="padding: 2vh; ">
         <div>
           <div class="box" style="padding: 2vh; padding-top: 2vw;">
-            <h2 class="w3-wide text-3xl silkscreen-regular" style="color: white">ADDITIONAL PROJECTS & EVENTS</h2>
+            <h2 class="w3-wide text-2xl silkscreen-regular" style="color: white">ADDITIONAL PROJECTS & EVENTS</h2>
             <span class="px-1"></span>
             <div class="media-scroller " style="padding:2vh;">
               <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key">
@@ -618,6 +618,11 @@ button:hover {
 	#hello .head h2 {
 		font-size: 20px;
 	}
+
+  .custom{
+    text-align: center;
+    margin: auto;
+  }
 }
 
 /* tablet */
@@ -650,12 +655,19 @@ button:hover {
 	#hello .head h2 {
 		font-size: 60px;
 	}
+
+  .custom{
+    text-align: center;
+    margin: auto;
+  }
 }
 
 @media (min-width: 1025px){
 	#hello .head h1 {
 		font-size: 100px;
 	}
+
+  
 }
 
 </style>
