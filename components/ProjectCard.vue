@@ -37,15 +37,17 @@ const overlayOpacity = computed(() => {
                         <p>This project isn't ready to be viewed</p>
                       </div>
                     </div>
-                    <img :src="project.img" alt="" class="image" >
-                    <video :src="project.video" autoplay='true' loop muted class="video"></video> 
+                    <div class="Player">
+                      <img :src="project.img" alt="" class="image" >
+                      <video :src="project.video" autoplay='true' loop muted class="video"></video> 
+                    </div>
                     </div>
                 </div>
             </div>
 
             <div style="position: relative; padding: 2vh;">
                 <div style="display: flex; flex-direction: row;">
-                  <p class="text-menu-text source-code-pro mb-5 w-full" style="text-wrap: wrap; font-size: 1.25vh;">
+                  <p class="text-menu-text text-sm source-code-pro mb-5 w-full" style="text-wrap: wrap;">
                     {{ project.description }}
                   </p>
                   <span class="px-2"></span>
@@ -169,16 +171,26 @@ const overlayOpacity = computed(() => {
   font-size: 0.8em;
 }
 
-
-.image{
+.Player {
+  width: 100%;
+  height: 100%;
   border-top-right-radius: 15px;
   border-top-left-radius: 15px;
-  opacity: 1;
+}
+
+.image{
+  width: 100%;
+  height: 100%;
+  border-top-right-radius: 15px;
+  border-top-left-radius: 15px;
+  aspect-ratio: 16/9;
   object-fit: contain;
+  opacity: 1;
   transition: 300ms ease;
 }
 
 .video{
+  width: 100%;
   height: 100%;
   position: absolute;
   border-top-right-radius: 15px;

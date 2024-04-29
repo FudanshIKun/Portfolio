@@ -41,10 +41,6 @@ function filterProjectsBy(filters) {
 <template>
   <main class="flex flex-col flex-auto lg:flex-row" style="height: 100%; overflow: hidden; border-top: 2px solid #454843;">
 
-    <div id="mobile-page-title">
-      <h2>My Journey</h2>
-    </div>
-
     <!-- section title (mobile) -->
     <div id="section-content-title" class="flex lg:hidden" @click="showFilters = !showFilters">
       <img :class="showFilters ? 'section-arrow rotate-90' : 'section-arrow'" src="/icons/arrow.svg">
@@ -77,7 +73,7 @@ function filterProjectsBy(filters) {
       <!-- windows tab -->
       <div class="tab-height w-full hidden lg:flex border-bot items-center">
         <div class="flex items-center border-right h-full">
-          <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};</p>
+          <p v-for="filter in filters" :key="filter" class="source-code-pro text-menu-text text-sm px-3">{{ filter }};</p>
           <img src="/icons/close.svg" alt="" class="m-3">
         </div>
       </div>
@@ -85,9 +81,9 @@ function filterProjectsBy(filters) {
       <!-- windows tab mobile -->
       <div id="tab" class="flex lg:hidden items-center">
           <span class="text-white"> // </span>
-          <p class="font-fira_regular text-white text-sm px-3">projects</p>
+          <p class="source-code-pro text-white text-sm px-3">projects</p>
           <span class="text-menu-text"> / </span>
-          <p v-for="filter in filters" :key="filter" class="font-fira_regular text-menu-text text-sm px-3">{{ filter }};</p>
+          <p v-for="filter in filters" :key="filter" class="source-code-pro text-menu-text text-sm px-3">{{ filter }};</p>
       </div>
 
       <!-- projects -->
@@ -95,9 +91,6 @@ function filterProjectsBy(filters) {
         <div id="not-found" class="hidden flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
           <span class="flex justify-center text-4xl pb-3">
             X__X
-          </span>
-          <span class="flex justify-center">
-            OOP!
           </span>
           <span class="text-white flex justify-center text-xl">
             No matching projects
