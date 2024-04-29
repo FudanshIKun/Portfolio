@@ -4,27 +4,27 @@
       <ul>
         <li>
           <i class="fa-solid fa-house">
-            <RouterLink to="/" :class="{ 'active': isActive('/') }" @click="toggleMobileMenu()">Welcome</RouterLink>
+            <RouterLink to="/" :class="{ active: isActive('/') }" @click="toggleMobileMenu()">Welcome</RouterLink>
           </i>
         </li>
         <li>
           <i class="fa-solid fa-hand-fist">
-            <RouterLink to="/beatproject" :class="{ 'active': isActive('/beatproject') }" @click="toggleMobileMenu()">BEATPROJECT</RouterLink>
+            <RouterLink to="/beatproject"  :to="{name: 'beatproject' }" :class="{ active: isActive('/beatproject') }" @click="toggleMobileMenu()">BEATPROJECT</RouterLink>
           </i>
         </li>
         <li>
           <i class="fa-solid fa-user">
-            <RouterLink to="/about-me" :class="{ 'active': isActive('/about-me') }" @click="toggleMobileMenu()">About</RouterLink>
+            <RouterLink :to="{name: 'about-me' }" :class="{ active: isActive('/about-me') }" @click="toggleMobileMenu()">About</RouterLink>
           </i>
         </li>
         <li>
           <i class="fa-solid fa-file">
-            <RouterLink to="/projects" :class="{ 'active': isActive('/projects') }" @click="toggleMobileMenu()">Journey</RouterLink>
+            <RouterLink to="/projects" :class="{ active: isActive('/projects') }" @click="toggleMobileMenu()">Journey</RouterLink>
           </i>
         </li>
         <li>
           <i class="fa-solid fa-address-book">
-            <RouterLink to="/contact-me" :class="{ 'active': isActive('/contact-me') }" @click="toggleMobileMenu()">Contact</RouterLink>
+            <RouterLink to="/contact-me" :class="{ active: isActive('/contact-me')}" @click="toggleMobileMenu()">Contact</RouterLink>
           </i>
         </li>
       </ul>

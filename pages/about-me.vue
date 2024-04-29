@@ -61,7 +61,7 @@ export default {
 
 <template>
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
-  <main v-if="!loading" id="about-me" class="page" style="height: 100%;">
+  <main v-if="!loading" id="about-me" class="page" style="height: 85%;">
 
     <div id="page-menu" class="w-full flex" style="height: 100%;">
       <!-- focused section content -->
@@ -324,8 +324,8 @@ export default {
 /* desktop */
 @media (min-width: 1025px){
 	.head{
-    line-height: 1rem; 
-    font-size: 1rem;
+    line-height: .75rem; 
+    font-size: .65rem;
   }
 }
 
