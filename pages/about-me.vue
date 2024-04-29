@@ -78,9 +78,9 @@ export default {
             <div v-for="(folder, key) in section.info" class="grid grid-cols-2 items-center my-2 source-code-pro text-menu-text" @click="focusCurrentFolder(folder)">
               <div class="flex col-span-2 hover:text-white hover:cursor-pointer">
                 <img  id="diple" src="/icons/diple.svg" alt="">
-                <img v-if="section.title == 'Personal'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(44%) sepia(26%) saturate(7447%) hue-rotate(308deg) brightness(96%) contrast(101%);">
-                <img v-if="section.title == 'Profession'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(25%) sepia(71%) saturate(6497%) hue-rotate(249deg) brightness(105%) contrast(91%);">
-                <img v-if="section.title == 'Hobbies'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(38%) sepia(83%) saturate(1439%) hue-rotate(201deg) brightness(92%) contrast(89%);">
+                <img v-if="section.title == 'Personal'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 24px; filter: invert(44%) sepia(26%) saturate(7447%) hue-rotate(308deg) brightness(96%) contrast(101%);">
+                <img v-if="section.title == 'Profession'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 24px; filter: invert(25%) sepia(71%) saturate(6497%) hue-rotate(249deg) brightness(105%) contrast(91%);">
+                <img v-if="section.title == 'Hobbies'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 24px; filter: invert(38%) sepia(83%) saturate(1439%) hue-rotate(201deg) brightness(92%) contrast(89%);">
                 <p :id="folder.title" :key="key" :class="{ active: isActive(folder.title)}">{{ folder.title }}</p>
               </div>
               <div v-if="folder.files !== undefined" class="col-span-2">
@@ -124,9 +124,9 @@ export default {
             <div v-for="(folder, key, index) in section.info" :key="key" class="grid grid-cols-2 items-center my-2 jersey-15-regular text-menu-text hover:text-white hover:cursor-pointer" @click="focusCurrentFolder(folder)">
               <div class="flex col-span-2">
                 <img id="diple" src="/icons/diple.svg">
-                <img v-if="section.title == 'Personal'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(44%) sepia(26%) saturate(7447%) hue-rotate(308deg) brightness(96%) contrast(101%);">
-                <img v-if="section.title == 'Profession'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(25%) sepia(71%) saturate(6497%) hue-rotate(249deg) brightness(105%) contrast(91%);">
-                <img v-if="section.title == 'Hobbies'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 22px; filter: invert(38%) sepia(83%) saturate(1439%) hue-rotate(201deg) brightness(92%) contrast(89%);">
+                <img v-if="section.title == 'Personal'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 24px; filter: invert(44%) sepia(26%) saturate(7447%) hue-rotate(308deg) brightness(96%) contrast(101%);">
+                <img v-if="section.title == 'Profession'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 24px; filter: invert(25%) sepia(71%) saturate(6497%) hue-rotate(249deg) brightness(105%) contrast(91%);">
+                <img v-if="section.title == 'Hobbies'" :src="'/icons/folder' + '.svg'" alt="" class="mr-3" style="width: 24px; filter: invert(38%) sepia(83%) saturate(1439%) hue-rotate(201deg) brightness(92%) contrast(89%);">
                 <p :id="folder.title" v-html="key" :class="{ active: isActive(folder.title)}"></p>
               </div>
               <div v-if="folder.files !== undefined" class="col-span-2">
@@ -166,9 +166,9 @@ export default {
         <div id="commented-text" class="flex h-full w-full">
 
           <div class="w-full h-full ml-5 mr-10 lg:my-5 text-base" style="overflow-x: hidden; overflow-y:auto;">
-              <p><span v-if="currentSection == 'personal-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #F73D93; font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
-              <p><span v-if="currentSection == 'professional-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #7547f3; font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
-              <p><span v-if="currentSection == 'hobbies-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #525CEB; font-family: 'Lucida Console'; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
+              <p><span v-if="currentSection == 'personal-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #F73D93; font-family: 'Lucida Console', sans-serif; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
+              <p><span v-if="currentSection == 'professional-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #7547f3; font-family: 'Lucida Console', sans-serif; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
+              <p><span v-if="currentSection == 'hobbies-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #525CEB; font-family: 'Lucida Console', sans-serif; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
               <CommentedText 
                 :text="config.dev.about.sections[currentSection].info[folder].description"
               />
@@ -219,6 +219,7 @@ export default {
 </template>
 
 <style scoped>
+@import url('https://fonts.cdnfonts.com/css/lucida-console');
 /* Hide scrollbar for Chrome, Safari and Opera */
 ::-webkit-scrollbar {
   display: none;
