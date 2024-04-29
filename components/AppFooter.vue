@@ -9,16 +9,16 @@
             </span>
             <div id="social-icons" class="flex" style="padding-left: 1vw;">
                 <NuxtLink :to="social.instagram.url + social.instagram.user" target="_blank" class="flex justify-center items-center">
-                    <i class="fa fa-instagram" style="font-size: 20px;"></i>
+                    <i class="fa fa-instagram text-gray-400" style="font-size: 20px;"></i>
                 </NuxtLink>
                 <NuxtLink :to="social.linkin.url + social.linkin.user" target="_blank" class="flex justify-center items-center ">
-                    <i class="fa fa-linkedin-square" style="font-size: 20px;"></i>
+                    <i class="fa fa-linkedin-square text-gray-400" style="font-size: 20px;"></i>
                 </NuxtLink>
             </div>
         </div>
 
         <!-- github user -->
-        <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-5 border-left hover:text-white">
+        <NuxtLink :to="social.github.url + social.github.user" target="_blank" class="hidden md:flex items-center px-5 border-left hover:text-white text-gray-400">
             @{{ social.github.user }}
             <i class="fa fa-github" style="font-size:20px"></i>
         </NuxtLink>
@@ -32,23 +32,27 @@ footer {
     height: 40px;
     min-height: 40px;
     font-size: 13px;
+    
 }
 
 #social-icons > a {
     height: 100%;
     width: 50px;
+    
  }
 
 #social-icons > a > i {
     width: 1.25rem; /* 20px */
     height: 1.25rem; /* 20px */
     margin: auto;
+    
 }
 
 footer > a > i {
     width: 1.25rem; /* 20px */
     height: 1.25rem; /* 20px */
     margin-left: 0.5rem; /* 8px */
+    
 }
 
 #social-icons > a:hover i {

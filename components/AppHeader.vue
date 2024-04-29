@@ -1,8 +1,8 @@
 <template>
-    <header id="navbar" class="w-full hidden lg:flex flex-col jersey-15-regular">
+    <header id="navbar" class="w-full hidden lg:flex flex-col jersey-15-regular ">
       <nav class="w-full flex justify-between" style="align-items: center; font-size: 23px;">
 
-          <div class="flex" style="font-size: 18px;">
+          <div class="flex text-gray-400" style="font-size: 18px;">
             <RouterLink id="nav-link" to="/" :class="{ active: isActive('/') }">
               Welcome!
             </RouterLink>
@@ -20,9 +20,11 @@
             </RouterLink>
           </div>
 
-          <RouterLink style="font-size: 18px;" id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
-           Contact me
-          </RouterLink>
+          <div class="text-gray-400">
+            <RouterLink style="font-size: 18px;" id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
+              Contact me
+            </RouterLink>
+          </div>
       
       </nav>
 
@@ -33,11 +35,11 @@
 <style>
 
 #nav-link {
-  @apply text-menu-text px-6 h-full flex items-center;
+  @apply px-6 h-full flex items-center;
 }
 
 #nav-link-contact {
-  @apply text-menu-text px-6 h-full flex items-center;
+  @apply px-6 h-full flex items-center;
 }
 
 #nav-link:hover, #nav-link-contact:hover {

@@ -57,7 +57,7 @@ export default {
 
       </section>
 
-      <section class="hero source-code-pro" style="height: 60%;">
+      <section class="hero source-code-pro" style="height: 100%;">
         <div style="justify-content: center; margin-top: auto; margin-bottom: auto; margin-left: auto; ">
           <div class="w3-container w3-content w3-right" style="max-width:800px;">
             <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white;">WHO AM I</h2>
@@ -104,7 +104,7 @@ export default {
         </div>
       </section>
 
-      <section class="hero" style="height: 60%; margin: auto; padding: 2vw; text-align: center;">
+      <section class="hero" style="height: 75%; margin: auto;  padding: 2vw; padding-top: 60px; text-align: center;">
         <div>
           <h2 class="w3-wide text-3xl silkscreen-regular pb-6" style="color: white;">WHAT I DO</h2>
           <div class="w3-content box">
@@ -114,7 +114,7 @@ export default {
                   <span class="px-1"></span>
                   <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #F73D93;">Design</h2> 
                   <span class="px-1"></span>
-                  <p class="source-code-pro" style="color: gray;">Possess passion in game & graphic design with a focus on shaping experiences for players</p>
+                  <p class="source-code-pro" style="color: gray;">Possess passion in game & graphic design with a focus on shaping experiences for players.</p>
                 </div> 
 
                 <div> 
@@ -130,7 +130,7 @@ export default {
                   <span class="px-1"></span>
                   <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #525CEB;">Code</h2> 
                   <span class="px-1"></span>
-                  <p class="source-code-pro" style="color: gray;">Maintaining code quality and efficiency, writing clean, reusable and optimized code to ensure smooth gaming experiences</p>
+                  <p class="source-code-pro" style="color: gray;">Maintaining code quality and efficiency, writing clean, reusable and optimized code to ensure smooth gaming experiences.</p>
                 </div> 
 
                 
@@ -177,7 +177,7 @@ export default {
         </div>
       </section>  
 
-      <section class="hero" style="height: 45%;">
+      <section class="hero" style="height: 50%;">
         <div>
           <div class="w3-container source-code-pro" style="max-width:800px; padding: 2vw;">
             <h2 class="w3-wide text-3xl pb-3 silkscreen-regular" style="color: white;">WHAT I USE</h2>
@@ -283,7 +283,7 @@ export default {
         </div>
       </section>
 
-      <section class="hero" style="height: 55%;">
+      <section class="hero" style="height: 85%;">
         <div style="height: fit-content;">
           <div class="w3-container w3-content w3-right" style="max-width:1000px; padding: 2vw;">
             <section class="box text-sm source-code-pro"> 
@@ -360,7 +360,7 @@ export default {
       
       <section class="hero" style="padding-top: 5vh; padding-left: 5vw; padding-right: 5vw;">
         <div>
-          <div class="box" style="padding: 2vh;">
+          <div class="box" style="padding: 2vh; padding-top: 2vw;">
             <h2 class="w3-wide text-3xl silkscreen-regular" style="color: white">ADDITIONAL PROJECTS & EVENTS</h2>
             <span class="px-1"></span>
             <div class="media-scroller " style="padding:2vh;">
@@ -434,11 +434,6 @@ button:hover {
   vertical-align: baseline;
   white-space: nowrap;
   cursor: default;
-}
-
-.pill:hover {
-  filter: brightness(1.1);
-  outline: 0;
 }
 
 .grid-container {
