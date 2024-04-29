@@ -165,10 +165,10 @@ export default {
         <!-- text -->
         <div id="commented-text" class="flex h-full w-full">
 
-          <div class="w-full h-full ml-5 mr-10 lg:my-5 text-base" style="overflow-x: hidden; overflow-y:auto;">
-              <p><span v-if="currentSection == 'personal-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #F73D93; font-family: 'Lucida Console', sans-serif; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
-              <p><span v-if="currentSection == 'professional-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #7547f3; font-family: 'Lucida Console', sans-serif; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
-              <p><span v-if="currentSection == 'hobbies-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #525CEB; font-family: 'Lucida Console', sans-serif; line-height: 14px; font-size: 14px; display: inline-block;"></span></p>
+          <div class="w-full h-full ml-5 mr-10 lg:my-5 text-base pt-5" style="overflow-x: hidden; overflow-y:auto;">
+              <p><span class="head" v-if="currentSection == 'personal-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #F73D93; font-family: 'Lucida Console', sans-serif; display: inline-block;"></span></p>
+              <p><span class="head" v-if="currentSection == 'professional-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #7547f3; font-family: 'Lucida Console', sans-serif; display: inline-block;"></span></p>
+              <p><span class="head" v-if="currentSection == 'hobbies-info'" v-html="config.dev.about.sections[currentSection].info[folder].header" style="color: #525CEB; font-family: 'Lucida Console', sans-serif; display: inline-block;"></span></p>
               <CommentedText 
                 :text="config.dev.about.sections[currentSection].info[folder].description"
               />
@@ -303,6 +303,30 @@ export default {
 
 #section-content #contacts {
   padding: 0px 15px;
+}
+
+/* mobile */
+@media (max-width: 768px) {
+	.head{
+    line-height: 1.25vw; 
+    font-size: 1.5vw;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.head{
+    line-height: 1.25vw; 
+    font-size: 1.25vw;
+  }
+}
+
+/* desktop */
+@media (min-width: 1025px){
+	.head{
+    line-height: 1rem; 
+    font-size: 1rem;
+  }
 }
 
 </style>

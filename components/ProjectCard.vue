@@ -8,6 +8,7 @@ const imageOpacity = computed(() => {
 const overlayOpacity = computed(() => {
   return project.progress && project.progress === 1 ? 0 : 1
 })
+
 </script>
 
 <template>
@@ -27,7 +28,7 @@ const overlayOpacity = computed(() => {
             </div>
         </span>
 
-        <div id="project-card" class="flex flex-col" style="width: 100%;">
+        <div id="project-card" style="width: 100%;">
             <div id="window">
                 <div class="container">
                   <div class="content" >
@@ -47,7 +48,7 @@ const overlayOpacity = computed(() => {
 
             <div style="position: relative; padding: 2vh;">
                 <div style="display: flex; flex-direction: row;">
-                  <p class="text-menu-text text-sm source-code-pro mb-5 w-full" style="text-wrap: wrap;">
+                  <p class="text-menu-text text-sm source-code-pro mb-5" style="text-wrap: wrap; width: 100%;">
                     {{ project.description }}
                   </p>
                   <span class="px-2"></span>

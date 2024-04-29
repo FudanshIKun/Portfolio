@@ -5,7 +5,7 @@ const { blog, key } = defineProps(['blog', 'key'])
 <template>
   <div style="border-top: 2px solid #454843; margin-top: 15px; padding-left: 10px;">
     <div class="card">
-        <div class="post" style="display: flex; flex-direction: row;">
+        <div class="post" style="display: flex;">
             <div class="post-content">
                 <p class="post-header source-code-pro text-gray-200">
                 <a :href="blog.continue" class="source-code-pro text-gray-200" style="font-size: 16px;">{{ blog.title }}</a>
@@ -30,7 +30,7 @@ const { blog, key } = defineProps(['blog', 'key'])
 <style scoped>
 .card {
   width: 525px;
-  height: 320px;
+  height: fit-content;
   margin-top: 30px;
 
   border-radius: 10px;
@@ -116,4 +116,26 @@ a:link {
 .date {
   font-size: 13px;
 }
+
+/* mobile */
+@media (max-width: 768px) {
+	.post{
+    flex-direction: column;
+  }
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.post{
+    flex-direction: row;
+  }
+}
+
+/* desktop */
+@media (min-width: 1025px){
+	.post{
+    flex-direction: row;
+  }
+}
+
 </style>
