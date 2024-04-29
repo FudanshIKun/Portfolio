@@ -4,27 +4,27 @@
       <ul>
         <li>
           <i class="fa-solid fa-house">
-            <a href="/" :class="{ 'active': isActive('/') }" @click="toggleMobileMenu()">Welcome</a>
+            <RouterLink to="/" :class="{ 'active': isActive('/') }" @click="toggleMobileMenu()">Welcome</RouterLink>
+          </i>
+        </li>
+        <li>
+          <i class="fa-solid fa-hand-fist">
+            <RouterLink to="/beatproject" :class="{ 'active': isActive('/beatproject') }" @click="toggleMobileMenu()">BEATPROJECT</RouterLink>
           </i>
         </li>
         <li>
           <i class="fa-solid fa-user">
-            <a href="/beatproject" :class="{ 'active': isActive('/beatproject') }" @click="toggleMobileMenu()">BEATPROJECT</a>
+            <RouterLink to="/about-me" :class="{ 'active': isActive('/about-me') }" @click="toggleMobileMenu()">About</RouterLink>
           </i>
         </li>
         <li>
-          <i class="fa-solid fa-rocket">
-            <a href="/about-me" :class="{ 'active': isActive('/about-me') }" @click="toggleMobileMenu()">About</a>
+          <i class="fa-solid fa-file">
+            <RouterLink to="/projects" :class="{ 'active': isActive('/projects') }" @click="toggleMobileMenu()">Journey</RouterLink>
           </i>
         </li>
         <li>
-          <i class="fa-solid fa-people-group">
-            <a href="/projects" :class="{ 'active': isActive('/projects') }" @click="toggleMobileMenu()">Journey</a>
-          </i>
-        </li>
-        <li>
-          <i class="fa-solid fa-cart-shopping">
-            <a href="/contact-me" :class="{ 'active': isActive('/contact-me') }" @click="toggleMobileMenu()">Contact</a>
+          <i class="fa-solid fa-address-book">
+            <RouterLink to="/contact-me" :class="{ 'active': isActive('/contact-me') }" @click="toggleMobileMenu()">Contact</RouterLink>
           </i>
         </li>
       </ul>
@@ -33,7 +33,12 @@
 </template>
 
 <script>
+import { RouterLink } from 'vue-router'
+
 export default {
+  components: {
+    RouterLink
+  },
   data() {
     return {
       menuOpen: false,
@@ -83,7 +88,6 @@ export default {
   padding-left: 10px;
   transition: color 0.3s ease;
   color: inherit;
-  text-decoration: none;
 }
 
 .navigation ul li a.active {
@@ -97,12 +101,7 @@ export default {
   bottom: -5px;
   width: 100%;
   height: 2px;
-  background-color: purple;
-  transform: scaleX(0);
   transition: transform 0.3s ease;
 }
 
-.navigation ul li a.active:hover::after {
-  transform: scaleX(1);
-}
 </style>

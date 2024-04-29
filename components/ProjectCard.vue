@@ -86,7 +86,8 @@ const overlayOpacity = computed(() => {
 #project-card {
   border: 1px solid #1E2D3D;
   background-color: #011221;
-  border-radius: 15px;
+  border-bottom-left-radius: 15px;
+  border-bottom-right-radius: 15px;
   max-width: 400px;
   z-index: -2;
 }
@@ -174,15 +175,11 @@ const overlayOpacity = computed(() => {
 .Player {
   width: 100%;
   height: 100%;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
 }
 
 .image{
   width: 100%;
   height: 100%;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
   aspect-ratio: 16/9;
   object-fit: contain;
   opacity: 1;
@@ -193,8 +190,6 @@ const overlayOpacity = computed(() => {
   width: 100%;
   height: 100%;
   position: absolute;
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
   aspect-ratio: 16/9;
   object-fit: cover;
   inset: 0;
@@ -202,8 +197,6 @@ const overlayOpacity = computed(() => {
 }
 
 #showcase {
-  border-top-right-radius: 15px;
-  border-top-left-radius: 15px;
   aspect-ratio: 16/9;
   object-fit: cover;
 }
