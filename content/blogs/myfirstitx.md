@@ -1,8 +1,9 @@
 ---
 title: My First ITX PC Building
-description: Learning how to use @nuxt/content to create a blog
+description: Personal Blog
 createdAt: DateTime
 updatedAt: DateTime
+published: false
 ---
 ## WORK IN PROGRESS
 This Blog isn't ready to be viewed

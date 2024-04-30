@@ -1,8 +1,8 @@
 ---
 title: BEATPROJECT
-description: Learning how to use @nuxt/content to create a blog
+description: Personal Project
 createdAt: DateTime
 updatedAt: DateTime
+published: false
 ---
-## WORK IN PROGRESS
-This Blog isn't ready to be viewed
+## Content
