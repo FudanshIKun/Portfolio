@@ -70,7 +70,7 @@
                 "name": "BEATPRROJECT",
                 "description": "Personal-Project",
                 "img": "",
-                "video": "",
+                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1714485759/BEATPROJECT_Development_Trailer_blbuum.mp4",
                 "progress": 1
             }
         }
@@ -191,7 +191,7 @@
                         "date": "April 28, 2024",
                         "title": "My First ITX PC build!",
                         "content": "Well, I hated notebook so... <br>K39v2 (white): <br>i5-12400 <br>Noctua NH-L9i-chroma black <br>Asus ROG Strix b660-i Motherboard Geforce GTX 1650 <br>16GB PNY DDR5 4800MHz <br>512GB SSD M.2 HIKSEMI E3000 <br>500GB WD BLACK SN750 2280 <br>Dianjipa MF500F Platinum+ Flex PSU",
-                        "img": "",
+                        "img": "/images/blogs/itx.jpg",
                         "continue": ""
                     }
                 }
