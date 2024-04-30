@@ -5,13 +5,20 @@
 
 <template>
   <div class="flex w-full h-full" style="width: 100%; height: 100%; overflow: scroll;">
-    <main class="dark:prose-invert">
+    <main>
       <ContentDoc>
         <template v-slot="{ doc }">
-          <article>
-            <h1>{{ doc.title }}</h1>
-          </article>
-          <ContentRenderer :value="doc" />
+          <div class="prose dark:prose-invert">
+            <div class="head">
+              <article>
+                <h1>{{ doc.title }}</h1>
+              </article>
+              <ContentRenderer :value="doc" />
+            </div>
+            <div class="content">
+
+            </div>
+          </div>
         </template>
         <template #not-found>
           <h1>Document not found</h1>

@@ -15,15 +15,22 @@ export default {
     }
   },
   mounted() {
+    this.$nextTick(() => {
+      const downloadButton = document.getElementById('download-cv');
+      if (downloadButton) {
+        downloadButton.addEventListener('click', this.downloadCV);
+      }
+    });
+
     if (window.innerWidth <= 1024) {
-      this.isMobile = true
+      this.isMobile = true;
     }
 
-    window.addEventListener('resize', this.handleResize)
+    window.addEventListener('resize', this.handleResize);
 
     // When the component is mounted, we can remove the loader.
-    this.highlights = this.config.public.dev.highlights
-    this.loading = false
+    this.highlights = this.config.public.dev.highlights;
+    this.loading = false;
   },
   beforeDestroy() {
     // Remove the event listener when the component is destroyed.
@@ -37,8 +44,16 @@ export default {
         this.isMobile = false
       }
     },
+    downloadCV() {
+      const cvUrl = '/cv.pdf';
+      const link = document.createElement('a');
+      link.href = cvUrl;
+      link.download = 'panyawat-puengthamthanapoom.pdf';
+      link.click();
+    }
   }
 }
+
 </script>
 
 <template>
@@ -90,13 +105,11 @@ export default {
                 See more About Me
               </RouterLink>
               <span class="px-2"></span>
-              <button 
-              class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" 
-              style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
+              <button id="download-cv" class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
                 <div style="display: flex; flex-direction: row; align-items: center">
-                  <i class="fa fa-download" style="padding-top: .6px;"></i> 
+                  <i class="fa fa-download" style="padding-top: .6px;"></i>
                   <span class="px-1"></span>
-                  <p   style="text-wrap: nowrap;">Download CV</p>
+                  <p style="text-wrap: nowrap;">Download CV</p>
                 </div>
               </button>
             </div>
