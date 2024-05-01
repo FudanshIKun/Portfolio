@@ -374,7 +374,7 @@ export default {
       <section class="hero" style="padding: 2vh; ">
         <div>
           <div class="box" style="padding: 2vh; padding-top: 2vw;">
-            <h2 class="w3-wide text-2xl silkscreen-regular" style="color: white">ADDITIONAL PROJECTS & EVENTS</h2>
+            <h2 class="w3-wide text-2xl silkscreen-regular" style="color: white">RECENT EVENTS</h2>
             <span class="px-1"></span>
             <div class="media-scroller " style="padding:2vh;">
               <div class="media-element container" v-for="(activities, key) in highlights.activities" :key="key">
