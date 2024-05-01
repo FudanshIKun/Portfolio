@@ -17,13 +17,13 @@ You can viewed the trailer of the game (university assignment) in the highlight 
 
 ---
 
-# Story Overview
+# Overview
 In BEATPROJECT, you find yourself mysteriously transported to a parallel world through your video game display. Now, you must navigate this unfamiliar realm, facing unexpected challenges and adversaries at every turn. Can you survive and emerge victorious against all odds?
 
 ---
 
 # Genre
-Platforming, Methoidvania, Female Protagonist / (PvP, Side Scrolling, Action Narrative)
+Platforming, Methoidvania, Female Protagonist / (PvE or PvP, Side Scrolling, Action Narrative)
 
 ---
 
