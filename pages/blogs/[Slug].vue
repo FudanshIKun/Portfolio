@@ -30,15 +30,13 @@
               </article>
               
             </div>
-            <div class="content" style="height: 100%;">
+            <div class="content">
+              <div v-if="doc.published == false" style="text-align: center;">
+                <h1 class="rubik-mono-one-regular" style="font-size: 1rem;">WORK IN PROGRESS</h1>
+                <p class="source-code-pro">This Blog isn't ready to be viewed</p>
+              </div>
               <div>
-                <div v-if="doc.published == false" style="text-align: center;">
-                  <h1 class="rubik-mono-one-regular" style="font-size: 1rem;">WORK IN PROGRESS</h1>
-                  <p class="source-code-pro">This Blog isn't ready to be viewed</p>
-                </div>
-                <div v-if="doc.published == true" class="prose dark:prose-invert prose-img:rounded-xl prose-a:text-gray-300 prose-p:text-gray-400 prose-base">
-                  <ContentRenderer :value="doc" style="padding-top: 100px; text-align: left;"/>
-                </div>
+                <ContentRenderer v-if="doc.published == true" :value="doc" class="prose dark:prose-invert prose-img:rounded-xl prose-a:text-gray-300 prose-p:text-gray-400 prose-base" style="padding-top: 100px; text-align: left;"/>
               </div>
               
             </div>
@@ -85,8 +83,9 @@ main{
 }
 
 .content {
-  padding: 5vw;
-  width: 45%;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
 }
 
 .content img{
