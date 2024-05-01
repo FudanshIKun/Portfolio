@@ -4,13 +4,13 @@
 </script>
 
 <template>
-  <div class="flex w-full h-full" style="width: 100%; height: 100%; overflow: scroll;">
-    <main>
+  <div class="flex w-full h-full" style="width: 100%; height: 100%; overflow: scroll; padding-bottom: 5vw; border-top: 1px solid #454843;">
+    <main style="">
       <ContentDoc>
         <template v-slot="{ doc }">
-          <div style="width: 100%; height: 100%;">
-            <div class="head" style="border-bottom: 2px solid #454843;">
-              <article style="padding: 1vw; padding-top: 3vw; padding-bottom: 3vw;">
+          <div style="width: 100%; height: 100%; display: flex; flex-direction: column; align-items: center;">
+            <div class="head" style="border-bottom: 2px solid #454843; text-align: center;">
+              <article style="padding: .75vw; padding-top: 1vw;">
                 <header class="ad5-container ad5-max-width-xs ad5-margin-bottom-lg">
                   <h1 class="rubik-mono-one-regular" style="font-size: 2.5rem;">{{ doc.title }}</h1>
                   <h2 class="source-code-pro">{{ doc.description }}</h2>
@@ -30,18 +30,14 @@
               </article>
               
             </div>
-            <div class="content">
-              <div class="w-full">
-                <div>
-                  <div>
-                    <div v-if="doc.published == false" style="text-align: center;">
-                      <h1>WORK IN PROGRESS</h1>
-                      <p>This Blog isn't ready to be viewed</p>
-                    </div>
-                    <div v-if="doc.published == true" style="display: flex; align-items: center;">
-                      <ContentRenderer :value="doc" style="padding-top: 100px; text-align: left;"/>
-                    </div>
-                  </div>
+            <div class="content" style="height: 100%;">
+              <div>
+                <div v-if="doc.published == false" style="text-align: center;">
+                  <h1 class="rubik-mono-one-regular" style="font-size: 1rem;">WORK IN PROGRESS</h1>
+                  <p class="source-code-pro">This Blog isn't ready to be viewed</p>
+                </div>
+                <div v-if="doc.published == true" class="prose dark:prose-invert prose-img:rounded-xl prose-a:text-gray-300 prose-p:text-gray-400 prose-base">
+                  <ContentRenderer :value="doc" style="padding-top: 100px; text-align: left;"/>
                 </div>
               </div>
               
@@ -65,7 +61,6 @@
   display: none;
 
 }
-
 
 main{
   border-top: 2px solid #454843;
@@ -91,14 +86,31 @@ main{
 
 .content {
   padding: 5vw;
+  width: 45%;
+}
+
+.content img{
+  min-width: 200px;
+  min-height: 200px;
 }
 
 .icon {
     height: 45px;
+}
+
+/* tablet */
+@media (min-width: 768px) and (max-width: 1024px) {
+	.content {
+    width: 70%;
   }
+}
 
 /* mobile */
 @media (max-width: 768px) {
+  .content {
+    width: 100%;
+  }
+  
 	.icon {
     height: 35px;
   }

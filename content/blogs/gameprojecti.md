@@ -1,8 +1,8 @@
 ---
 title: Antarctic Adventure
 description: University Assignment
-createdAt: DateTime
-updatedAt: DateTime
+createdAt: 01 / May / 2024
+updatedAt: 01 / May / 2024
 published: false
 ---
 ## WORK IN PROGRESS
