@@ -430,7 +430,7 @@ button:hover {
 }
 
 .pill {
-  background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));
+  background-color: #F73D93;
   border-radius: 500px;
   border-width: 0;
   box-shadow: rgba(0,0,0,.25) 0 1px 3px,rgba(0,0,0,.12) 0 4px 10px;

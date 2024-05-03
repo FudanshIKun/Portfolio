@@ -7,11 +7,11 @@
             <RouterLink to="/" :class="{ active: isActive('/') }" @click="toggleMobileMenu()">Welcome</RouterLink>
           </i>
         </li>
-        <li>
+        <!-- <li>
           <i class="fa-solid fa-hand-fist">
             <RouterLink to="/beatproject"  :to="{name: 'beatproject' }" :class="{ active: isActive('/beatproject') }" @click="toggleMobileMenu()">BEATPROJECT</RouterLink>
           </i>
-        </li>
+        </li> -->
         <li>
           <i class="fa-solid fa-user">
             <RouterLink :to="{name: 'about-me' }" :class="{ active: isActive('/about-me') }" @click="toggleMobileMenu()">About</RouterLink>
