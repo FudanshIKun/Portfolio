@@ -203,7 +203,7 @@ export default {
 
           <div id="posts" v-if="currentSection === 'hobbies-info'" class="flex flex-col lg:px-6 lg:py-4 w-full" style="overflow: auto; ">
             <!-- title -->
-            <p class="rubik-mono-one-regular" style="color: white; padding-left: 20px;">Short blogs</p>
+            <p class="rubik-mono-one-regular" style="color: white; padding-left: 20px;">Blogs</p>
             <div class="flex flex-col" style="overflow-x: hidden;">
               <BlogSnippet
                 v-for="(blog, key) in config.public.dev.about.sections['hobbies-info'].blogs" 

@@ -7,25 +7,29 @@
               Welcome!
             </RouterLink>
 
-            <RouterLink id="nav-link" :to="{name: 'beatproject' }" :class="{ active: isActive('/beatproject') }">
+            <!-- <RouterLink id="nav-link" :to="{name: 'beatproject' }" :class="{ active: isActive('/beatproject') }">
               BEATPROJECT
-            </RouterLink>
+            </RouterLink> -->
   
             <RouterLink id="nav-link" :to="{name: 'about-me' }" :class="{ active: isActive('/about-me') }">
               About Me
             </RouterLink>
   
+            <!-- <RouterLink id="nav-link" to="/myblogs" :class="{ active: isActive('/myblogs') }">
+              My Blogs
+            </RouterLink> -->
+
             <RouterLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
               My Journey
             </RouterLink>
-          </div>
 
-          <div class="text-gray-400">
-            <RouterLink style="font-size: 18px;" id="nav-link-contact" to="/contact-me" :class="{ active: isActive('/contact-me')}">
-              Contact me
-            </RouterLink>
+            <div class="text-gray-400">
+              <RouterLink style="font-size: 18px;" id="nav-link" to="/contact-me" :class="{ active: isActive('/contact-me')}">
+                Contact me
+              </RouterLink>
+            </div>
           </div>
-      
+          <!-- Move Contact Me's div to Make it on the right -->
       </nav>
 
     </header>
