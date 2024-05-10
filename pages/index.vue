@@ -105,7 +105,7 @@ export default {
             <div class="source-code-pro" style="display:flex; flex-direction: row-reverse;">
               <RouterLink 
               id="nav-link" 
-              to="/about-me?topic=personal-info&folder=Bio" 
+              to="/about" 
               target="" 
               class="w3-round-large w3-padding-large w3-margin-top w3-right text-xs" 
               style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; 
@@ -199,7 +199,7 @@ export default {
                 <p class="source-code-pro" style="padding: 1vh; color: white;">These are the software I've encountered throughout my journey. The ones highlighted in bold represent my areas of expertise, favourite or interest one.</p>
                 <div class="w3-quarter">
                   <ul class="w3-ul w3-gray w3-center" >
-                    <li class="w3-black w3-padding-16" style="font-size: 12px">USEFUL TOOLS</li>    
+                    <li class="w3-black w3-padding-16" style="font-size: 12px">TOOLS</li>    
                     <li class="w3-padding-16"> 
                       <a href="https://www.gimp.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Gimp</a> 
                     </li>
@@ -240,6 +240,30 @@ export default {
                   <ul class="w3-ul w3-gray w3-center" >
                     <li class="w3-black w3-padding-16" style="font-size: 12px">DEVELOPMENT</li>
                     <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">C# Scripting</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">HTML & CSS</a> 
+                    </li> 
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Nuxt.js</a> 
+                    </li> 
+                    <li class="w3-padding-16"> 
+                      <a href="https://firebase.google.com/docs/unity/setup" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Firebase</a> 
+                    </li>             
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Shaders</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">VFXs</a> 
+                    </li>
+                  </ul>
+                </div>
+
+                <div class="w3-quarter">
+                  <ul class="w3-ul w3-gray w3-center">
+                    <li class="w3-black w3-padding-16" style="font-size: 12px">SOFTWARES</li>
+                    <li class="w3-padding-16"> 
                       <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Git</a> 
                     </li>    
                     <li class="w3-padding-16"> 
@@ -253,42 +277,6 @@ export default {
                     </li>
                     <li class="w3-padding-16"> 
                       <a href="https://www.fmod.com/unity" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px;">FMOD Studio</a> 
-                    </li>
-                    <li class="w3-padding-16"> 
-                      <a href="https://www.yarnspinner.dev/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px; font-style:italic ; font-weight: 1000;">Yarn Spinner</a> 
-                    </li>
-                    <li class="w3-padding-16"> 
-                      <a href="https://firebase.google.com/docs/unity/setup" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Firebase</a> 
-                    </li>   
-                  </ul>
-                </div>
-
-                <div class="w3-quarter">
-                  <ul class="w3-ul w3-gray w3-center">
-                    <li class="w3-black w3-padding-16" style="font-size: 12px">SKILLS</li>
-                    <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Algorithms</a> 
-                    </li>
-                    <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">C# Scripting</a> 
-                    </li>
-                    <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Backend</a> 
-                    </li>    
-                    <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">HTML & CSS</a> 
-                    </li> 
-                    <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Nuxt.js</a> 
-                    </li> 
-                    <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">UX/UI</a> 
-                    </li>             
-                    <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Shaders</a> 
-                    </li>
-                    <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">VFXs</a> 
                     </li>
                   </ul>
                 </div>
