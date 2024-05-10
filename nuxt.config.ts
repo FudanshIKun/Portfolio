@@ -33,7 +33,7 @@ export default defineNuxtConfig({
         { rel: 'stylesheet', href: 'https://unpkg.com/prismjs/themes/prism.css'},
         { rel: 'manifest', href: 'pwa/manifest.json' },
         { rel: 'apple-touch-icon', href: 'pwa/icons/apple-touch-icon.png' },
-        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Jersey+15&family=Permanent+Marker&family=Rubik+Mono+One&family=Sedgwick+Ave+Display&family=Silkscreen:wght@400;700&family=Source+Code+Pro&display=swap'},
+        { rel: 'stylesheet', href: 'https://fonts.googleapis.com/css2?family=Jersey+15&family=Permanent+Marker&family=Rubik+Mono+One&family=Sedgwick+Ave+Display&family=Silkscreen:wght@400;700&family=Source+Code+Pro&display=swap&family=Poetsen+One&display=swap'},
       ],
       script: [
         {src: 'https://unpkg.com/masonry-layout@4/dist/masonry.pkgd.min.js'},

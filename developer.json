@@ -1,7 +1,7 @@
 {
     "name": "ToruKun",
     "realname": "Panyawat Puengthamthanapoom",
-    "role": "Game Developer",
+    "role": "Developer",
     "highlights": {
         "activities": {
             "5": {
@@ -110,27 +110,21 @@
             },
             "professional-info": {
                 "title": "Profession",
+                "status": "Available",
                 "info": {
                     "Experience": {
                         "icon": "",
                         "title": "Experience",
                         "header": "<br>███████╗██╗&nbsp;&nbsp;██╗██████╗&nbsp;███████╗██████╗&nbsp;██╗███████╗███╗&nbsp;&nbsp;&nbsp;██╗&nbsp;██████╗███████╗<br>██╔════╝╚██╗██╔╝██╔══██╗██╔════╝██╔══██╗██║██╔════╝████╗&nbsp;&nbsp;██║██╔════╝██╔════╝<br>█████╗&nbsp;&nbsp;&nbsp;╚███╔╝&nbsp;██████╔╝█████╗&nbsp;&nbsp;██████╔╝██║█████╗&nbsp;&nbsp;██╔██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█████╗&nbsp;&nbsp;<br>██╔══╝&nbsp;&nbsp;&nbsp;██╔██╗&nbsp;██╔═══╝&nbsp;██╔══╝&nbsp;&nbsp;██╔══██╗██║██╔══╝&nbsp;&nbsp;██║╚██╗██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══╝&nbsp;&nbsp;<br>███████╗██╔╝&nbsp;██╗██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██║&nbsp;&nbsp;██║██║███████╗██║&nbsp;╚████║╚██████╗███████╗<br>╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚═╝&nbsp;&nbsp;╚═══╝&nbsp;╚═════╝╚══════╝<br><br>",
                         "description": 
-                        "<br>While I've not yet had the opportunity to immerse myself in the industry, I eagerly anticipate the chance to gain valuable hands-on experience. I am enthusiastic about the prospect of contributing to real-world projects and collaborating with professionals. Each day, I actively seek out opportunities to learn and grow, preparing myself and my skills for when the time comes"
+                        "<br>While I've not yet had the opportunity to immerse myself in the industry, I eagerly anticipate the chance to gain valuable hands-on experience. I am enthusiastic about the prospect of contributing to real-world projects and collaborating with professionals. Each day, I actively seek out opportunities to learn and grow, preparing myself and my skills for when the time comes."
                     },
-                    "Hard-skills": {
+                    "Skills": {
                         "icon": "",
-                        "title": "Hard-skills",
-                        "header": "<br>██╗&nbsp;&nbsp;██╗&nbsp;█████╗&nbsp;██████╗&nbsp;██████╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██╗&nbsp;&nbsp;██╗██╗██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██║&nbsp;&nbsp;██║██╔══██╗██╔══██╗██╔══██╗&nbsp;&nbsp;&nbsp;&nbsp;██╔════╝██║&nbsp;██╔╝██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████║███████║██████╔╝██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;███████╗█████╔╝&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██╔══██║██╔══██║██╔══██╗██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;╚════██║██╔═██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██║██████╔╝&nbsp;&nbsp;&nbsp;&nbsp;███████║██║&nbsp;&nbsp;██╗██║███████╗███████╗<br>╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝╚═════╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚══════╝<br><br>",
+                        "title": "Skills",
+                        "header": "<br>███████╗██╗&nbsp;&nbsp;██╗██╗██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗<br>██╔════╝██║&nbsp;██╔╝██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔════╝<br>███████╗█████╔╝&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗<br>╚════██║██╔═██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚════██║<br>███████║██║&nbsp;&nbsp;██╗██║███████╗███████╗███████║<br>╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚══════╝╚══════╝<br><br>",
                         "description": 
-                        "I'm not a professional but as a gamer, I believe that the essence of game development is its features and graphic. That's why I've dedicated myself to mastering coding, programming and shader. I'm passionate about crafting immersive experiences and bringing worlds to life. while also keeping the code clean and readable for future reference, When I come back to it. Every project is an opportunity for me to refine my skills, and gain another experiences to create even better games"
-                    },
-                    "Soft-skills": {
-                        "icon": "",
-                        "title": "Soft-skills",
-                        "header": "<br>███████╗&nbsp;██████╗&nbsp;███████╗████████╗&nbsp;&nbsp;&nbsp;&nbsp;███████╗██╗&nbsp;&nbsp;██╗██╗██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>██╔════╝██╔═══██╗██╔════╝╚══██╔══╝&nbsp;&nbsp;&nbsp;&nbsp;██╔════╝██║&nbsp;██╔╝██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████╗██║&nbsp;&nbsp;&nbsp;██║█████╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗█████╔╝&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>╚════██║██║&nbsp;&nbsp;&nbsp;██║██╔══╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚════██║██╔═██╗&nbsp;██║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br>███████║╚██████╔╝██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████║██║&nbsp;&nbsp;██╗██║███████╗███████╗<br>╚══════╝&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝╚═╝╚══════╝╚══════╝<br><br>",
-                        "description":                   
-                        "I believe that soft skills are essential for effective teamwork. Strong communication skills, a collaborative mindset, and the ability to foster a productive environment are crucial for achieving our game development goals. I'm dedicated to continuous learning, self-improvement and approach challenges with creativity and resilience."
+                        "I'm not a professional but as a gamer, I believe that the essence of game development is its features and graphic. That's why I've dedicated myself to mastering coding, programming and shader. I'm passionate about crafting immersive experiences and bringing worlds to life. while also keeping the code clean and readable for future reference, When I come back to it. Every project is an opportunity for me to refine my skills, and gain another experiences to create even better games."
                     }
                 },
                 "gist": {
@@ -147,52 +141,55 @@
                         "title": "Game",
                         "header": "<br>&nbsp;██████╗&nbsp;&nbsp;█████╗&nbsp;███╗&nbsp;&nbsp;&nbsp;███╗███████╗<br>██╔════╝&nbsp;██╔══██╗████╗&nbsp;████║██╔════╝<br>██║&nbsp;&nbsp;███╗███████║██╔████╔██║█████╗&nbsp;&nbsp;<br>██║&nbsp;&nbsp;&nbsp;██║██╔══██║██║╚██╔╝██║██╔══╝&nbsp;&nbsp;<br>╚██████╔╝██║&nbsp;&nbsp;██║██║&nbsp;╚═╝&nbsp;██║███████╗<br>&nbsp;╚═════╝&nbsp;╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚═╝╚══════╝<br><br>",
                         "description": 
-                        "I'm an avid gamer, Exploring and seeking out new games is what I do in my free time. While I occasional enjoy the AAA title, most of my inspiration come from indie games. Indie titles is special for me, they offer creativity and innovation that's hard to find elsewhere. Sure, not every indie game I play is a masterpiece, but each one provides valuable insights and inspiration for my own projects. Some games spark new ideas or challenge me to think differently about game design, They're even cheaper compare to most AAA title. Regardless of the game, I played. I always approach it with an open mind and enjoy to learn something from it. After all, every gaming experience no matter how big or small helps shape me to be better as game developer."
+                        "I'm an avid gamer, Exploring and seeking out new games is what I do in my free time. While I occasional enjoy the AAA title, most of my inspiration come from indie games. Indie titles is special for me, they offer creativity and innovation that's hard to find elsewhere. Sure, not every indie game I play is a masterpiece, but each one provides valuable insights and inspiration for my own projects. Some games spark new ideas or challenge me to think differently about game design, They're even cheaper compare to most AAA title. Regardless of the game, I played. I always approach it with an open mind and enjoy to learn something from it. After all, every gaming experience no matter how big or small helps shape me to be better as game developer.",
+                        "blogs":{
+                            "1":{
+                                "avatar": "icons/avatar.jpg",
+                                "username": "ToruKun",
+                                "date": "April 28, 2024",
+                                "title": "My new favourite game! UNBEATABLE [white label]",
+                                "content": "A young girl learns a song. An exclusive side-story set in the world of D-CELL GAMES' upcoming rhythm-adventure.",
+                                "img": "/images/blogs/unbeatable.jpg",
+                                "continue": ""
+                            }
+                        }
                     },
                     "Art": {
                         "icon": "",
                         "title": "Art",
                         "header": "<br>&nbsp;█████╗&nbsp;██████╗&nbsp;████████╗<br>██╔══██╗██╔══██╗╚══██╔══╝<br>███████║██████╔╝&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██╔══██║██╔══██╗&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>██║&nbsp;&nbsp;██║██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>╚═╝&nbsp;&nbsp;╚═╝╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
                         "description": 
-                        "I've always had a strong interest for art, both in 2D and 3D formats. I firmly believe that graphics are essential for making a good games. While I've dabbled in art as a hobby or when required for university projects, My goal is to gradually refine my skills, ensuring that my projects benefit from visually designs and art skills while balancing my responsibilities as a developer. <br><br>"
-                        
+                        "I've always had a strong interest for art, both in 2D and 3D formats. I firmly believe that graphics are essential for making a good games. While I've dabbled in art as a hobby or when required for university projects, My goal is to gradually refine my skills, ensuring that my projects benefit from visually designs and art skills while balancing my responsibilities as a developer. <br><br>",
+                        "blogs":{
+                            "1":{
+                                "avatar": "icons/avatar.jpg",
+                                "username": "ToruKun",
+                                "date": "April 28, 2024",
+                                "title": "My Custom ITX PC build!",
+                                "content": "Well, I hated notebook so... <br>K39v2 (white): <br>i5-12400 <br>Noctua NH-L9i-chroma black <br>Asus ROG Strix b660-i Motherboard Geforce GTX 1650 <br>16GB PNY DDR5 4800MHz <br>512GB SSD M.2 HIKSEMI E3000 <br>500GB WD BLACK SN750 2280 <br>Dianjipa MF500F Platinum+ Flex PSU",
+                                "img": "/images/blogs/itx.jpg",
+                                "continue": ""
+                            }
+                        }
                     },
                     "Cosplay": {
                         "icon": "",
                         "title": "Cosplay",
                         "header": "<br>&nbsp;██████╗&nbsp;██████╗&nbsp;███████╗██████╗&nbsp;██╗&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;█████╗&nbsp;██╗&nbsp;&nbsp;&nbsp;██╗<br>██╔════╝██╔═══██╗██╔════╝██╔══██╗██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══██╗╚██╗&nbsp;██╔╝<br>██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║███████╗██████╔╝██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████║&nbsp;╚████╔╝&nbsp;<br>██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║╚════██║██╔═══╝&nbsp;██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;██╔══██║&nbsp;&nbsp;╚██╔╝&nbsp;&nbsp;<br>╚██████╗╚██████╔╝███████║██║&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;███████╗██║&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;██║&nbsp;&nbsp;&nbsp;<br>&nbsp;╚═════╝&nbsp;╚═════╝&nbsp;╚══════╝╚═╝&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;╚══════╝╚═╝&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;╚═╝&nbsp;&nbsp;&nbsp;<br><br>",
                         "description": 
-                        "I embarked on my cosplay journey during my freshman year at university when I decided to join my major's cosplay contest alongside my friends. While the experience was enjoyable and filled with camaraderie, I didn't delve as deeply into it as some of my peers did. Instead, I dabbled in it occasionally or participated when invited by friends. But I didn't hate it tho, already have something more enjoyable to do."
+                        "I embarked on my cosplay journey during my freshman year at university when I decided to join my major's cosplay contest alongside my friends. While the experience was enjoyable and filled with camaraderie, I didn't delve as deeply into it as some of my peers did. Instead, I dabbled in it occasionally or participated when invited by friends. But I didn't hate it tho, already have something more enjoyable to do.",
+                        "blogs":{
+                            "1":{
+                                "avatar": "icons/avatar.jpg",
+                                "username": "ToruKun",
+                                "date": "April 28, 2024",
+                                "title": "My First Cosplay!",
+                                "content": "RSU OpenHouse Mini Cosplay Contest 2023",
+                                "img": "/images/blogs/first-cosplay.jpg",
+                                "continue": ""
+                            }
+                        }
                         
-                    }
-                },
-                "blogs": {
-                    "3": {
-                        "avatar": "icons/avatar.jpg",
-                        "username": "ToruKun",
-                        "date": "April 28, 2024",
-                        "title": "My First Cosplay!",
-                        "content": "RSU OpenHouse Mini Cosplay Contest 2023",
-                        "img": "/images/blogs/first-cosplay.jpg",
-                        "continue": ""
-                    },
-                    "2": {
-                        "avatar": "icons/avatar.jpg",
-                        "username": "ToruKun",
-                        "date": "April 28, 2024",
-                        "title": "My new favourite game! UNBEATABLE [white label]",
-                        "content": "A young girl learns a song. An exclusive side-story set in the world of D-CELL GAMES' upcoming rhythm-adventure.",
-                        "img": "/images/blogs/unbeatable.jpg",
-                        "continue": ""
-                    },
-                    "1": {
-                        "avatar": "icons/avatar.jpg",
-                        "username": "ToruKun",
-                        "date": "April 28, 2024",
-                        "title": "My First ITX PC build!",
-                        "content": "Well, I hated notebook so... <br>K39v2 (white): <br>i5-12400 <br>Noctua NH-L9i-chroma black <br>Asus ROG Strix b660-i Motherboard Geforce GTX 1650 <br>16GB PNY DDR5 4800MHz <br>512GB SSD M.2 HIKSEMI E3000 <br>500GB WD BLACK SN750 2280 <br>Dianjipa MF500F Platinum+ Flex PSU",
-                        "img": "/images/blogs/itx.jpg",
-                        "continue": ""
                     }
                 }
             }

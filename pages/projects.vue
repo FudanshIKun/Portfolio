@@ -1,7 +1,7 @@
 <script setup>
 import { ref } from 'vue'
 const config = useRuntimeConfig()
-const techs = ['Graphic Design', 'Illustration', 'Modeling', 'Autodesk Maya', 'Game Design', 'Game', 'Unity', 'Shader']
+const techs = ['Illustration', 'Modeling', 'Game', 'Shader']
 const filters = ref(['all'])
 const showFilters = ref(true)
 const projects = ref(config.public.dev.projects)
@@ -40,20 +40,8 @@ function filterProjectsBy(filters) {
 
 <template>
   <main class="flex flex-col flex-auto lg:flex-row" style="height: 100%; overflow: hidden; border-top: 2px solid #454843;">
-
-    <!-- section title (mobile) -->
-    <div id="section-content-title" class="flex lg:hidden" @click="showFilters = !showFilters">
-      <img :class="showFilters ? 'section-arrow rotate-90' : 'section-arrow'" src="/icons/arrow.svg">
-      <span class="source-code-pro text-white text-sm">projects</span>
-    </div>
     
     <div v-if="showFilters" id="filter-menu" class="w-full flex-col border-right font-fira_regular text-menu-text lg:flex">
-
-      <!-- title -->
-      <div id="section-content-title" class="hidden lg:flex items-center min-w-full">
-        <img id="section-arrow-menu" src="/icons/arrow.svg" alt="" class="section-arrow mx-3">
-        <p class="source-code-pro text-white text-sm">projects</p>
-      </div>
 
       <!-- filter menu -->
       <nav id="filters" class="w-full flex-col" style="max-height: 100%;">
@@ -69,32 +57,17 @@ function filterProjectsBy(filters) {
     <!-- content -->
 
     <div class="flex flex-col w-full overflow-hidden">
-      
-      <!-- windows tab -->
-      <div class="tab-height w-full hidden lg:flex border-bot items-center">
-        <div class="flex items-center border-right h-full">
-          <p v-for="filter in filters" :key="filter" class="source-code-pro text-menu-text text-sm px-3">{{ filter }};</p>
-          <img src="/icons/close.svg" alt="" class="m-3">
-        </div>
-      </div>
-
-      <!-- windows tab mobile -->
-      <div id="tab" class="flex lg:hidden items-center">
-          <span class="text-white"> // </span>
-          <p class="source-code-pro text-white text-sm px-3">projects</p>
-          <span class="text-menu-text"> / </span>
-          <p v-for="filter in filters" :key="filter" class="source-code-pro text-menu-text text-sm px-3">{{ filter }};</p>
-      </div>
 
       <!-- projects -->
       <div id="projects-case" class="grid grid-cols-1 lg:grid-cols-2 max-w-full h-full lg:self-center" style="overflow-y: scroll;">
-        <div id="not-found" class="hidden flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
+        <div id="not-found" class="hidden flex flex-col source-code-pro text-menu-text my-5 h-full justify-center items-center">
           <span class="flex justify-center text-4xl pb-3">
-            X__X
+            X_X
           </span>
           <span class="text-white flex justify-center text-xl">
             No matching projects
           </span>
+          <a href="/contact-me" class="hover:text-green-600"> Come back later!</a>
         </div>
         
         <project-card
@@ -115,6 +88,14 @@ function filterProjectsBy(filters) {
 ::-webkit-scrollbar {
   display: none;
 
+}
+
+#section-content-title{
+  background-color: #1f1f1f;
+}
+
+#filter-menu{
+  background-color: #1f1f1f;
 }
 
 #filters {
