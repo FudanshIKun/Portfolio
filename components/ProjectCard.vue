@@ -58,7 +58,7 @@ const overlayOpacity = computed(() => {
                 <div style="display: flex;">
                   <div>
                   <NuxtLink id = "button" v-if="project.source && project.source !== ''" :href="project.source" target="_blank" class="text-white source-code-pro py-2 px-4 text-xs w3-round-large">
-                    Github
+                    Source Code
                   </NuxtLink>
                   </div>
                   <span class="px-1"></span>

@@ -1,7 +1,7 @@
 <template>
     <main id="contact-me" class="page" style="border-top: 2px solid #454843;">
 
-        <div id="page-menu" class="w-fullflex flex-col" style="height: 100%; border-right: 2px solid #454843;">
+        <div id="page-menu" class="w-fullflex flex-col" style="height: 100%; border-right: 2px solid #454843; background-color: #1f1f1f;">
 
             <!-- contacts -->
             <div id="contacts" class="submenu">

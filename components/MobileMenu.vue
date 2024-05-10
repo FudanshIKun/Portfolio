@@ -14,7 +14,12 @@
         </li> -->
         <li>
           <i class="fa-solid fa-user">
-            <RouterLink :to="{name: 'about-me' }" :class="{ active: isActive('/about-me') }" @click="toggleMobileMenu()">About</RouterLink>
+            <RouterLink :to="{name: 'about' }" :class="{ active: isActive('/about') }" @click="toggleMobileMenu()">About</RouterLink>
+          </i>
+        </li>
+        <li>
+          <i class="fa-solid fa-user">
+            <RouterLink :to="{name: 'experience' }" :class="{ active: isActive('/experience') }" @click="toggleMobileMenu()">Experience</RouterLink>
           </i>
         </li>
         <li>

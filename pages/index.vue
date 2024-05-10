@@ -58,11 +58,18 @@ export default {
 
 <template>
   	<main v-if="!loading" id="hello" class="max-w-full h-full" style="overflow-y: scroll; overflow-x: hidden;">
-      <section class="hero" style="height: 100%;">
-        <div style="height: 100%; justify-content: end;">
-          
+      <button v-if="isMobile==false" id="download-cv" class="w3-round-large w3-padding-large w3-margin-top mr-6 w3-right text-xs" style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; 
+        background-image: linear-gradient(180deg, rgba(247,61,147,1) 0%, rgba(82,92,235,1) 0%);">
+        <div style="display: flex; flex-direction: row; align-items: center">
+          <i class="fa fa-download" style="padding-top: .6px;"></i>
+          <span class="px-1"></span>
+          <p style="text-wrap: nowrap;">Download CV</p>
         </div>
-        <div class="head" style="padding-bottom: 5vh; color: white; padding-left: 5vw; padding-top: 2vh;">
+      </button>
+      <section class="hero" style="height: 35vw; flex-direction: column;">
+        
+        <div style="height: 100%; justify-content: end;"></div>
+        <div class="head" style="color: white; padding-left: 5vw; padding-top: 2vh;">
           <h1 class="jersey-15-regular">{{ config.dev.realname }}</h1>
           <h2 class="jersey-15-regular">> {{ config.dev.role }}</h2>
           <!--
@@ -72,9 +79,9 @@ export default {
 
       </section>
 
-      <section class="hero source-code-pro" style="height: 100%;">
-        <div style="justify-content: center; margin-top: auto; margin-bottom: auto; margin-left: auto; ">
-          <div class="w3-container w3-content w3-right" style="max-width:800px;">
+      <section class="hero source-code-pro" style="height: fit-content; margin-top: 5vw; margin-bottom: 5vw;">
+        <div class="middle">
+          <div class="w3-container w3-content" style="max-width:800px;">
             <h2 class="w3-wide text-3xl pl-6 pb-6 silkscreen-regular custom" style="color: white;">WHO AM I</h2>
             <div class="box">
               
@@ -101,23 +108,16 @@ export default {
               to="/about-me?topic=personal-info&folder=Bio" 
               target="" 
               class="w3-round-large w3-padding-large w3-margin-top w3-right text-xs" 
-              style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
-                See more About Me
+              style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; 
+              background-image: linear-gradient(180deg, rgba(247,61,147,1) 0%, rgba(82,92,235,1) 0%);">
+                See More in About Me
               </RouterLink>
-              <span class="px-2"></span>
-              <button id="download-cv" class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-right text-xs" style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
-                <div style="display: flex; flex-direction: row; align-items: center">
-                  <i class="fa fa-download" style="padding-top: .6px;"></i>
-                  <span class="px-1"></span>
-                  <p style="text-wrap: nowrap;">Download CV</p>
-                </div>
-              </button>
             </div>
           </div>
         </div>
       </section>
 
-      <section class="hero" style="height: 75%; margin: auto;  padding: 2vw; padding-top: 60px; text-align: center;">
+      <section class="hero" style="height: fit-content;  padding: 2vw; text-align: center; flex-direction: column;">
         <div>
           <h2 class="w3-wide text-3xl silkscreen-regular pb-6" style="color: white;">WHAT I DO</h2>
           <div class="w3-content box">
@@ -135,7 +135,7 @@ export default {
                   <span class="px-1"></span>
                   <h2 class="rubik-mono-one-regular" style="font-size: 36px; color: #7547f3;">Create</h2> 
                   <span class="px-1"></span>
-                  <p class="source-code-pro" style="color: gray;">Designing, Implementing, and Testing features to deliver immersive and engaging gameplay.</p>
+                  <p class="source-code-pro" style="color: gray;">Implementing and Testing features to deliver immersive and engaging gameplay.</p>
                 </div> 
 
                 <div> 
@@ -184,196 +184,150 @@ export default {
           id="nav-link" 
           to="/projects" 
           class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right text-xs source-code-pro"
-          style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
-            More about My Journey
+          style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; 
+          background-image: linear-gradient(180deg, rgba(247,61,147,1) 0%, rgba(82,92,235,1) 0%);">
+            See More in My Journey
           </RouterLink>
         </div>
       </section>  
 
-      <section class="hero" style="height: 50%;">
-        <div>
-          <div class="w3-container source-code-pro" style="max-width:800px; padding: 2vw;">
-            <h2 class="w3-wide text-3xl pl-6 pb-3 silkscreen-regular custom" style="color: white;">WHAT I USE</h2>
-            <div class="w3-row-padding box" style="max-width:85vw; height: fit-content;"> 
-              <p class="source-code-pro" style="padding: 1vh; color: white;">These are the software I've encountered throughout my journey. The ones highlighted in bold represent my areas of expertise, favourite or interest one.</p>
-              <div class="w3-quarter">
-                <ul class="w3-ul w3-gray w3-center" >
-                  <li class="w3-black w3-padding-16" style="font-size: 12px">USEFUL TOOLS</li>    
-                  <li class="w3-padding-16"> 
-                    <a href="https://www.gimp.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Gimp</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://www.darktable.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Darktable</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://www.openshot.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">OpenShot</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://www.reaper.fm/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Reaper</a> 
-                  </li>
-                </ul>
-              </div>  
+      <section class="hero flex custom-flex" style="height: fit-content;">
+        <div id="left" style="grid-template-columns: repeat(2, minmax(0, 1fr));">
+            <div class="w3-container source-code-pro" style="max-width:850px; margin: auto; display: flex; flex-direction: column;">
+              <h2 class="w3-wide text-3xl pl-6 pb-3 silkscreen-regular custom" style="color: white;">WHAT I USE</h2>
+              <div class="w3-row-padding box" style="height: fit-content;"> 
+                <p class="source-code-pro" style="padding: 1vh; color: white;">These are the software I've encountered throughout my journey. The ones highlighted in bold represent my areas of expertise, favourite or interest one.</p>
+                <div class="w3-quarter">
+                  <ul class="w3-ul w3-gray w3-center" >
+                    <li class="w3-black w3-padding-16" style="font-size: 12px">USEFUL TOOLS</li>    
+                    <li class="w3-padding-16"> 
+                      <a href="https://www.gimp.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Gimp</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://www.darktable.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Darktable</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://www.openshot.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">OpenShot</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://www.reaper.fm/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Reaper</a> 
+                    </li>
+                  </ul>
+                </div>  
 
-              <div class="w3-quarter">
-                <ul class="w3-ul w3-gray w3-center" style="min-width: 100px;">
-                  <li class="w3-black w3-padding-16" style="font-size: 12px">DESIGN TOOLS</li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://www.figma.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Figma</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://procreate.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Procreate</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://www.blender.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Blender</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://en.wikipedia.org/wiki/Autodesk_Maya" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Autodesk Maya</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://store.steampowered.com/app/2718190/Substance_3D_Painter_2024/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Subtance Painter</a> 
-                  </li>
-                </ul>
-              </div>
-
-              <div class="w3-quarter">
-                <ul class="w3-ul w3-gray w3-center" >
-                  <li class="w3-black w3-padding-16" style="font-size: 12px">DEVELOPMENT TOOLS</li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Git</a> 
-                  </li>    
-                  <li class="w3-padding-16"> 
-                    <a href="https://code.visualstudio.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Visual Studio Code</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://www.jetbrains.com/rider/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Jetbrain Rider</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://unity.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Unity Game Engine</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://www.fmod.com/unity" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px;">Unity FMOD</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://www.yarnspinner.dev/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px; font-style:italic ; font-weight: 1000;">Unity Yarn Spinner</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a href="https://firebase.google.com/docs/unity/setup" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Unity Firebase Integration</a> 
-                  </li>   
-                </ul>
-              </div>
-
-              <div class="w3-quarter">
-                <ul class="w3-ul w3-gray w3-center">
-                  <li class="w3-black w3-padding-16" style="font-size: 12px">PROFICIENCIES</li>
-                  <li class="w3-padding-16"> 
-                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Algorithms</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">C# Scripting</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Backend</a> 
-                  </li>    
-                  <li class="w3-padding-16"> 
-                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">HTML & CSS</a> 
-                  </li> 
-                  <li class="w3-padding-16"> 
-                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Nuxt.js</a> 
-                  </li> 
-                  <li class="w3-padding-16"> 
-                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">UX/UI</a> 
-                  </li>             
-                  <li class="w3-padding-16"> 
-                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Shaders</a> 
-                  </li>
-                  <li class="w3-padding-16"> 
-                    <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">VFXs</a> 
-                  </li>
-                </ul>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      <section class="hero" style="height: 85%;">
-        <div style="height: fit-content;">
-          <div class="w3-container w3-content w3-right" style="max-width:1000px; padding: 2vw;">
-            <section class="box text-sm source-code-pro"> 
-                <h2 class="w3-wide text-3xl pb-6 silkscreen-regular" style="color: white">LANGUAGES</h2>
-                <div style="box-shadow: var(--shadow-2); padding: 1vh;">
-                  <p style="color: white"><b>THAI</b></p>
-                  <span class="px-0.5"></span>
-                  <div class="w3-light-grey w3-round-xlarge">
-                    <div class="w3-round-xlarge w3-gray" style="height:24px;width:99%"></div>
-                  </div>
-                  <p style="color: gray; padding-top: 1vh;">Native Speaker</p>
+                <div class="w3-quarter">
+                  <ul class="w3-ul w3-gray w3-center" style="min-width: 100px;">
+                    <li class="w3-black w3-padding-16" style="font-size: 12px">DESIGN</li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://www.figma.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Figma</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://procreate.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Procreate</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://www.blender.org/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Blender</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://en.wikipedia.org/wiki/Autodesk_Maya" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Autodesk Maya</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://store.steampowered.com/app/2718190/Substance_3D_Painter_2024/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Subtance Painter</a> 
+                    </li>
+                  </ul>
                 </div>
-                <div style="box-shadow: var(--shadow-2); padding: 1vh;">
-                  <p style="color: white"><b>ENGLISH</b></p>
-                  <span class="px-0.5"></span>
-                  <div class="w3-light-grey w3-round-xlarge">
-                    <div class="w3-round-xlarge w3-gray" style="height:24px;width:65%"></div>
-                  </div>
-                  <p style="color: gray; padding-top: 1vh;">I understand well but my speaking and my grammar aren't so good.</p>
-                </div>
-            </section>
-          </div>
-        </div>
-      </section>
 
-      <!--
-      <section class="hero" style="padding-top: 5vh; padding-left: 5vh;">
-        <div style=" padding: 2vw; padding-right: 5vh;">
-          <div class="box" style="padding: 2vh;">
-            <h2 class="w3-wide text-3xl" style="color: white">WORK EXPERIENCE</h2>
-            <span class="px-1"></span>
-            <div id="not-found" class="flex flex-col font-fira_retina text-menu-text my-5 h-full justify-center items-center">
-              <span class="flex justify-center text-4xl pb-3">
-                T__T
-              </span>
-              <span class="flex justify-center">
-                NOOO!
-              </span>
-              <span class="text-white flex justify-center text-xl">
-                I don't have any work experience yet.
-              </span>
-              <a href="/contact-me" class="hover:text-green-600"> Help me get one!</a>
-            </div>
-            <div class="media-scroller snaps-inline" style="padding:2vh;">
-              <div class="media-element container" v-for="(experience, key) in highlights.experience" :key="key">
-                <div class="card" style="width: 100%;">
-                  <div class="slide slide1">
-                    <NuxtLink>
-                      <img id="h-auto" :src="experience.img" style="inline-size: 100%; aspect-ratio: 16 / 9; object-fit:cover; border-radius: 5px;">
-                    </NuxtLink>
-                  </div>
-                  <div style="padding: 1vh;">
-                    <div style="width: 100%;">
-                      <h3 v-if="index == null" class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ experience.title}}</h3>
-                      <h3 v-else class="font-fira_bold mr-3" style="font-size:smaller; text-wrap:wrap; color: white">{{ experience.title}}</h3>
-                      <p class="text-menu-text font-fira_retina text-sm mb-5">
-                        {{ experience.description }}
-                      </p>
+                <div class="w3-quarter">
+                  <ul class="w3-ul w3-gray w3-center" >
+                    <li class="w3-black w3-padding-16" style="font-size: 12px">DEVELOPMENT</li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://cli.github.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Git</a> 
+                    </li>    
+                    <li class="w3-padding-16"> 
+                      <a href="https://code.visualstudio.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Visual Studio Code</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://www.jetbrains.com/rider/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Jetbrain Rider</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://unity.com/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Unity Engine</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://www.fmod.com/unity" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px;">FMOD Studio</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://www.yarnspinner.dev/" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 10px; font-style:italic ; font-weight: 1000;">Yarn Spinner</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a href="https://firebase.google.com/docs/unity/setup" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Firebase</a> 
+                    </li>   
+                  </ul>
+                </div>
+
+                <div class="w3-quarter">
+                  <ul class="w3-ul w3-gray w3-center">
+                    <li class="w3-black w3-padding-16" style="font-size: 12px">SKILLS</li>
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Algorithms</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">C# Scripting</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">Backend</a> 
+                    </li>    
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">HTML & CSS</a> 
+                    </li> 
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">Nuxt.js</a> 
+                    </li> 
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">UX/UI</a> 
+                    </li>             
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Shaders</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">VFXs</a> 
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>     
+        </div>
+
+        <div id="right" class="max-w-full flex flex-col">   
+            <div style="height: fit-content;">
+              <div class="w3-container w3-content" style="max-width:1000px; padding: 2vw;">
+                <h2 class="w3-wide text-3xl pb-3 silkscreen-regular custom" style="color: white;">LANGUAGES</h2>
+                <section class="box text-sm source-code-pro"> 
+                    <div style="box-shadow: var(--shadow-2); padding: 1vh;">
+                      <p style="color: white"><b>THAI</b></p>
+                      <span class="px-0.5"></span>
+                      <div class="w3-light-grey w3-round-xlarge">
+                        <div class="w3-round-xlarge w3-gray" style="height:24px;width:99%"></div>
+                      </div>
+                      <p style="color: gray; padding-top: 1vh;">Native Speaker</p>
                     </div>
-                  </div>
-                </div>
+                    <div style="box-shadow: var(--shadow-2); padding: 1vh;">
+                      <p style="color: white"><b>ENGLISH</b></p>
+                      <span class="px-0.5"></span>
+                      <div class="w3-light-grey w3-round-xlarge">
+                        <div class="w3-round-xlarge w3-gray" style="height:24px;width:65%"></div>
+                      </div>
+                      <p style="color: gray; padding-top: 1vh;">I understand well but my speaking and my grammar aren't so good.</p>
+                    </div>
+                </section>
               </div>
             </div>
+            
+
           </div>
-          <RouterLink 
-              id="nav-link" 
-              to="/about-me?topic=professional-info&folder=Experience" 
-              class="w3-button w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-right text-xs">
-                See more On My Experiences
-              </RouterLink>
-        </div>
       </section>
-      -->
       
-      <section class="hero" style="padding: 2vh; ">
+      <section class="hero" style="margin-top: 5vw; padding: 2vh; flex-direction: column;">
         <div>
-          <div class="box" style="padding: 2vh; padding-top: 2vw;">
+          <div class="box">
             <h2 class="w3-wide text-2xl silkscreen-regular" style="color: white">RECENT EVENTS</h2>
             <span class="px-1"></span>
             <div class="media-scroller " style="padding:2vh;">
@@ -397,13 +351,13 @@ export default {
               </div>
             </div>
           </div>
-          <RouterLink 
+          <!-- <RouterLink 
           id="nav-link" 
           to="/about-me?topic=hobbies-info&folder=Game" 
           class="w3-round-large w3-dark-grey w3-padding-large w3-margin-top w3-margin-bottom w3-left text-xs source-code-pro"
           style="height: fit-content; text-align: center; text-wrap: nowrap; color: white; background-image: linear-gradient(rgba(173, 65, 253, .77), rgba(94, 65, 253, .97));">
-              More about My Hobbies
-          </RouterLink>
+              See More in My Hobbies
+          </RouterLink> -->
         </div>
       </section>
 
@@ -542,7 +496,6 @@ button:hover {
 } 
 
 #hello { 
-  height: 100%;
   width: 100%;
   border-top: 2px solid #454843;
 }
@@ -553,7 +506,6 @@ button:hover {
 
 #hello .hero {
 	display: flex;
-	flex-direction: column;
 	margin: 0rem;
 }
 
@@ -594,8 +546,11 @@ button:hover {
   width: 100%;
 }
 
-
 @media (min-width: 50em){
+  .middle {
+    margin-left: auto;
+  }
+
   .skills{
     display: grid;
     grid-template-columns: repeat(3, 10fr);
@@ -610,10 +565,30 @@ button:hover {
     padding: 2.5rem;
     min-height: 350px;
   }
+
+  .custom-flex{
+    display: flex;
+    flex-direction: row
+  }
+
+  #left{
+  width: 65%;
+
+  }
+
+  #right{
+    width: 45%;
+
+  }
 }
 
 /* mobile */
 @media (max-width: 768px) {
+  ::-webkit-scrollbar {
+  display: none;
+
+  } 
+
 	#hello {
 		padding-left: 0;
 	}
@@ -636,10 +611,35 @@ button:hover {
     text-align: center;
     margin: auto;
   }
+
+  #left{
+  width: 100%;
+
+  }
+
+  #right{
+    width: 100%;
+
+  }
 }
 
 /* tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
+  ::-webkit-scrollbar {
+  display: none;
+
+  }
+
+  #left{
+  width: 100%;
+
+  }
+
+  #right{
+    width: 100%;
+
+  }
+
 	#hello {
 		padding-left: 0;
 	}

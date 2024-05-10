@@ -11,26 +11,32 @@
               BEATPROJECT
             </RouterLink> -->
   
-            <RouterLink id="nav-link" :to="{name: 'about-me' }" :class="{ active: isActive('/about-me') }">
+            <RouterLink id="nav-link" :to="{name: 'about' }" :class="{ active: isActive('/about') }">
               About Me
+            </RouterLink>
+
+            <RouterLink id="nav-link" :to="{name: 'experience' }" :class="{ active: isActive('/experience') }">
+              Experience
             </RouterLink>
   
             <!-- <RouterLink id="nav-link" to="/myblogs" :class="{ active: isActive('/myblogs') }">
-              My Blogs
+              Blogs
             </RouterLink> -->
 
             <RouterLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
-              My Journey
+              Journey
             </RouterLink>
 
-            <div class="text-gray-400">
-              <RouterLink style="font-size: 18px;" id="nav-link" to="/contact-me" :class="{ active: isActive('/contact-me')}">
-                Contact me
-              </RouterLink>
-            </div>
+          
           </div>
           <!-- Move Contact Me's div to Make it on the right -->
+          <div class="text-gray-400">
+            <RouterLink style="font-size: 18px;" id="nav-link" to="/contact-me" :class="{ active: isActive('/contact-me')}">
+              Contact Me
+            </RouterLink>
+          </div>
       </nav>
+      
 
     </header>
 
