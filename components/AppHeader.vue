@@ -1,3 +1,23 @@
+<script>
+
+export default {
+  computed: {
+    // Set active class to current page link
+    isActive() {
+      return route => this.$route.path === route;
+    }
+  },
+  setup() {
+    const config = useRuntimeConfig()
+
+    return {
+      config
+    }
+  },
+};
+
+</script>
+
 <template>
     <header id="navbar" class="w-full hidden lg:flex flex-col jersey-15-regular ">
       <nav class="w-full flex justify-between" style="align-items: center; font-size: 23px;">
@@ -78,23 +98,3 @@
 }
 
 </style>
-
-<script>
-
-export default {
-  computed: {
-    // Set active class to current page link
-    isActive() {
-      return route => this.$route.path === route;
-    }
-  },
-  setup() {
-    const config = useRuntimeConfig()
-
-    return {
-      config
-    }
-  },
-};
-
-</script>
