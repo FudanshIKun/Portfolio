@@ -1,7 +1,7 @@
 <template>
     <div id="shot">
               <div class="card">
-                <img src="/Simple Profile.jpg">
+                <img src="/simple-profile.jpg">
                 <div id="component"></div>
               </div>
               <div class="description">
@@ -77,6 +77,7 @@ a:hover {
   to, 20%, 40%, 60%, 80% {
     opacity: 1;
   }
+
   from, 10%, 30%, 50%, 70%, 90% {
     opacity: 0;
   }
@@ -85,7 +86,7 @@ a:hover {
 /* tablet */
 @media (min-width: 768px) and (max-width: 1024px) {
     #shot{
-    @apply hidden
+      @apply hidden
     }
 }
 
