@@ -64,7 +64,7 @@ export default {
           <div class="border-top" v-if="section.title == 'Profession'">
 
             <div class="header">
-                <p class="poetsen-one-regular" style="color: #7547f3; text-align: left; flex-direction: column-reverse;">Status :</p>
+                <p class="poetsen-one-regular" style="color: #7547f3; text-align: left; flex-direction: column-reverse;">Class :</p>
                 <h3 class="permanent-marker-regular" style="color: #7547f3; font-size: 36px;">{{section.status}}</h3>
             </div>
             <!-- folders -->

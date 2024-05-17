@@ -58,16 +58,14 @@ export default {
   <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
   <main v-if="!loading" id="about-me" class="page" style="height: 85%;">
 
-    <div id="page-menu" class="w-full flex" style="height: 100%;">
+    <div id="page-menu" class="w-full flex" style="min-width: fit-content; height: 100%;">
       <!-- focused section content -->
       <div id="section-content" class="hidden lg:block w-full h-full border-right" style="height: 100%;">
 
         <div v-for="(section, index) in config.dev.about.sections" :key="index">
           <div class="border-top" v-if="section.title == 'Personal'">
 
-            <div class="header">
-              <h3 class="permanent-marker-regular" style="color: #F73D93;">Torukun</h3>
-            </div>
+            <CardName></CardName>
             <!-- folders -->
             <div v-if="section.title == 'Personal'" v-for="(folder, key) in section.info" class="grid grid-cols-2 items-center text-menu-text pl-6 pr-2" @click="focusCurrentFolder(folder)">
                 <div class="hover:text-white hover hover:cursor-pointer folder">
@@ -93,9 +91,7 @@ export default {
         <div v-for="(section, index) in config.dev.about.sections" :key="index">
           <div class="border-top pb-6" v-if="section.title == 'Personal'">
 
-            <div class="header">
-              <h3 class="permanent-marker-regular" style="color:#F73D93;">Torukun</h3>
-            </div>
+            <CardName></CardName>
             <!-- folders -->
             <div v-if="section.title == 'Personal'" v-for="(folder, key) in section.info" class="grid grid-cols-2 items-center source-code-pro text-menu-text pl-6 pr-2" @click="focusCurrentFolder(folder)">
                 <div class="hover:text-white hover:cursor-pointer folder">

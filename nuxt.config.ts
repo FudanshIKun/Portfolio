@@ -40,6 +40,8 @@ export default defineNuxtConfig({
         {src: 'https://kit.fontawesome.com/d3a076a782.js'},
         {src: 'https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js'},
         {src: 'https://unpkg.com/prismjs'},
+        {src: 'https://scripts.sirv.com/sirvjs/v3/sirv.js'},
+        {src: 'https://static.imgix.net/ix-player/@latest/dist/ix-player.mjs'},
         {innerHTML: 'emailjs.init(\'2z2G1Z5GbSaziHlBg\')'}
       ]
     },

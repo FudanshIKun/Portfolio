@@ -35,42 +35,42 @@
                 "name": "2D TOPDOWN SHOOTING GAME",
                 "description": "University-Assignment",
                 "img": "",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712466930/Projects/University/CGE108-2D-GAME-0.mp4",
+                "video": "https://torukun.imgix.net/CGE108-2D%20Game%20Development(1)(Reduced).mp4",
                 "progress": 1
             },
             "5": {
                 "name": "Simple Shader",
                 "description": "University-Assignment",
                 "img": "",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712471368/Projects/University/VFX_Highlights_fjhw1b.mp4",
+                "video": "https://torukun.imgix.net/CGE4990-Visual%20Effect%20For%20Game.mp4",
                 "progress": 1
             },
             "4": {
                 "name": "3D Mobile Game Prototype",
                 "description": "University-Assignment",
                 "img": "",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712468108/Projects/University/CGE109-3D-GAME-DEVELOPMENT.mp4",
+                "video": "https://torukun.imgix.net/CGE109-3D%20Game%20Development(Reduced).mp4",
                 "progress": 1
             },
             "3": {
                 "name": "Simple Rythm Game",
                 "description": "University-Assignment",
                 "img": "",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711813160/Projects/University/Simple_Rythm_Game_Showreel_hw5mxq.mp4",
+                "video": "https://torukun.imgix.net/CGE105-Game%20Design.mp4",
                 "progress": 1
             },
             "2": {
                 "name": "ANTARCTIC ADVENTURE [REMAKE]",
                 "description": "University-Assignment",
                 "img": "",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711809903/Projects/University/Antarctic_Adventure_Remake_Showreel_m01zb9.mp4",
+                "video": "https://torukun.imgix.net/CGE381-GAME%20PROJECT%20I(Reduced).mp4",
                 "progress": 1
             },
             "1": {
                 "name": "BEATPRROJECT",
                 "description": "Personal-Project",
                 "img": "",
-                "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1714485759/BEATPROJECT_Development_Trailer_blbuum.mp4",
+                "video": "https://torukun.imgix.net/CGE382-Game%20Project%20II(cinematic).mp4",
                 "progress": 1
             }
         }
@@ -110,7 +110,7 @@
             },
             "professional-info": {
                 "title": "Profession",
-                "status": "Available",
+                "status": "Student",
                 "info": {
                     "Experience": {
                         "icon": "",
@@ -246,7 +246,7 @@
             "title": "my-first-game",
             "description": "A Simple TopdownPixel Game",
             "img": "/images/projects/(University)SimplePixelGame.png",
-            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712467975/Projects/University/my%20first%20game.mp4",
+            "video": "https://torukun.imgix.net/My%20First%20Game(Reduced).mp4",
             "tech": ["Game", "Unity"],
             "url": "/blogs/simpletopdown",
             "source": "https://github.com/FudanshIKun/SimpleTopdownPixel-Game",
@@ -258,7 +258,7 @@
             "title": "university-assignment",
             "description": "A Simple TopdownShooting Game",
             "img": "/images/projects/(University)SimpleTopdownShooting.png",
-            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712466930/Projects/University/CGE108-2D-GAME-0.mp4",
+            "video": "https://torukun.imgix.net/CGE108-2D%20Game%20Development(1)(Reduced).mp4",
             "tech": ["Unity", "Game"],
             "url": "/blogs/simpletopdownshooting",
             "source": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
@@ -270,7 +270,7 @@
             "title": "university-assignment",
             "description": "A Simple Otome Game",
             "img": "/images/projects/(University)OtomeProject.png",
-            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712468047/Projects/University/CGE108-2D-Game-1.mov",
+            "video": "https://torukun.imgix.net/CGE108-2D%20Game%20Development(2)(Reduced).mov",
             "tech": ["Unity", "Game"],
             "url": "/blogs/simpleotome",
             "source": "https://github.com/FudanshIKun/CGE108-2DIMENSIONAL-GAME-DEVELOPMENT",
@@ -282,7 +282,7 @@
             "title": "university-assignment",
             "description": "A Simple Rythm Game",
             "img": "/images/projects/(University)SimpleRythmGame.png",
-            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4",
+            "video": "https://torukun.imgix.net/CGE105-Game%20Design.mp4",
             "tech": ["Unity", "Game", "Game Design"],
             "url": "/blogs/simplerythm",
             "source": "https://github.com/FudanshIKun/CGE105-GAME-DESIGN-AND-PRODUCTION",
@@ -294,7 +294,7 @@
             "title": "university-assignment",
             "description": "A Simple 3D ArrowShooting Mobile Game \nInspired from game \"Pathless\" \nwith Firebase Integration",
             "img": "/images/projects/(University)SimpleThirdPersonArrowShooting.png",
-            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712468108/Projects/University/CGE109-3D-GAME-DEVELOPMENT.mp4",
+            "video": "https://torukun.imgix.net/CGE109-3D%20Game%20Development(Reduced).mp4",
             "tech": ["Unity", "Game"],
             "url": "/blogs/simplethirdpersonarrowshooting",
             "source": "https://github.com/FudanshIKun/CGE109-3DIMENSIONAL-GAME-DEVELOPMENT",
@@ -306,7 +306,7 @@
             "title": "university-assignment",
             "description": "A Pack of simple shader created within unity",
             "img": "/images/projects/(University)CGE499-VisualEffect.png",
-            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1712471368/Projects/University/VFX_Highlights_fjhw1b.mp4",
+            "video": "https://torukun.imgix.net/CGE4990-Visual%20Effect%20For%20Game.mp4",
             "tech": ["Unity", "Shader"],
             "url": "/blogs/simplevfx",
             "source": "https://github.com/FudanshIKun/CGE499-VisualEffect/",
@@ -317,7 +317,7 @@
             "title": "university-assignment",
             "description": "A Remake of Antarctic Adventure(1983)",
             "img": "/images/projects/(University)Antarctic-Adventure-Remake.png",
-            "video": "https://res.cloudinary.com/drjnabgbd/video/upload/v1711772354/Projects/University/Antarctic_Adventure_Remake_Gameplay_sj4wve.mp4",
+            "video": "https://torukun.imgix.net/CGE381-GAME%20PROJECT%20I(Reduced).mp4",
             "tech": ["Unity", "Game"],
             "url": "/blogs/gameprojecti",
             "source": "https://github.com/FudanshIKun/CGE381-GAME-PROJECT-I",
