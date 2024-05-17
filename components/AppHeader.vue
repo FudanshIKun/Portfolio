@@ -19,9 +19,9 @@
               Experience
             </RouterLink>
   
-            <!-- <RouterLink id="nav-link" to="/myblogs" :class="{ active: isActive('/myblogs') }">
+            <RouterLink id="nav-link" to="/myblogs" :class="{ active: isActive('/myblogs') }">
               Blogs
-            </RouterLink> -->
+            </RouterLink>
 
             <RouterLink id="nav-link" to="/projects" :class="{ active: isActive('/projects') }">
               Journey

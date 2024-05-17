@@ -138,7 +138,7 @@ main.page {
 
 /* LG - XL */
 @media (min-width: 1024px) {
-  #page-menu, #nav-logo, #filter-menu {
+  #nav-logo, #filter-menu {
     min-width: 275px !important;
     max-width: 275px !important;
   }

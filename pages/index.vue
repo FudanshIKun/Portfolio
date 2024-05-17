@@ -243,6 +243,9 @@ export default {
                       <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">C# Scripting</a> 
                     </li>
                     <li class="w3-padding-16"> 
+                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Unity Development</a> 
+                    </li>
+                    <li class="w3-padding-16"> 
                       <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px;">HTML & CSS</a> 
                     </li> 
                     <li class="w3-padding-16"> 
@@ -252,10 +255,7 @@ export default {
                       <a href="https://firebase.google.com/docs/unity/setup" target="_blank" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Firebase</a> 
                     </li>             
                     <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Shaders</a> 
-                    </li>
-                    <li class="w3-padding-16"> 
-                      <a class="w3-opacity w3-hover-opacity-off" style="font-size: 12px">VFXs</a> 
+                      <a href="https://docs.unity3d.com/Manual/Shaders.html" class="w3-opacity w3-hover-opacity-off" style="font-size: 12px; font-style:italic ; font-weight: 1000;">Shaders</a> 
                     </li>
                   </ul>
                 </div>

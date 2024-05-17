@@ -23,6 +23,11 @@
           </i>
         </li>
         <li>
+          <i class="fa-solid fa-user">
+            <RouterLink :to="{name: 'myblogs' }" :class="{ active: isActive('/myblogs') }" @click="toggleMobileMenu()">Blogs</RouterLink>
+          </i>
+        </li>
+        <li>
           <i class="fa-solid fa-file">
             <RouterLink to="/projects" :class="{ active: isActive('/projects') }" @click="toggleMobileMenu()">Journey</RouterLink>
           </i>
