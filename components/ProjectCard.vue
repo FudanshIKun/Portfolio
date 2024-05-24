@@ -2,11 +2,11 @@
 const { project, key, index } = defineProps(['project', 'key', 'index'])
 
 const imageOpacity = computed(() => {
-  return project.video && project.video !== '' ? 0 : 1
+  return project.video && project.video !== '' ? .01 : 1
 })
 
 const overlayOpacity = computed(() => {
-  return project.progress && project.progress === 1 ? 0 : 1
+  return project.progress && project.progress === 1 ? .01 : 1
 })
 
 </script>
@@ -14,7 +14,7 @@ const overlayOpacity = computed(() => {
 <template>
     <div id="project" :key="key" class="lg:mx-5">
 
-        <span class="flex text-sm my-3">
+        <span class="text-sm my-3" style="display: flex;">
             <div style="display: flex; flex-direction: column;">
               <NuxtLink :href="project.url" target="_self">
                 <h3 v-if="index == null" :class="['text-purplefy source-code-pro',project.url && project.url !== '' ? 'hover:text-green-600' : '',]">
@@ -93,10 +93,6 @@ const overlayOpacity = computed(() => {
   z-index: -2;
 }
 
-#window {
-  position: relative;
-}
-
 .container {
   position: relative;
   display: flex;
@@ -104,10 +100,6 @@ const overlayOpacity = computed(() => {
   justify-content: center;
   overflow: hidden;
   z-index: 0;
-}
-
-.fadeIn-top{
-  top: 20%;
 }
 
 .container:hover .image {
@@ -131,7 +123,7 @@ const overlayOpacity = computed(() => {
   top: 0;
   bottom: 0;
   right: 0;
-  opacity: 0;
+  opacity: .01;
   -webkit-transition: all 0.4s ease-in-out 0s;
   -moz-transition: all 0.4s ease-in-out 0s;
   transition: all 0.4s ease-in-out 0s;
@@ -145,7 +137,7 @@ const overlayOpacity = computed(() => {
   width: 100%;
   top: 50%;
   left: 50%;
-  opacity: 0;
+  opacity: .01;
   -webkit-transform: translate(-50%, -50%);
   -moz-transform: translate(-50%, -50%);
   transform: translate(-50%, -50%);
@@ -155,8 +147,6 @@ const overlayOpacity = computed(() => {
 }
 
 .content:hover .content-details{
-  top: 50%;
-  left: 50%;
   opacity: 1;
 }
 
