@@ -11,7 +11,7 @@
                     <NuxtLink :to="social.instagram.url + social.instagram.user" target="_blank" class="flex justify-center items-center">
                         <i class="fa fa-instagram text-gray-400" style="font-size: 20px;"></i>
                     </NuxtLink>
-                    <NuxtLink :to="social.linkin.url + social.linkin.user" target="_blank" class="flex justify-center items-center ">
+                    <NuxtLink :to="social.linkedin.url + social.linkedin.user" target="_blank" class="flex justify-center items-center ">
                         <i class="fa fa-linkedin-square text-gray-400" style="font-size: 20px;"></i>
                     </NuxtLink>
                 </div>

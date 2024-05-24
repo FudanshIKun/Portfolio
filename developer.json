@@ -1,5 +1,5 @@
 {
-    "name": "ToruKun",
+    "name": "Toru{Kun}",
     "realname": "Panyawat Puengthamthanapoom",
     "role": "Developer",
     "highlights": {
@@ -208,18 +208,13 @@
                 "url": "https://github.com/",
                 "user": "FudanshIKun"
             },
-            "facebook": {
-                "title": "Facebook",
-                "url": "https://m.facebook.com/",
-                "user": "torut0ru"
-            },
             "instagram": {
                 "title": "Instagram",
                 "url": "https://www.instagram.com/",
                 "user": "torut0ru"
             },
-            "linkin": {
-                "title": "LinkIn",
+            "linkedin": {
+                "title": "LinkedIn",
                 "url": "https://www.linkedin.com/in/",
                 "user": "panyawat-puengthamthanapoom-2a193821b/"
             }
@@ -232,8 +227,8 @@
                     "url": "https://instagram.com/",
                     "user": "torut0ru"
                 },
-                "LinkIn": {
-                    "title": "LinkIn",
+                "linkedin": {
+                    "title": "LinkedIn",
                     "url": "https://www.linkedin.com/in/",
                     "user": "panyawat-puengthamthanapoom-2a193821b/"
                 }
@@ -325,6 +320,18 @@
             "progress": 1
         },
         "2": {
+            "name": "Default Cube",
+            "title": "university-assignment",
+            "description": "Simple Multiplayer Game using Unity Services and Netcode for Gameobject",
+            "img": "/images/projects/(University)Netcode.png",
+            "video": "https://torukun.imgix.net/CGE499-Online-Multiplayer-Game-Development.mp4",
+            "tech": ["Unity", "Game", "Game Design"],
+            "url": "",
+            "source": "https://github.com/FudanshIKun/CGE499-Online-Multiplayer-Game-Development/tree/Prototype",
+            "download": "https://drive.google.com/file/d/1f71s3PJ9tDhtKbrEuauNYsQaAmVjK9TN/view?usp=sharing",
+            "progress": 1
+        },
+        "1": {
             "name": "BEATPROJECT",
             "title": "personal-project",
             "description": "A Game where injustice becomes law, so you do crime and save the day.",
@@ -332,18 +339,6 @@
             "video": "",
             "tech": ["Unity", "Game", "Game Design"],
             "url": "/blogs/beatproject",
-            "source": "",
-            "download": "",
-            "progress": 0
-        },
-        "1": {
-            "name": "Default Cube",
-            "title": "university-assignment",
-            "description": "Simple Multiplayer Game using Unity Services and Netcode for Gameobject",
-            "img": "/images/projects/(University)Netcode.png",
-            "video": "",
-            "tech": ["Unity", "Game", "Game Design"],
-            "url": "",
             "source": "",
             "download": "",
             "progress": 0
