@@ -34,44 +34,32 @@
             "6": {
                 "name": "2D TOPDOWN SHOOTING GAME",
                 "description": "University-Assignment",
-                "img": "",
-                "video": "https://torukun.imgix.net/CGE108-2D%20Game%20Development(1)(Reduced).mp4",
-                "progress": 1
+                "video": "https://torukun.imgix.net/CGE108-2D%20Game%20Development(1)(Reduced).mp4"
             },
             "5": {
                 "name": "Simple Shader",
                 "description": "University-Assignment",
-                "img": "",
-                "video": "https://torukun.imgix.net/CGE4990-Visual%20Effect%20For%20Game.mp4",
-                "progress": 1
+                "video": "https://torukun.imgix.net/CGE4990-Visual%20Effect%20For%20Game.mp4"
             },
             "4": {
                 "name": "3D Mobile Game Prototype",
                 "description": "University-Assignment",
-                "img": "",
-                "video": "https://torukun.imgix.net/CGE109-3D%20Game%20Development(Reduced).mp4",
-                "progress": 1
+                "video": "https://torukun.imgix.net/CGE109-3D%20Game%20Development(Reduced).mp4"
             },
             "3": {
                 "name": "Simple Rythm Game",
                 "description": "University-Assignment",
-                "img": "",
-                "video": "https://torukun.imgix.net/CGE105-Game%20Design.mp4",
-                "progress": 1
+                "video": "https://torukun.imgix.net/CGE105-Game%20Design.mp4"
             },
             "2": {
                 "name": "ANTARCTIC ADVENTURE [REMAKE]",
                 "description": "University-Assignment",
-                "img": "",
-                "video": "https://torukun.imgix.net/CGE381-GAME%20PROJECT%20I(Reduced).mp4",
-                "progress": 1
+                "video": "https://torukun.imgix.net/CGE381-GAME%20PROJECT%20I(Reduced).mp4"
             },
             "1": {
                 "name": "BEATPRROJECT",
                 "description": "Personal-Project",
-                "img": "",
-                "video": "https://torukun.imgix.net/CGE382-Game%20Project%20II(cinematic).mp4",
-                "progress": 1
+                "video": "https://torukun.imgix.net/CGE382-Game%20Project%20II(cinematic).mp4"
             }
         }
     },
@@ -322,12 +310,12 @@
         "2": {
             "name": "Default Cube",
             "title": "university-assignment",
-            "description": "Simple Multiplayer Game using Unity Services and Netcode for Gameobject",
+            "description": "Simple Multiplayer Game using Unity Services and Netcode",
             "img": "/images/projects/(University)Netcode.png",
             "video": "https://torukun.imgix.net/CGE499-Online-Multiplayer-Game-Development.mp4",
             "tech": ["Unity", "Game", "Game Design"],
-            "url": "",
-            "source": "https://github.com/FudanshIKun/CGE499-Online-Multiplayer-Game-Development/tree/Prototype",
+            "url": "/blogs/defaultcube",
+            "source": "https://github.com/FudanshIKun/CGE499-Online-Multiplayer-Game-Development/",
             "download": "https://drive.google.com/file/d/1f71s3PJ9tDhtKbrEuauNYsQaAmVjK9TN/view?usp=sharing",
             "progress": 1
         },
