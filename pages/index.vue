@@ -70,7 +70,7 @@ export default {
         
         <div style="height: 100%; justify-content: end;"></div>
         <div class="head" style="color: white; padding-left: 5vw; padding-top: 2vh;">
-          <h1 class="jersey-15-regular">{{ config.dev.realname }}</h1>
+          <h1 class="permanent-marker-regular">{{ config.dev.name }}</h1>
           <h2 class="jersey-15-regular">> {{ config.dev.role }}</h2>
           <!--
           <h2 class="jersey-15-regular" style="font-size: 40px;">{{ config.dev.name }}</h2>
