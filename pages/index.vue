@@ -72,9 +72,6 @@ export default {
         <div class="head" style="color: white; padding-left: 5vw; padding-top: 2vh;">
           <h1 class="permanent-marker-regular">{{ config.dev.name }}</h1>
           <h2 class="jersey-15-regular">> {{ config.dev.role }}</h2>
-          <!--
-          <h2 class="jersey-15-regular" style="font-size: 40px;">{{ config.dev.name }}</h2>
-          -->
         </div>
 
       </section>
@@ -164,8 +161,7 @@ export default {
                 <div class="card">
                   <div class="slide slide1" >
                     <div class="container h-auto">
-                      <img :src="highlights.img" v-if="highlights.img !== ''" alt="" class="image">
-                      <video :src="highlights.video" v-if="highlights.img == ''" autoplay='true' loop muted class="video"></video>
+                      <video :src="highlights.video" autoplay='true' loop muted class="video"></video>
                     </div>
                   </div>
                   <div style="width: 100%; padding: 2vh;">
