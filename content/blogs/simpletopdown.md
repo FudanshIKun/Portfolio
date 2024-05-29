@@ -5,7 +5,7 @@ createdAt: 01 / May / 2024
 updatedAt: 01 / May / 2024
 published: true
 ---
-<video source src="https://res.cloudinary.com/drjnabgbd/video/upload/v1712467975/Projects/University/my%20first%20game.mp4" autoplay loop></video>
+<video source src="https://torukun.imgix.net/My%20First%20Game(Reduced).mp4" autoplay loop></video>
 
 # Simple Topdown Game
 This project is my first self made game in my freshy year. As I was very interested in pixel art style.

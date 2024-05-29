@@ -9,6 +9,7 @@ published: true
 # Default Cube
 Default Cube is a mobile game where players contest as a "cube". And we have competition to see who is the best default cube! This project are Created for Education Purpose Only. Do not use this for commercial at all.
 
+<video source src="https://torukun.imgix.net/CGE499-Online-Multiplayer-Game-Development.mp4" autoplay loop></video>
 ---
 
 # Overview

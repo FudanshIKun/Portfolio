@@ -5,7 +5,7 @@ createdAt: 01 / May / 2024
 updatedAt: 01 / May / 2024
 published: true
 ---
-<video source src="https://res.cloudinary.com/drjnabgbd/video/upload/v1712468108/Projects/University/CGE109-3D-GAME-DEVELOPMENT.mp4" autoplay loop></video>
+<video source src="https://torukun.imgix.net/CGE109-3D%20Game%20Development(Reduced).mp4" autoplay loop></video>
 
 # Simple Third Person Arrow Shooting Game
 This was very fun project for me, But I didn't really looking to improve graphic quality, I worked alone on entirely project so I Made it more like a prototype.

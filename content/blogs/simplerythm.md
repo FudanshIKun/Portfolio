@@ -5,7 +5,7 @@ createdAt: 01 / May / 2024
 updatedAt: 01 / May / 2024
 published: true
 ---
-<video source src="https://res.cloudinary.com/drjnabgbd/video/upload/v1711274762/Projects/University/Simple%20Rythm%20Game.mp4" autoplay loop></video>
+<video source src="https://torukun.imgix.net/CGE105-Game%20Design.mp4" autoplay loop></video>
 
 # Simple Rythm Game
 This project is one of my university assignments. Based from my university subject (CGE105-GAME DESIGN AND PRODUCTION) 

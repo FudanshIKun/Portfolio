@@ -5,7 +5,7 @@ createdAt: 01 / May / 2024
 updatedAt: 01 / May / 2024
 published: true
 ---
-<video source src="https://res.cloudinary.com/drjnabgbd/video/upload/v1712466930/Projects/University/CGE108-2D-GAME-0.mp4" autoplay loop></video>
+<video source src="https://torukun.imgix.net/CGE108-2D%20Game%20Development(1)(Reduced).mp4" autoplay loop></video>
 
 # Simple Topdown Pixel Shooting Game
 This project is one of my university assignments. Based from my university subject (CGE108-2D Game Development) 

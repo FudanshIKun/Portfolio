@@ -14,7 +14,7 @@ This project is one of my university assignments. It's based from topic that I h
 
 I haven't published the mobile version yet. (tested on low-end mobile but the polygons in there are far too high) 
 
-<video source src="https://res.cloudinary.com/drjnabgbd/video/upload/v1711772354/Projects/University/Antarctic_Adventure_Remake_Gameplay_sj4wve.mp4" autoplay loop></video>
+<video source src="https://torukun.imgix.net/CGE381-GAME%20PROJECT%20I(Reduced).mp4" autoplay loop></video>
 
 ---
 
