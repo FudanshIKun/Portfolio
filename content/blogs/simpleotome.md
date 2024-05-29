@@ -14,7 +14,7 @@ This project is one of my university assignments. This one based from my univers
 
 The desktop version can be downloaded from my Journey Page
 
-<video source src="https://res.cloudinary.com/drjnabgbd/video/upload/v1712468047/Projects/University/CGE108-2D-Game-1.mov" autoplay loop></video>
+<video source src="https://torukun.imgix.net/CGE108-2D%20Game%20Development(2)(Reduced).mov" autoplay loop></video>
 ---
 
 # Overview

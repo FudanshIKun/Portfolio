@@ -5,7 +5,7 @@ createdAt: 01 / May / 2024
 updatedAt: 01 / May / 2024
 published: true
 ---
-<video source src="https://res.cloudinary.com/drjnabgbd/video/upload/v1712471368/Projects/University/VFX_Highlights_fjhw1b.mp4" autoplay loop></video>
+<video source src="https://torukun.imgix.net/CGE4990-Visual%20Effect%20For%20Game.mp4" autoplay loop></video>
 
 # Simple Shaders & Visual Effects
 This project is one of my university assignments. It's based from my university assignment (CGE499-Visual Effect for Game)  Shader and Visual Effect for game. 

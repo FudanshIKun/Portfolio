@@ -13,8 +13,7 @@ A Game where injustice becomes law, so you do crime and save the day.
 
 This project once was my university assignment and I designed to continued it. So, it's still currently under development in the background. I don't plan to release my university assignment - version, since I don't think, I've pushed enough to confidently published it yet. 
 
-You can viewed the trailer of the game (university assignment) in the highlight of my Welcome page.
-
+<video source src="https://torukun.imgix.net/CGE382-Game%20Project%20II(cinematic).mp4" autoplay loop></video>
 ---
 
 # Overview
